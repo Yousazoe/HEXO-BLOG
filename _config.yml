@@ -1,0 +1,180 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Fl0w3r
+subtitle: '牵马观潮落，提剑纵天涯'
+description: '藏剑若锋，养心若鱼'
+keywords:
+author: Yousazoe
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
+url: http://yousazoe.top
+root: /
+permalink: archives/:abbrlink.html
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next-reloaded
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+- type: git
+  repo:
+      github: git@github.com:Yousazoe/yousazoe.github.io.git
+      coding: git@e.coding.net:yousazoe/yousazoe/yousazoe.git
+  branch: master
+
+# 通用站点地图
+sitemap:
+  path: sitemap.xml
+
+# 百度站点地图
+baidusitemap:
+  path: baidusitemap.xml
+
+# hexo-tag-cloud 标签云 | see https://github.com/MikeCoder/hexo-tag-cloud
+tag_cloud:
+  textFont: Trebuchet MS, Helvetica # 字体
+  textColor: '#555' # 字体颜色
+  textHeight: 14 # 字体高度
+  outlineColor: '#FFFFFF' # 字体背景色
+  maxSpeed: 0.1 # 标签云最大移动速度    
+
+# 字数统计
+symbols_count_time:
+  separated_meta: true
+  item_text_post: true
+  item_text_total: ture
+  awl: 2
+  wpm: 275
+
+#站内搜索
+search:
+  path: search.xml
+  field: post # 指定搜索范围，可选 post | page | all
+  format: html # 指定页面内容形式，可选 html | raw (Markdown) | excerpt | more
+  limit: 10000
+
+# hexo-neat
+# 博文压缩
+neat_enable: true
+# 压缩html
+neat_html:
+  enable: true
+  exclude:
+# 压缩css  
+neat_css:
+  enable: true
+  exclude:
+    - '**/*.min.css'
+# 压缩js
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '**/*.min.js'
+    - '**/jquery.fancybox.pack.js'
+    - '**/index.js'  
+
+# 图片懒加载
+lazyload:
+  enable: false 
+  onlypost: false
+  loadingImg: themes/next-reloaded/source/images/loading.gif #可选 eg. ./images/loading.png
+
+# 百度主动推送
+baidu_url_submit:
+  count: 100 				     ## 提交最新的1个链接
+  host: yousazoe.top 	     ## 百度站长平台中注册的域名
+  token: slBbq5f8WxljPytW	 ## 准入秘钥
+  path: baidu_urls.txt 		 ## 文本文档的地址， 新链接会保存在此文本文档里
