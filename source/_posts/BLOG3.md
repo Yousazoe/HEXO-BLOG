@@ -329,3 +329,81 @@ lazyload:
   # loadingImg: #可选 eg. ./images/loading.png
 ```
 
+
+
+### 外链优化
+
+减少出站链接能够有效防止权重分散，hexo 有很方便的自动为出站链接添加 `nofollow` 标签的插件。
+
+首先安装 `hexo-filter-nofollow` 插件：
+
+```bash
+npm install hexo-filter-nofollow --save
+```
+
+然后我们在站点的配置文件`_config.yml` 中添加配置，将 `nofollow` 设置为 `true`：
+
+```yaml
+# 外部链接优化
+nofollow:
+  enable: true
+  field: site
+  exclude:
+    - 'exclude1.com'
+    - 'exclude2.com'
+```
+
+其中 `exclude`（例外的链接，比如友链）将不会被加上 `nofollow` 属性。
+
+
+
+### 侧栏标签云
+
+#### 地址
+
+[hexo-tag-cloud](https://github.com/D0n9X1n/hexo-tag-cloud)
+
+#### 安装
+
+- 进入到 hexo 的根目录，然后在 `package.json` 中添加依赖: `"hexo-tag-cloud": "2.1.*"`
+
+- 然后执行 `npm install` 命令
+
+  ```bash
+  npm install hexo-tag-cloud
+  ```
+
+- 然后需要你去修改主题的 tagcloud 的模板，这个依据你的主题而定。
+
+这里以 Next 主题为例，找到文件 `next/layout/_macro/sidebar.swig`, 然后添加如下内容。
+
+```html
+<div class="site-overview-wrap sidebar-panel">
+  {{ partial('_partials/sidebar/site-overview.swig', {}, {cache: theme.cache.enable}) }}
+
+  {{- next_inject('sidebar') }}
+</div>
+
+{% if site.tags.length > 1 %}
+<script type="text/javascript" charset="utf-8" src="{{ url_for('/js/tagcloud.js') }}"></script>
+<script type="text/javascript" charset="utf-8" src="{{ url_for('/js/tagcanvas.js') }}"></script>
+<div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div id="myCanvasContainer" class="widget tagcloud">
+        <canvas width="250" height="250" id="resCanvas" style="width:100%">
+            {{ list_tags() }}
+        </canvas>
+    </div>
+</div>
+{% endif %}
+
+{%- if theme.back2top.enable and theme.back2top.sidebar %}
+<div class="back-to-top motion-element">
+  <i class="fa fa-arrow-up"></i>
+  <span>0%</span>
+</div>
+{%- endif %}
+```
+
+
+

@@ -5,7 +5,7 @@ tags:
   - Pico-8
   - Reprint
   - Game Engine
-categories: Pico-8游戏引擎 (Pico-8 Game Engine)
+categories:  Pico-8 游戏引擎 (Pico-8 Game Engine)
 banner_img: 'https://tva1.sinaimg.cn/large/0081Kckwgy1gljxgzq715j30m80ciaat.jpg'
 abbrlink: 2a6e7125
 date: 2020-12-11 15:02:56
@@ -22,7 +22,7 @@ pico-8 的社区是一个满是热情与分享精神的社区，无数玩家与�
 
 <!--more-->
 
-
+### 效果
 
 ![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljxi27lo3g30ar0arx6q.gif)
 

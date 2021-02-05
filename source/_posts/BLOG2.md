@@ -326,7 +326,7 @@ highlight_theme: normal
 
 
 
-### 阅读进度条
+#### 阅读进度条
 
 我们可以在主题配置文件`_config.yml` 中进行修改：
 
@@ -363,7 +363,24 @@ vendors:
 
 
 
-### 动态彩带背景
+#### 阅读百分比&底部返回
+
+在主题配置文件`_config.yml` 中修改：
+
+```yaml
+back2top:
+  enable: ture
+  # Back to top in sidebar.
+  sidebar: false
+  # Scroll percent label in b2t button.
+  scrollpercent: ture
+```
+
+
+
+
+
+#### 动态彩带背景
 
 我们可以在主题配置文件`_config.yml` 中修改：
 
@@ -392,6 +409,16 @@ three:
 ```
 
 
+
+#### 边框圆角
+
+在`themes/next-reloaded/source/css/_variables/Gemini.styl`中添加如下代码：
+
+```stylus
+// 修改主题页面布局为圆角
+$border-radius-inner = 15px 15px 15px 15px;
+$border-radius = 15px;
+```
 
 
 
@@ -458,3 +485,6 @@ translateInitilization();
 
 - [三步让你的网站支持简体繁体切换](https://www.arao.me/website/hexo-support-jian-fan-language.html#more)
 - [两步让你的网站支持简体繁体切换](http://qingbo.site/2016/10/11/how-set-Chinese-Simplified-switch-to-Chinese-Traditional/)
+
+
+

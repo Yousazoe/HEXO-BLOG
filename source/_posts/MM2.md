@@ -9,7 +9,7 @@ tags:
   - Mooc
   - GPS
   - Mathematical Modeling
-categories: 数学建模(Mathematical Modeling)
+categories: 数学建模 (Mathematical Modeling)
 date: 2020-11-03 22:47:09
 comments: false
 ---

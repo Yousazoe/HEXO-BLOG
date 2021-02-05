@@ -1,5 +1,5 @@
 ---
-title: Pico-8 精彩代码解析
+title: Pico-8 精彩代码--植物生长效果解析
 top: false
 mathjax: false
 tags:
@@ -7,7 +7,7 @@ tags:
   - Pico-8
   - Reprint
   - Game Engine
-categories: Pico-8游戏引擎 (Pico-8 Game Engine)
+categories:  Pico-8 游戏引擎 (Pico-8 Game Engine)
 abbrlink: 9c0e841f
 translate_title: pico8-wonderful-code-analysis
 date: 2020-11-16 13:06:42

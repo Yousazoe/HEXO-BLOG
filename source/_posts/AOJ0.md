@@ -3546,7 +3546,7 @@ END_OF_TEXT
 
 ##### 問題を解く
 
-
+本题要求我们从输入中统计出现特定字符串的个数。这里主要使用了`transform`函数来转换大小写，每次接收输入的字符串进行比较即可。
 
 ```c++
 #include <iostream>
@@ -3574,7 +3574,7 @@ int main(){
 }
 ```
 
-
+对于`transform(first,last,result,op);`，`first`是容器的首迭代器，`last`为容器的末迭代器，`result`为存放结果的容器，`op`为要进行操作的一元函数对象或`sturct`、`class`。
 
 
 
