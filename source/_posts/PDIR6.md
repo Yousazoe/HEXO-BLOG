@@ -16,7 +16,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn5zbxjud7j31hc0u0dpy.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn5zbxjud7j31hc0u0dpy.jpg)
 
 ### 引言
 
@@ -28,15 +28,15 @@ sticky:
 
 佩德罗・梅代鲁斯最为知名的作品莫过于《塞莱斯特山（蔚蓝，Celeste）》，不过他持续在网络上发布的像素美术教程也同样相当知名。这里选择的教程就是经过风农翻译整理内容。
 
-![图片](https://tva1.sinaimg.cn/large/0081Kckwgy1gm78a6los3j30u008c74z.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm78a6los3j30u008c74z.jpg)
 
 
 
 ### 宇宙飞船推进器
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm78a8i99rg30e80e8qlp.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm78a8i99rg30e80e8qlp.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm78aatyglg30e80e8kbh.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm78aatyglg30e80e8kbh.gif)
 
 
 GDC 归来，新一期教程！（风农: 不是我去的 GDC。。。）
@@ -51,9 +51,9 @@ GDC 归来，新一期教程！（风农: 不是我去的 GDC。。。）
 
 ### 黑魔法特效
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm78ag8adyg30e80e8k80.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm78ag8adyg30e80e8k80.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm78a9fc2dg30e80e8tq4.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm78a9fc2dg30e80e8tq4.gif)
 
 
 这是一节非常抽象的教程，里面更多的是窍门和理念的集合，不是一步步教程。
@@ -73,9 +73,9 @@ GDC 归来，新一期教程！（风农: 不是我去的 GDC。。。）
 
 ### 肖像
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm78agweuwg30e80e84qp.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm78agweuwg30e80e84qp.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm78acq9b1g30e80e84qp.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm78acq9b1g30e80e84qp.gif)
 
 
 上周投票是个平局，我就选了个自己最想做的：肖像教程。
@@ -90,9 +90,9 @@ GDC 归来，新一期教程！（风农: 不是我去的 GDC。。。）
 
 ### 光魔法特效
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm78ahtyupg30e80e8an7.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm78ahtyupg30e80e8an7.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm78adiy17g30e80e87if.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm78adiy17g30e80e87if.gif)
 
 
 又一节非常抽象的教程，里面更多的是窍门和理念的集合，不是一步步教程。
@@ -111,9 +111,9 @@ GDC 归来，新一期教程！（风农: 不是我去的 GDC。。。）
 
 ### 翅膀 / 飞行
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm78aeehk0g30e80e81kx.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm78aeehk0g30e80e81kx.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm78afk4d8g30e80e84qp.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm78afk4d8g30e80e84qp.gif)
 
 
 翅膀/飞行终于在投票里赢了一次：D 准确讲是平局，不过我猜我是能决定平局结果的吧？这期就是翅膀/飞行了！

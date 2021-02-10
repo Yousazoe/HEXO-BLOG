@@ -16,7 +16,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn5zie8htlj31hc0u0dje.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn5zie8htlj31hc0u0dje.jpg)
 
 ### 引言
 
@@ -30,14 +30,14 @@ sticky:
 
 这部分教程就是经过风农翻译整理的另一部分内容：《开始画像素画（Making Pixel Art）》。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhud6tcj7j30u008c74z.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhud6tcj7j30u008c74z.jpg)
 
 
 简单的 Aseprite 动画。这是系列的第 3 篇。
 
 ### 什么是动画？
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhuggpz84g30dw05oab9.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhuggpz84g30dw05oab9.gif)
 
 
 
@@ -47,7 +47,7 @@ sticky:
 
 首先我们要了解时间轴。它是一种在单个文件里表现多个图像的方法。每一列都是完整的图像，有一个编号，我们称之为帧。
 
-![图片](https://tva1.sinaimg.cn/large/0081Kckwgy1glhudbdlr7j30dq02t0pm.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhudbdlr7j30dq02t0pm.jpg)
 
 
 
@@ -55,7 +55,7 @@ sticky:
 
 试着在不同帧上画些颜色，点击播放（Enter 键，回车）。也可以在预览窗口看，按 F7。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhud72cy8j308w07idfl.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhud72cy8j308w07idfl.jpg)
 
 
 
@@ -65,27 +65,27 @@ sticky:
 
 画动画有非常多的技巧，比如应该按什么顺序绘制每帧，如何优化，不过我们暂时先讲我了解的最简单的一个技巧：一个“连续动作（straight-ahead）”的弹球动画。“连续动作”是指我们按顺序一帧一帧直接画，而不是先画出重要帧，再添加中间帧的方式。先建个 `32` 乘 `32` 的文件，随便选个调色盘。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhudcea72j30pt03r741.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhudcea72j30pt03r741.jpg)
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhud855nnj30ig03va9t.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhud855nnj30ig03va9t.jpg)
 
 
 
 动画第一帧我称之为“静止”。它既是概念图，定义动画的风格，也是这个序列的停止位置。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhudekly7j30440440ba.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhudekly7j30440440ba.jpg)
 
 你要注意这帧里添加的细节，因为下一帧也要保持相同的风格。
 
 接着复制这一帧（ALT + N），把它向上移动 `4` 像素，像这样：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhudajda0j303u03w0b4.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhudajda0j303u03w0b4.jpg)
 
 之后，继续向上 `3` 像素，`2` 像素，`1` 像素，多保持相同位置一帧，后面反过来一遍。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhud8k43lj30gt029741.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhud8k43lj30gt029741.jpg)
 
 ### 节奏
 
@@ -93,7 +93,7 @@ sticky:
 
 我们来添加一些节奏。球在落地后停一段时间，再跳起来。要增加某一帧的持续时间，右键 点击帧上的数字，选择帧属性（Frame Properties）。然后你可以输入你想要这帧持续的时间。我们试下 `300` 毫秒。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhud9h0a1j308d05qdfm.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhud9h0a1j308d05qdfm.jpg)
 
 
 
@@ -109,23 +109,23 @@ sticky:
 
 我们复制下第一帧，把它水平拉伸，垂直方向上压扁，保持整体体积。保持体积是很重要的，这样物体不会看起来变小或者变大了。当然这属于在我们更有经验之后可以尝试打破的规则，不过暂时还是遵守它。这帧也被称作“准备帧”，主要用来让下一帧发生的动作看起来更强烈。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhud7nyyfj30bi0640kw.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhud7nyyfj30bi0640kw.jpg)
 
 现在我们用同样方式复制并修改球落地时的帧，可以画的更加夸张点。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhudd1yndj307m07l0f8.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhudd1yndj307m07l0f8.jpg)
 
 
 
 最后是垂直拉伸（同时水平挤压）跳起的第一帧和下落的最后一帧，当球速度最快的时候。这就完成了，我们看下结果：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhudbt9f1j30mg07uwe9.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhudbt9f1j30mg07uwe9.jpg)
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhud9yqt4g305c05cmxc.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhud9yqt4g305c05cmxc.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhudaxnfug305c05cq31.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhudaxnfug305c05cq31.gif)
 
 
 
@@ -141,7 +141,7 @@ sticky:
 
 ### 接下来
 
-![图片](https://tva1.sinaimg.cn/large/0081Kckwgy1glhude6qwbg305c05c747.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhude6qwbg305c05c747.gif)
 
 
 

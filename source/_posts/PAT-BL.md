@@ -13,7 +13,7 @@ date: 2020-08-08 10:54:53
 comments: false
 ---
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ghj9h9wmvbj30xc0irjwp.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ghj9h9wmvbj30xc0irjwp.jpg)
 
 <div align=center>
   <font size="3">

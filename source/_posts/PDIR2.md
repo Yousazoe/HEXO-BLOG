@@ -15,7 +15,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn5z43ozraj31hc0u0gvq.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn5z43ozraj31hc0u0gvq.jpg)
 
 ### 引言
 
@@ -27,15 +27,15 @@ sticky:
 
 佩德罗・梅代鲁斯最为知名的作品莫过于《塞莱斯特山（蔚蓝，Celeste）》，不过他持续在网络上发布的像素美术教程也同样相当知名。这里选择的教程就是经过风农翻译整理内容。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljth1mvn7j30u008c74z.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljth1mvn7j30u008c74z.jpg)
 
 
 
 ### 像素画基础 1
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljtjoj81ag30e80e8e81.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljtjoj81ag30e80e8e81.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljtjpfq75g30e80e8e81.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljtjpfq75g30e80e8e81.gif)
 
 降噪是大家选出的主题！（在 patreon 上有投票）我在此基础上拓展了一下，结果就稍微复杂了些，而且加了其他方面的讲解，所以这节就叫像素画基础1了。
 
@@ -53,9 +53,9 @@ sticky:
 
 ### 俯视角跑步循环
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljth22dutg30e80e80xa.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljth22dutg30e80e80xa.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljth3spung30e80e8ael.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljth3spung30e80e8ael.gif)
 
 
 这不是俯视角跑步循环的唯一做法。我选这种是因为我通常这样画，而且这是我能想到最简单的方式。
@@ -70,9 +70,9 @@ sticky:
 
 ### 闪电
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljth31xq5g30e80e8tem.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljth31xq5g30e80e8tem.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljth4c7j2g30e80e8ter.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljth4c7j2g30e80e8ter.gif)
 
 
 我个人做闪电类的东西遵守的法则就是让所有东西都闪烁，非常闪。而且会做成 24 帧，看起来就比较顺滑。
@@ -85,9 +85,9 @@ sticky:
 
 ### 故障效果
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljth2gk2ag30e80e8qeb.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljth2gk2ag30e80e8qeb.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljth5ccmdg30e80e87fd.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljth5ccmdg30e80e87fd.gif)
 
 
 我总会参考身边真实的故障效果。像商场里坏掉的显示器，商店的广告牌里的诡异故障效果，或者是我自己的显卡崩了的时候。
@@ -98,9 +98,9 @@ sticky:
 
 ### 关卡设计流程
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljth3l2xag30e80e8tea.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljth3l2xag30e80e8tea.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljth4yfjgg30e80e8grw.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljth4yfjgg30e80e8grw.gif)
 
 
 关卡设计不是我的特长，而且这方面各人有不同的理解，所以这里的都是我设计关卡时候的想法，不是法则。

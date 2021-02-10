@@ -15,7 +15,7 @@ date: 2020-12-03 13:09:54
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4ofatf7fj31hc0u0wf8.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4ofatf7fj31hc0u0wf8.jpg)
 
 ### 引言
 
@@ -339,7 +339,7 @@ footer:
 
 #### 实现效果
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gli3m9aqx0j311p073aav.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gli3m9aqx0j311p073aav.jpg)
 
 
 
@@ -769,7 +769,7 @@ nodeppt serve -h
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmlxgz5y7tj30u00z1tmb.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmlxgz5y7tj30u00z1tmb.jpg)
 
 
 
@@ -777,7 +777,7 @@ nodeppt serve -h
 
 - 进入到 hexo 的根目录，然后在 `package.json` 中添加依赖: `"hexo-tag-cloud": "2.1.*"`
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmlxjb6g4bj311y0lcq94.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmlxjb6g4bj311y0lcq94.jpg)
 
 - 然后执行 `npm install hexo-tag-cloud` 命令
 
@@ -885,7 +885,7 @@ if site.tags.length
 
 对于Fluid主题用户而言，需要找到`/blog/themes/fluid/layout/tags.ejs`这个文件添加刚才ejs用户代码：
 
-```ejs
+```diff
 <%
 page.layout = "tags"
 page.title = theme.tag.title || __('tag.title')
@@ -981,7 +981,7 @@ tag_cloud:
 
 效果图：
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmlxt8wzxpj311k0j3jsh.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmlxt8wzxpj311k0j3jsh.jpg)
 
 
 

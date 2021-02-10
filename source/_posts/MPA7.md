@@ -16,7 +16,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn5zm7aw4aj31hc0u0jv1.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn5zm7aw4aj31hc0u0jv1.jpg)
 
 ### 引言
 
@@ -30,14 +30,14 @@ sticky:
 
 这部分教程就是经过风农翻译整理的另一部分内容：《开始画像素画（Making Pixel Art）》。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhv8bd0hfj30u008c74z.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhv8bd0hfj30u008c74z.jpg)
 
 
 系列第 7 篇。
 
 ### 什么是线条
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhv89ju74j30ei0d812e.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhv89ju74j30ei0d812e.jpg)
 
 
 
@@ -45,7 +45,7 @@ sticky:
 
 在像素美术中，屏幕上的空间非常受限。每个像素都很重要，绘制线条就变得很昂贵。因此，如果你在画非常低像素作品，不推荐使用线条。即使有一些富裕的空间，还是要谨慎的使用线条，试着不使用线条去完成。最少化线条的使用，是保持像素画整洁的好办法。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/VZ8kwNia656nTI2LBj3suic8XQ4Ec2mDovDCt2BDcwjydRAsAavRfUE6DHsv5ia5XcbHnydHaaHo09AvG04kIS50Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640.png)
 
 
 
@@ -57,13 +57,13 @@ sticky:
 
 这种不必要的拐角，通常出现在手绘线条时。你可以手工去清理，也可以打开铅笔工具的“像素完美”（`pixel perfect`）功能来避免这些。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhv88tzipj309w05c741.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhv88tzipj309w05c741.jpg)
 
 
 
 这个算法在画单像素线条时非常有用，不过不总是完美的，你还是应该知道如何手工去清理。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhv8cjbhrj30a205p0jc.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhv8cjbhrj30a205p0jc.jpg)
 
 
 
@@ -73,7 +73,7 @@ sticky:
 
 ### 方形线
 
-![](https://mmbiz.qpic.cn/mmbiz_png/VZ8kwNia656nTI2LBj3suic8XQ4Ec2mDovZlINW3bgF8R1K5SK9yyhNaKCib7BiblqlicP8AkCzIBxyFMttmyIBNLKQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210210102237778.png)
 
 
 
@@ -81,7 +81,7 @@ sticky:
 
 处理过程基本一样，只是你需要找到每个对角链接的像素，把它变方，而不是去删掉拐角。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhv8a5yvaj309w05m0i1.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhv8a5yvaj309w05m0i1.jpg)
 
 注意这样做也会产生很多锯齿，别忘了处理他们。
 
@@ -89,7 +89,7 @@ sticky:
 
 有些时候，尤其是在较低分辨率，线条会吸引过多的注意。有个弱化这种效果的方法是，给线条添加临近颜色的深色版本。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/VZ8kwNia656nTI2LBj3suic8XQ4Ec2mDov1liczK25ftiam3YsickNl5yTnNicL81HKl91snwwbw5s4XwAS1yrCib8lWA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210210102250162.png)
 
 
 
@@ -107,19 +107,19 @@ sticky:
 
 **Step 1  — 草图**
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhv87ygl3j30fh078mwx.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhv87ygl3j30fh078mwx.jpg)
 
 第一步先忽略各种像素画的规则，尽可能流畅的勾勒出形状。基本上跟在纸上或者其他数字化的，非像素的媒介一样。不要过多考虑之后如何清理线条。完成后可以稍作整理，去除明显的标志线，定义一些形状。
 
 **Step 2  — 线条清理**
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvbdn60dj307j0770sh.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvbdn60dj307j0770sh.jpg)
 
 
 
 现在开始做清理。把草图层设置成半透明，可以 右键 点击图层名称，选择属性，再调低透明度。现在可以在上面的图层去画。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhv8ao6foj30c007zq2q.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhv8ao6foj30c007zq2q.jpg)
 
 这里的思路是画出最终的线条图。先聚焦在重点线条上，比如构成角色剪影和脸部的线条。先不要关心颜色和光影，如果想画的话可以画一点主阴影，重点还是把主要形状弄对。
 
@@ -127,7 +127,7 @@ sticky:
 
 **Step 3  —  底色**
 
-![](https://mmbiz.qpic.cn/mmbiz_png/VZ8kwNia656nTI2LBj3suic8XQ4Ec2mDovve85R4AL3Ns9CkkPy3GZ91D8PLYmrl3Sc3WztQWvgHOec9h0XZDLrg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210210102322791.png)
 
 
 
@@ -137,13 +137,13 @@ sticky:
 
 **Step 4  —  光影**
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhv88aqv3j307p077gld.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhv88aqv3j307p077gld.jpg)
 
 
 
 开始给画添加光影，添加明暗区域。试着想象光会如何照射到你画的物体上，相应的渲染。这一步找个参考图是个很好的办法。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvaibzjbj309z07h742.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvaibzjbj309z07h742.jpg)
 
 
 
@@ -155,7 +155,7 @@ sticky:
 
 **Step 5  —  线条上色和抗锯齿**
 
-![图片](https://tva1.sinaimg.cn/large/0081Kckwgy1glhv8c2gduj307p07agld.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhv8c2gduj307p07agld.jpg)
 
 
 
@@ -167,7 +167,7 @@ sticky:
 
 **Step 6  — 打磨细节**
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvb2fvmtj307t076t8h.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvb2fvmtj307t076t8h.jpg)
 
 
 

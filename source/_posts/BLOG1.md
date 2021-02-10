@@ -17,7 +17,7 @@ date: 2020-12-03 19:51:34
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4ofxtwutj313g0jo761.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4ofxtwutj313g0jo761.jpg)
 
 ### 引言
 
@@ -334,7 +334,7 @@ n1-n2-...：每行的图片数量，可以省略，默认单行最多 3 张图�
 
 如下图为 `{% gi 5 3-2 %}` 示例，代表共 5 张图，第一行 3 张图，第二行 2 张图。
 
-![Group Images](https://tva1.sinaimg.cn/large/0081Kckwgy1glawxszspnj31d40t8txa.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glawxszspnj31d40t8txa.jpg)
 
 
 

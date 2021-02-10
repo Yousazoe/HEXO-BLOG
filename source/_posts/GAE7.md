@@ -12,7 +12,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ghr9b2xyjej30xc0ot42q.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ghr9b2xyjej30xc0ot42q.jpg)
 
 <div align=center>
   <font size="3">

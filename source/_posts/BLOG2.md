@@ -12,7 +12,7 @@ date: 2021-01-26 16:55:34
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4n8vkpmgj30ma09u40a.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4n8vkpmgj30ma09u40a.jpg)
 
 <div align=center>
   <font size="3">
@@ -60,7 +60,7 @@ $ git clone https://github.com/iissnan/hexo-theme-next themes/next
 1. 前往 NexT 版本 [发布页面](https://github.com/iissnan/hexo-theme-next/releases)。
 2. 选择你所需要的版本，下载 Download 区域下的 Source Code (zip) 到本地。例如，下载 v0.4.0 版本：
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn173rzm2oj30o30art9c.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn173rzm2oj30o30art9c.jpg)
 
 3. 解压所下载的压缩包至站点的 themes 目录下， 并将 解压后的文件夹名称（`hexo-theme-next-0.4.0`）更改为 `next`。
 

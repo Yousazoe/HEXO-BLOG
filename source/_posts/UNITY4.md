@@ -15,7 +15,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4o5qaa8ej31400u0mzn.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4o5qaa8ej31400u0mzn.jpg)
 
 ### 引言
 

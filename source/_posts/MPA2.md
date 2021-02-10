@@ -16,7 +16,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn5zhhvzmzj31hc0u0434.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn5zhhvzmzj31hc0u0434.jpg)
 
 ### 引言
 
@@ -30,7 +30,7 @@ sticky:
 
 这部分教程就是经过风农翻译整理的另一部分内容：《开始画像素画（Making Pixel Art）》。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhu7imh83j30u008c74z.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhu7imh83j30u008c74z.jpg)
 
 
 相关链接：
@@ -50,7 +50,7 @@ sticky:
 
 ### 什么是像素簇
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhu7kk00zj30ln0axwec.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhu7kk00zj30ln0axwec.jpg)
 
 
 
@@ -58,13 +58,13 @@ sticky:
 
 画像素画的时候，我的重点是尽量少出现像素簇，而且一定避免单像素的簇。这些单像素的也可以叫孤立像素，通常会让画面看起来有很多噪点，很乱。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhu7ix03cj30ra0e3q2q.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhu7ix03cj30ra0e3q2q.jpg)
 
 
 
 有时候你需要把一个孤立像素删除，但有时候你可能还需要这个细节。对于后者，我有一些喜欢的形状可以代替这个孤立像素，就是饼干下面这些绿色形状。不过有些时候它也可以用，像是纹理，抗锯齿（以后的章节会讲），以及一些强细节，比如下面骷髅里的红色眼睛：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhu7jxpdvj307o07j0nc.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhu7jxpdvj307o07j0nc.jpg)
 
 
 
@@ -78,7 +78,7 @@ sticky:
 
 上次我们是画了线条，再用颜色填充内部。这次我们直接开始画颜色。大致的画上你想画的东西，重点在选择颜色和氛围。自由的下笔，不要加细节。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhu7lcj7dj30nj085t8h.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhu7lcj7dj30nj085t8h.jpg)
 
 
 
@@ -86,13 +86,13 @@ sticky:
 
 #### 第二步：改良
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhu7ktfnnj30ms0f0web.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhu7ktfnnj30ms0f0web.jpg)
 
 
 
 你可以看出我是从远处开始，像天空和山，然后添加了建筑，再添加了人物剪影。这是一种常见的绘画技巧，对像素画也很适用。这个思路是先准备好基础，再往上面放东西，用这种方法比较容易选择颜色，以及确定物体尺寸。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhu7lvuf3j30es07dq2t.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhu7lvuf3j30es07dq2t.jpg)
 
 
 
@@ -100,7 +100,7 @@ sticky:
 
 #### 第三步：修正锯齿，添加细节
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhu7m739fj30gi0eba9u.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhu7m739fj30gi0eba9u.jpg)
 
 
 
@@ -110,7 +110,7 @@ sticky:
 
 想象你需要修正的边界是个楼梯，每一阶上的像素数量要有逻辑。我们要计算像素数，保证曲线接近于水平时，像素数量是逐渐增加的，当曲线接近垂直时是逐渐减少的。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhu7jfk5oj308y07f0sh.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhu7jfk5oj308y07f0sh.jpg)
 
 
 
@@ -122,7 +122,7 @@ sticky:
 
 现在回到我们的画。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhu7nr5gej30p609ddfo.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhu7nr5gej30p609ddfo.jpg)
 
 
 

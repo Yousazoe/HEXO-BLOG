@@ -13,7 +13,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ghh8o4l8ovj312w0t6aea.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ghh8o4l8ovj312w0t6aea.jpg)
 
 <div align=center>
   <font size="3">
@@ -251,7 +251,7 @@ comments: false
 	- 随着低年龄层玩家的涌入，玩法偏向硬核和多样发展
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ghhena24kfj310n0kmtdb.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ghhena24kfj310n0kmtdb.jpg)
 
 ### 知名游戏厂商简评
 

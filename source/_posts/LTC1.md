@@ -14,7 +14,7 @@ categories: LeetCode题解 (LeetCode Solution)
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4mym0wp6j30xc0irn4o.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4mym0wp6j30xc0irn4o.jpg)
 
 <div align=center>
   <font size="3">

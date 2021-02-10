@@ -14,7 +14,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4oa9rl0cj312w0lwjvf.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4oa9rl0cj312w0lwjvf.jpg)
 
 ### 引言
 
@@ -32,7 +32,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gll2uj4w2ej30xc0ir789.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gll2uj4w2ej30xc0ir789.jpg)
 
 
 
@@ -44,7 +44,7 @@ sticky:
 
 横井将一个十字带球形枢轴的塑料片安在掌机的输入键上，方向键就此诞生。它很薄，使Game & Watch掌机可以轻松盖上；它的手感也很自然，它是一片按键而非四个独立按钮，按上方向时下方向会翘起，就像跷跷板，这让玩家自然感受到了按了哪个方向。横井将之称为“加号控制器”，英文十字形很像数学加号。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gll3adwyzcj311y0lcakj.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gll3adwyzcj311y0lcakj.jpg)
 
 
 
@@ -52,7 +52,7 @@ sticky:
 
 方向键一直没成为主流直到它出现在FC手柄上，但这也非一帆风顺。设计FC手柄时，工程师们为使用哪种方向控制器发生争论，其中一名工程师泽野贵夫建议使用横井军平的方向键。他的几位同事对此心有疑虑，但是当泽野用一部Game & Watch掌机充当FC原型机手柄后，大家都被方向键稳定和自然所折服：玩家可专注于操作而非手柄。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gll3krqp4gj311y0lcmye.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gll3krqp4gj311y0lcmye.jpg)
 
 
 
@@ -66,7 +66,7 @@ sticky:
 
 先让我们看下NES手柄的方向键，方向键是块背面带球形枢轴的塑料片，它坐落在四个输入键上，允许控制八个方向移动；现在我们打开世嘉五代手柄，世嘉将他们的控制器命名为方向按键，或简称D按键。首先会注意到方向键被包括在一个圆盘中，球形枢轴被置于输入键中心而非塑料片上，工作原理与方向键如出一辙，但这些小改动使世嘉免于任天堂的任何起诉；在PS2手柄上，索尼将方向键置于手柄外壳下，球形枢轴置于一片单独扣在底部的塑料上。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gll4032xodj30xc0m80up.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gll4032xodj30xc0m80up.jpg)
 
 
 

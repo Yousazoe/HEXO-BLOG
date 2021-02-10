@@ -14,7 +14,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4odgcr3hj31hc0u074w.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4odgcr3hj31hc0u074w.jpg)
 
 <div align=center>
   <font size="3">
@@ -124,7 +124,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glflr2ytjbj30go07fjri.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glflr2ytjbj30go07fjri.jpg)
 
 
 
@@ -148,7 +148,7 @@ sticky:
 
 旋转变换是一个线性的操作，在二维的情况下它们是可交换的，交换旋转的顺序对于结果没有影响，三维空间则不然。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glfpny93dzj30ba0a3mx6.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glfpny93dzj30ba0a3mx6.jpg)
 
 接下来的问题是，二维旋转矩阵是什么样子？用极坐标非常简单：
 
@@ -168,7 +168,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glfpma91gtj30sg0lc75d.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glfpma91gtj30sg0lc75d.jpg)
 
 
 

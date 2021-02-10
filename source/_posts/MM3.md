@@ -14,7 +14,7 @@ date: 2020-11-22 01:17:12
 comments: false
 ---
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkxbjaai90j30u00u0npe.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkxbjaai90j30u00u0npe.jpg)
 
 <div align=center>
   <font size="3">
@@ -73,7 +73,7 @@ comments: false
 
 万有引力定律由牛顿在总结前人研究成果基础上得出的著名物理定律。我们知道，伽利略在比萨斜塔上做了一个实验，验证了自由落体定律、开普勒通过对火星的细致研究以及对当时已经发现的太阳系六大行星的轨道综合分析，总结出著名的行星运动三定律：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkydvx56k0j30ic07ymy4.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkydvx56k0j30ic07ymy4.jpg)
 
 > + **开普勒第一定律**
 >
@@ -177,7 +177,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkzhahkr4jj30ra12ljyn.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkzhahkr4jj30ra12ljyn.jpg)
 
 <div align=center>
   <font size="3">

@@ -16,7 +16,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn5zfnfb9aj31hc0u00wn.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn5zfnfb9aj31hc0u00wn.jpg)
 
 ### 引言
 
@@ -30,7 +30,7 @@ sticky:
 
 这部分教程就是经过[风农](https://indienova.com/u/fengnong)翻译整理的另一部分内容：《开始画像素画（Making Pixel Art）》。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhtmvjmb7j30u008c74z.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhtmvjmb7j30u008c74z.jpg)
 
 - 相关链接：
 
@@ -77,7 +77,7 @@ sticky:
 
   点击主界面的“`New File`”，或者到 `FIle` > `New File`，之后就可以开始画了。
 
-  ![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhto9xfs3j307t0bqq2q.jpg)
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhto9xfs3j307t0bqq2q.jpg)
 
   
 
@@ -93,7 +93,7 @@ sticky:
 
   界面上有很多工具和菜单，别着急，我们现在只需要用几个按钮。最主要的工具是铅笔（Pencil），应该一直保持 `1px` 宽度，这是我们在画布上画像素的工具。点击这个按钮，或者按 B，再去点击屏幕，就可以画上一个所选颜色的像素点。
 
-  ![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhtodo3nvj30oh0k0dfx.jpg)
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhtodo3nvj30oh0k0dfx.jpg)
 
   
 
@@ -105,7 +105,7 @@ sticky:
 
   你可能注意到，在这么低的分辨率上画，跟常规绘画是不同的。所有东西都要计算好，没个像素的位置都是你需要做的决定。你需要适应这些。
 
-  ![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhtobbn8oj309h09w0si.jpg)
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhtobbn8oj309h09w0si.jpg)
 
   
 
@@ -115,7 +115,7 @@ sticky:
 
   这里是我画的几个 sprite，一定确保你画完自己的再看：
 
-  ![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhto6xtqmj30lu0b1a9t.jpg)
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhto6xtqmj30lu0b1a9t.jpg)
 
   
 
@@ -127,13 +127,13 @@ sticky:
 
   在试用版这个功能是禁用的！
 
-  ![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhtod6vxsj30bh09r3ya.jpg)
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhtod6vxsj30bh09r3ya.jpg)
 
   
 
   Aseprite 可以保存很多的格式，我建议保存一个 ase 文件。就好像 PS 里你会留一个 psd 文件一样。当要导出到 web 或游戏里时，可以 CTRL+ALT+SHIFT+S，或者 `File` > `Export`.
 
-  ![图片](https://tva1.sinaimg.cn/large/0081Kckwgy1glhtocrr05j30u00czq4t.jpg)
+  ![图片](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhtocrr05j30u00czq4t.jpg)
 
   
 
@@ -147,23 +147,23 @@ sticky:
 
   #### 第一步：线条
 
-  ![图片](https://tva1.sinaimg.cn/large/0081Kckwgy1glhtoaeyuhj30gv0480gi.jpg)
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhtoaeyuhj30gv0480gi.jpg)
 
   
 
   这种线条风格我称为像素完美线，只有 `1` 像素宽，与其他像素对角线连接。当画这种线时，注意避免不必要的边，比如：
 
-  ![图片](https://tva1.sinaimg.cn/large/0081Kckwgy1glhto75iqtj307w0b90jk.jpg)
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhto75iqtj307w0b90jk.jpg)
 
   
 
   Aseprite 还有个很棒的笔刷特性可以自动处理这些：选中你的笔刷工具，再选中像素完美（pixel-perfect）。记得不画线的时候要把它勾掉，不然很烦人。
 
-  ![图片](https://tva1.sinaimg.cn/large/0081Kckwgy1glhtocc0hdj309y02g741.jpg)
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhtocc0hdj309y02g741.jpg)
 
   #### 第二步：基本颜色
 
-  ![图片](https://tva1.sinaimg.cn/large/0081Kckwgy1glhtobselij30i704k0k1.jpg)
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhtobselij30i704k0k1.jpg)
 
   
 
@@ -173,17 +173,17 @@ sticky:
 
   用你的调色盘有创意的画出明暗。因为你只有非常受限的调色盘，你不会有每种不同亮度的色调，你必须随机应变。
 
-  ![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhto8ka0gj308h06d0sh.jpg) 
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhto8ka0gj308h06d0sh.jpg) 
 
   这个例子里，我用的也是 `AAP-Mini12` 调色盘。当我画上这个绿老哥之后，我没有其他亮绿色可用了，所以我选了能用的最接近的色，也就是黄色。阴影也是一样，我选了蓝色，因为这是最接近的暗色。但如果我反过来呢？我可以用个亮蓝色和暗红色，对吧？其实不太行：
 
-  ![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhto9lsp0j308o06a0sh.jpg) 
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhto9lsp0j308o06a0sh.jpg) 
 
   看起来好像很酷，但是明显有点不对劲。通常你得把冷色调用在阴影，暖色用在亮处，不然就看着怪。当然这也不是雷打不动的规则，有很多的例外。在你不确定的时候，就遵从它。
 
   #### 第四步：抗锯齿和优化
 
-  ![图片](https://tva1.sinaimg.cn/large/0081Kckwgy1glhto824guj30gp0480kq.jpg)
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhto824guj30gp0480kq.jpg)
 
   
 
@@ -191,7 +191,7 @@ sticky:
 
   另外一个适合在这个阶段做的是干掉孤立像素减少噪点。孤立像素就是不属于任何大的同色的像素簇的像素，也不属于抗锯齿，比如：
 
-  ![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhtob0n0wj30m70bo0si.jpg)
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhtob0n0wj30m70bo0si.jpg)
 
   
 

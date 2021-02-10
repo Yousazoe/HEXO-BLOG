@@ -9,7 +9,7 @@ date: 2020-05-22 22:10:53
 comments: false
 ---
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5uxkndixj30go09djt1.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5uxkndixj30go09djt1.jpg)
 
 ### 引言
 
@@ -62,7 +62,7 @@ Florence 是一场持续约 30 分钟的心动体验。故事很简短，但意�
 
 丰富多样的交互可能会带来操作上的困难，但在整个游玩过程中，不同的交互都有相应的提示。交互方面唯一的遗憾是《Florence》作为跨平台的游戏，交互由触屏变成了鼠标的拖动，PC端的体验可能较手机端稍逊色一些。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf7df4nwl8j30go09dmyk.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf7df4nwl8j30go09dmyk.jpg)
 
 #### 剧情题材
 
@@ -76,7 +76,7 @@ Florence 是一场持续约 30 分钟的心动体验。故事很简短，但意�
 
 在我看来，《Florence》与其说是一个故事，不如说是一个关于爱情的童话：与其在其中寻找现实中爱情的影子，不如放松下来，把它当作一本童话书或者一个绘本，静静欣赏那种单纯的美好。彼此激励一起为对方对梦想加油、无论做什么都是快乐而且有活力的、哪怕有吵架不久后还是原谅对方继续甜蜜、即使 Florence 失去了 Krish，她依旧选择了去热爱生活，去追逐自己的梦想，最后获得了成功。抛开合理性，这个剧情本身就已经超出了简单的甜甜的恋爱，立意上升到一个更高的层次：恋爱让自己变得更好。经历过这些，她明白了一个问题：我是谁？人的一生都在了解自己，女主也不例外。所以这款游戏的名字叫做“Florence”，不仅仅是说她经历了一切，更意味着，她经历的这一切，让她找回了自己。这可能才是游戏想真正表达的。
 
-![](https://steamcdn-a.akamaihd.net/steam/apps/1102130/ss_9e029df44296f3d21a61e96d0a7bea4447be2c14.600x338.jpg?t=1589331032)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/ss_9e029df44296f3d21a61e96d0a7bea4447be2c14.600x338.jpg)
 
 ### 结语
 

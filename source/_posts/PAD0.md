@@ -13,7 +13,7 @@ comment:
 sticky:
 ---
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4nt7r5jxj314w0i3788.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4nt7r5jxj314w0i3788.jpg)
 
 ### 引言
 

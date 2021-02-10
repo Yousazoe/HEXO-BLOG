@@ -14,7 +14,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4o4c5klrj30xc0egq44.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4o4c5klrj30xc0egq44.jpg)
 
 ### 引言
 
@@ -194,7 +194,7 @@ public class VariablesAndFunctions : MonoBehaviour
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmjhv3wervj30sn0830t5.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmjhv3wervj30sn0830t5.jpg)
 
 
 
@@ -239,7 +239,7 @@ public class VariablesAndFunctions : MonoBehaviour
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmjigo14utj30tv08j0t5.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmjigo14utj30tv08j0t5.jpg)
 
 
 #### 函数
@@ -305,7 +305,7 @@ public class VariablesAndFunctions : MonoBehaviour
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmjir0a4raj30tx08ndg9.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmjir0a4raj30tx08ndg9.jpg)
 
 
 
@@ -476,7 +476,7 @@ public class IfStatements : MonoBehaviour
 
 回到Unity中不断按空格键查看代码实际运行结果：
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmjknydwrgj30sl0d50tl.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmjknydwrgj30sl0d50tl.jpg)
 
 
 
@@ -514,7 +514,7 @@ public class WhileLoop : MonoBehaviour
 
 这个循环会继续4次，因为我们有4只杯子，看一下实际的运行情况。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmjl1sw0fbj30ty0dy3z4.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmjl1sw0fbj30ty0dy3z4.jpg)
 
 
 可以看到，我们洗了4只杯子。
@@ -546,7 +546,7 @@ public class DoWhileLoop : MonoBehaviour
 
 回到控制台界面，启动`DoWhileLoop`脚本，然后运行。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmjlfjy9wtj30ty0dyq3j.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmjlfjy9wtj30ty0dyq3j.jpg)
 
 可以看到控制台中输出了"hello world"字样。虽然条件初始设定是解析为`false`，但`DoWhileLoop`的循环主体始终会运行至少一次。
 
@@ -582,7 +582,7 @@ public class ForLoop : MonoBehaviour
 
 简而言之，任何需要执行指定次数的运算都可以使用`ForLoop`实现。运行代码可以看到它在控制台记录了3次：`i`值起始为0，接着是1，最后是2。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmjn4l93gdj30sl0ckgmf.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmjn4l93gdj30sl0ckgmf.jpg)
 
 
 你可以灵活利用不同循环，而且也应该考虑使用循环根据特定条件重复不同的操作。
@@ -663,7 +663,7 @@ public class ScopeAndAccessModifiers : MonoBehaviour
 ```
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmju1wo8cgj3080037dfy.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmju1wo8cgj3080037dfy.jpg)
 
 
 #### 私有变量
@@ -705,7 +705,7 @@ public class AnotherClass
 回到原脚本中，我只能访问刚才那个脚本的公开成员。例如我创建一个`AnotherClass`类实例，可以看到当我尝试访问它时，可以使用`apple`和`bananas`变量以及`FruitMachine`。
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmjuomizf0j30xb0g6wig.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmjuomizf0j30xb0g6wig.jpg)
 
 
 ```c#
@@ -780,7 +780,7 @@ public class AwakeAndStart : MonoBehaviour
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmjzbi2fn0j30ty0eet9g.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmjzbi2fn0j30ty0eet9g.jpg)
 
 
 ### Update和FixedUpdate
@@ -854,7 +854,7 @@ public class UpdateAndFixedUpdate : MonoBehaviour
 
 回到Unity来看一下两者的具体区别：
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmk1annywij30tx0eegne.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmk1annywij30tx0eegne.jpg)
 
 可以发现`FixedUpdate()`的时间间隔始终是0.02，而`Update()`的时间间隔各不相同。
 
@@ -870,12 +870,12 @@ public class UpdateAndFixedUpdate : MonoBehaviour
 
 向量(Vector)是在两点之间绘制的线条，向量的长度称为大小(Magnitude)。先简单了解一下二维向量：
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmk29qlrasj30uc0eegoh.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmk29qlrasj30uc0eegoh.jpg)
 
 二维向量表示二维平面上的点，它以原点(0,0)为参照指向二维平面的任意点。因为从原点出发，因此有隐含方向，它由X和Y这两个坐标组成，它们分别代表X和Y轴上与0的距离。在本例中，向量始于原点指向位置(12,5)这2个点之间的距离称为向量大小。向量大小可以利用勾股定理计算出来，斜边平方等于另外两边的平方和，而向量运算中的斜边就是我们要确定的向量大小。
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmk2c71knrj30u70fsjx1.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmk2c71knrj30u70fsjx1.jpg)
 
 假设场地中有2个人，Charles和Quentin，他们要厮杀对决。为符合绅士身份，他们同意用手枪决斗，但枪的射程为12个单位，他们是否能射中彼此呢？我们来计算一下：
 
@@ -885,11 +885,11 @@ $Magnitude = \sqrt{x^2 + y^2} = \sqrt{12^2 + 5^2} = 13$
 
 再来看另一个例子如何用向量解决二维空间中的问题。我们已经直到向量可用于表示空间内相对于原点的位置，但还应该知道移动物体有速度，而且位置会随着时间变化，这也能用向量表示。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmk2py42ibj30tp0cy76v.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmk2py42ibj30tp0cy76v.jpg)
 
 在这个图中，Frederick的位置为(5,6)，速度是(12,5)/小时，这意味着他的移动方向是沿X轴前进12个单位，沿Y轴前进5个单位。为了找到他在1小时后的新位置，我们用当前位置向量加上速度向量计算出最终位置坐标为(17,11)。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmk2qqhhwej30y10fbjva.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmk2qqhhwej30y10fbjva.jpg)
 
 记住，所有向量表示都相对于原点，即空间中0点的位置，速度向量也是如此。这在涉及预测的游戏开发任务中十分有用，应该注意的是最终位置的坐标等于这2个向量的坐标之和。
 
@@ -898,20 +898,20 @@ $Magnitude = \sqrt{x^2 + y^2} = \sqrt{12^2 + 5^2} = 13$
 
 三维向量与二维向量的原理是相同的，但延伸出一个Z轴，它表示深度。X轴和Z轴构成水平面，Y轴代表朝上的方向。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmk345a92kj30nx0af3zr.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmk345a92kj30nx0af3zr.jpg)
 
 Unity采用左手坐标系(Left Hand Rule Coordinates)，这意味着如果你举起左手食指朝上，拇指朝外成L形，中指朝前，则拇指代表X轴，食指代表Y轴，中指代表Z轴，这个手势能有效地让你联想到X Y和Z轴的顺序。
 
 由于Z轴代表深度，那么在上一个例子中，Charles和Quentin其实是站在X/Z平面上。要记住，任何三维坐标都采用X/Y/Z的顺序表示，Quentin站立位置是(0,0,0)即三维坐标原点，Charles站立位置是(12,0,5)。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmk35645kqj30v10hw49d.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmk35645kqj30v10hw49d.jpg)
 
 为增强三维空间感，可以想象Charles位于更高的优势点，现在他站在高7个单位的平台上，位置坐标是(12,7,5)。Charles和Quentin之间的向量大小计算方式与二维坐标相同，不过现在多了一个Z轴：
 
 $Magnitude = \sqrt{x^2 + y^2 + z^2} = \sqrt{12^2 + 7^2 + 5^2} = \sqrt{218} = 14.76$
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmk362mf2gj30up0i1alk.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmk362mf2gj30up0i1alk.jpg)
 
 Unity为了方便进行此类计算引入了一个帮助函数`Vector3.magnitude`，可以参阅官方温度以了解详情。
 
@@ -939,7 +939,7 @@ $Cross Product = \begin{pmatrix}Ay*Bz - Az*By \\\\ Az*Bx - Ax*Bz \\\\ Ax*By - Ay
 
 使用叉积的示例包括确定围绕哪个轴施加扭矩来旋转坦克的炮塔。假设你已知炮塔目前的朝向，也知道炮塔的目标朝向就可以对2个向量进行叉积运算确定对哪个轴施加转动扭矩
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmk3vupocej311y0lc0vn.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmk3vupocej311y0lc0vn.jpg)
 
 
 ### 启用和禁用组件
@@ -1296,11 +1296,11 @@ public class KeyInput : MonoBehaviour
 
 输入管理器允许指定输入名称，然后给它指定一个键或按钮。要访问这个功能，可以从顶部菜单`Edit`-`Project Settings` - `Input`。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmkz9reozgj311y0lctae.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmkz9reozgj311y0lctae.jpg)
 
 调用时可以用字符串来引用名称，例如`Jump`是空格键表示的默认输入，但我们可以输入其他键或按钮代码来更改表示`Jump`的输入，接着当我们调用这个按钮时，可以使用字符串`Jump`引用名称。如需了解`Positive Button`中可输入哪些内容，请查阅文档中的参考资料。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmkze744hrj311y0lc76m.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmkze744hrj311y0lc76m.jpg)
 
 使用`GetButton`和`GetKey`时，这些输入有3种状态，都会返回布尔值`true`或`false`。首先是`GetButton`还是`GetKey`根据有没有按下按钮来记录`true`或`false`：
 + 目前没有按下按键，所以`GetButton`返回`false`
@@ -1360,7 +1360,7 @@ public class ButtonInput : MonoBehaviour
 
 `Input.GetAxis`的用法与`GetButton`和`GetKey`类似，但存在一些根本性差异：`GetButton`和`GetKey`均返回布尔值，按钮要么被按下，要么没按下；而`GetAxis`会返回浮点值，这个值介于-1到1之间。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmkzxiy9vcj311y0lcwgu.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmkzxiy9vcj311y0lcwgu.jpg)
 
 轴在输入管理器中设置，访问方法是从顶部菜单选择`Edit`-`Project Settings` - `Input`。对于按钮操作，我们只会考虑`Positive Button`的值，但对于轴，`Positive Button`和`Negative Button`都要考虑，以及`Gravity`、`Sensitivity`、`Dead`和`Snap`，这是`GetAxis`横轴的标准行为。
 
@@ -1551,15 +1551,15 @@ public class UsingDeltaTime : MonoBehaviour
 
 大家或许想问值类型和引用类型有什么区别？简而言之，值类型变量其实包含某个值，所有引用类型变量都包含值存储位置的存储地址。因此如果值类型改变，则只会影响特定变量；但如果引用类型改变，所有包含特定存储地址的变量都会受到影响。我们可以打个打个比方，Charles有栋漂亮的蓝色住宅，装满了他最喜爱的东西。Quentin在网上看到了Charles的房子，心生羡慕，于是他原样仿造了那栋房子并摆满了Charles所有东西的复制品。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gml7u6wdjwj311y0lc0wh.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gml7u6wdjwj311y0lc0wh.jpg)
 
 这就像值类型赋值，其实就是复制变量。Quentin并不拥有Charles的房子，他对自己的房子所做的改变不会影响原房屋，漆成红色也没影响。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gml7uw5orkj311y0lc0wb.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gml7uw5orkj311y0lc0wb.jpg)
 
 如果Quentin知道Charles家的地址，那他就不必仿造那栋房子了，他可以在需要时随时去Charles家，看看房子里有哪些东西。这就像引用类型赋值，记住所需值的存储地址，在需要时返回这个地址获取变量的值。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gml7vi50vbj311y0lc0vr.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gml7vi50vbj311y0lc0vr.jpg)
 
 
 ```c#

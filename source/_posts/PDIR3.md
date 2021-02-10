@@ -15,7 +15,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn5z6hdoorj31hc0u0tiu.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn5z6hdoorj31hc0u0tiu.jpg)
 
 ### 引言
 
@@ -27,13 +27,13 @@ sticky:
 
 佩德罗・梅代鲁斯最为知名的作品莫过于《塞莱斯特山（蔚蓝，Celeste）》，不过他持续在网络上发布的像素美术教程也同样相当知名。这里选择的教程就是经过风农翻译整理内容。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glmib88u5vj30u008c74z.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glmib88u5vj30u008c74z.jpg)
 
 ### 水
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glmibewya6g30e80e8dy9.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glmibewya6g30e80e8dy9.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glmib97v9lg30e80e8qmm.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glmib97v9lg30e80e8qmm.gif)
 
 
 这估计是至今为止我做的最复杂的一节了，不过希望对大家有帮助！水也不是我的专长，所以为了这节我找了非常多资料。
@@ -46,9 +46,9 @@ sticky:
 
 ### 火
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glmibgn0cag30e80e8aq8.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glmibgn0cag30e80e8aq8-20210210113920843.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glmibftf9dg30e80e84gh.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glmibftf9dg30e80e84gh-20210210113911873.gif)
 
 
 火的教程来了！
@@ -61,9 +61,9 @@ sticky:
 
 ### 无缝循环
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glmibgeds8g30e80e845r.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glmibgeds8g30e80e845r.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glmibag70hg30e80e84gh.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/pic-pixel-tutorial-000122694wb.gif)
 
 
 这节有点抽象，我试着用自己做循环的过程给大家说明。
@@ -78,9 +78,9 @@ sticky:
 
 ### 植物 1
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glmibedsczg30e80e8k2j.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glmibedsczg30e80e8k2j.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glmibdtzilg30e80e8k37.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glmibdtzilg30e80e8k37.gif)
 
 
 这节与其说是教程，更像是一些技巧集合，和一些画蔬菜时候要注意的地方。
@@ -97,13 +97,13 @@ sticky:
 
 图片版：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glmibh44x8j30pk0g1wgm.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glmibh44x8j30pk0g1wgm.jpg)
 
 ### 骷髅和骨头
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glmibd1fjbg30e80e81ky.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glmibd1fjbg30e80e81ky.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glmibfgxawg30e80e84qq.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glmibfgxawg30e80e84qq.gif)
 
 
 这里是我画骷髅跟骨头时后的一些思路。

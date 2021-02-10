@@ -14,7 +14,7 @@ comment:
 sticky:
 ---
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4obfrjkrj30m80ciaat.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4obfrjkrj30m80ciaat.jpg)
 
 ### 引言
 
@@ -24,7 +24,7 @@ pico-8 的社区是一个满是热情与分享精神的社区，无数玩家与�
 
 ### 效果
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljxi27lo3g30ar0arx6q.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljxi27lo3g30ar0arx6q.gif)
 
 ### 代码分析
 
@@ -49,7 +49,7 @@ pset(x,y,(a+d/4)%8)goto _
 
 1-4 行代码是调色板映射代码，用来实现渐变的颜色。我们知道 pico8 只有 16 种颜色，16 种颜色很难配合出渐变的过渡效果。这里作者用到 pico8 隐藏的调色板，变量 `p` 中的 `130, 141, 136, 137, 142` 都是隐藏调色板的色号。这个隐藏的调色板在官方文档里也没有介绍，在论坛翻了了好久才找到，新旧两个调色板的对比，我做了个对比图：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljxixth3gj307d03ldfl.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljxixth3gj307d03ldfl.jpg)
 
 6-9 行定义了 4 个参数：
 
@@ -60,7 +60,7 @@ pset(x,y,(a+d/4)%8)goto _
 
 第 10 行 根据 `d` 和 `a` 的值将对应颜色填充到 `x, y`。我们可以分开来看下
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljxktdho3j30ej0eit8h.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljxktdho3j30ej0eit8h.jpg)
 
 
 
@@ -70,7 +70,7 @@ pset(x,y,a%8)
 
 如果只用 `a` 来计算，会将屏幕按照点的到中间点的角度分割成 `16` 份，这个比较好理解，因为 `a` 的取值是 `0-16`，相当于把屏幕中的点映射到 `16` 个区域。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljxkq5wmrj30ec0ec742.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljxkq5wmrj30ec0ec742.jpg)
 
 
 
@@ -80,7 +80,7 @@ pset(x,y,(d/4)%8)
 
 `d` 是点到中心的距离，相同距离的圆形区域被填充同一个颜色。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljxl650bjj30ek0eign1.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljxl650bjj30ek0eign1.jpg)
 
 
 
@@ -90,4 +90,4 @@ pset(x,y,(a+d/4)%8)
 
 当把角度和距离加起来的时候神奇的图像就出现了，而且角度 `a` 必须于 `8` 的倍数相乘才可以对齐，不知道原理是什么，真的很神奇。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gljxi3fnaxj30dq05ogli.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gljxi3fnaxj30dq05ogli.jpg)

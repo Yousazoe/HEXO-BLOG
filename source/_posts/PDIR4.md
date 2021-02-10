@@ -16,7 +16,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn5z8d807nj31hc0u0wol.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn5z8d807nj31hc0u0wol.jpg)
 
 ### 引言
 
@@ -30,13 +30,13 @@ sticky:
 
 佩德罗・梅代鲁斯最为知名的作品莫过于《塞莱斯特山（蔚蓝，Celeste）》，不过他持续在网络上发布的像素美术教程也同样相当知名。这里选择的教程就是经过风农翻译整理内容。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glsh6yz1yrj30u008c74z.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glsh6yz1yrj30u008c74z.jpg)
 
 ### 角色设计 1
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glsh6zvcfhg30e80e81kx.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glsh6zvcfhg30e80e81kx.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glsh7283bug30e80e81kx.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glsh7283bug30e80e81kx.gif)
 
 
 这节是关于角色剪影！
@@ -53,9 +53,9 @@ sticky:
 
 ### 动画计划
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glsh7408hxg30e80e8n63.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glsh7408hxg30e80e8n63.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glsh75ds13g30e80e811z.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glsh75ds13g30e80e811z.gif)
 
 
 这节是关于我如何处理需要计划的复杂动画。我不知道这是不是“官方”做法，因为我从来没经历过科班培训，这只是我的工作方式：
@@ -68,9 +68,9 @@ sticky:
 
 ### <1 像素的运动
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glsh76bwvog30e80e8n4s.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glsh76bwvog30e80e8n4s.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glsh76u5iog30e80e87co.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glsh76u5iog30e80e87co.gif)
 
 
 这节是关于 <1 像素的运动，有些人也叫亚像素动画。因为移动少于一个像素是不可能的，所以这节其实是关于如何让像素动画尽可能的精美。
@@ -79,9 +79,9 @@ sticky:
 
 ### 爆炸 1
 
-![img](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/pic-pixel-tutorial-00018-cn9178a6.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glsh77ezszg30e80e8doq.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glsh77ezszg30e80e8doq.gif)
 
 
 爆炸是我最喜欢画的主题之一了！里面有很多的粒子，我通常都会一个一个的处理。比如我会从头到尾画一个弹片，接着从头到尾画一团烟雾，等等。
@@ -94,9 +94,9 @@ sticky:
 
 ### 机器和怪异科技
 
-![img](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/pic-pixel-tutorial-00019-cn9194P4.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glsh77uh87g30e80e87qz.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glsh77uh87g30e80e87qz.gif)
 
 
 不好意思各位，本来应该昨天发，但是感冒太严重了。今天好点了。（风农：不是我。）

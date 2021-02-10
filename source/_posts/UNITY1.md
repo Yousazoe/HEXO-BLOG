@@ -16,6 +16,8 @@ sticky:
 
 
 
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf3sypo104j31hc0u0ae8.jpg)
+
 ### 引言
 
 本文转载了Unity社区的优秀博主 [Michael Wang](https://unity.cn/u/michael-wang-2/?tab=article) 的 [Unity Student Plan申请指南！](https://unity.cn/projects/unity-student-plan-shen-qing-zhi-nan)，希望通过转载的方式可以帮助到对 Unity Pro 购买上有困难的在读学生申请「Unity Student Plan」，也希望有能力的读者朋友可以去支持一下原文作者，他有大量的优质 Unity 教学视频可供初学者学习。
@@ -43,7 +45,7 @@ sticky:
 
 直奔主题，详细内容查看官方正确网站：[点我申请](https://store.unity.com/academic/unity-student?_ga=2.192862250.1412877669.1590291680-1494240502.1590291680)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glbpvkhdfzj30u016h42m.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glbpvkhdfzj30u016h42m.jpg)
 
 ### 主要步骤
 
@@ -73,7 +75,7 @@ sticky:
 
 *注意你需要有 Github 账号。[点我跳转！](https://education.github.com/benefits)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glbpvi91g4j31b90u0n2i.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glbpvi91g4j31b90u0n2i.jpg)
 
 **GitHub官方网站提供了非常详细的注册指南，在这里就不赘述了。但是提供一些可能遇到的问题的小提示：**
 
@@ -83,11 +85,11 @@ sticky:
 - 学生证等信息不在身边，可以访问[「学信档案网站」](https://my.chsi.com.cn/archive/index.jsp)截图上传证明。
 - 保持好的心态，你一定会成功！
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glbpviz7ofj30oj0v1jtj.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glbpviz7ofj30oj0v1jtj.jpg)
 
 做完以上的操作你很可能看到这样的界面
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glbpvk0chxj313n0ktjta.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glbpvk0chxj313n0ktjta.jpg)
 
 *不要担心 4 days 很可能就是几个小时的事儿，30 days 也不一定非要等30天！请大家多多留意自己的邮箱，GitHub 总是会给你惊喜的。*
 
@@ -97,7 +99,7 @@ sticky:
 
 当你收到了 GitHub 的确认邮件，那么恭喜你，你基本上成功了，现在你需要回到文章开头的 Unity Student Plan 申请的连接完成 3 个步骤。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glbpvldizsj31go0l2gs1.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glbpvldizsj31go0l2gs1.jpg)
 
 - Unity 发给你的**邮件**当中会详细描述你在哪里可以获得你的 Pro 专业版 使用权的**激活码**，使用激活码**在HUB中激活你的证书**。
 - 你会获得让所有人望眼欲穿的，价值 **$489.93 的 Assets Pack 超优质资源包**，跟我一样只能看看的请[点击这里](https://assetstore.unity.com/browse/student-plan-pack?_ga=2.131450953.776403174.1590049942-37205968.1582701932)！

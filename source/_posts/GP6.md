@@ -9,7 +9,7 @@ translate_title: gameplay-system
 date: 2020-05-09 11:16:37
 comments: false
 ---
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf97mfku7fj30x30lp750.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf97mfku7fj30x30lp750.jpg)
 <div align=center>
   <font size="3">
     <i>
@@ -65,7 +65,7 @@ comments: false
 
 如果是一个从来没有玩过三消游戏的人，上面的描述非常模糊。所以我们看一个例子，看一下别的三消游戏作为参考：
 
-![](https://cdn.ourplay.net/xspace/news/1550841439321035.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/1550841439321035.gif)
 <div align=center><font size="3"><i>图源网络</i></font></div><br>
 
 通过上面同类产品的参考，我们继续进行一些尝试性描述：
@@ -82,7 +82,7 @@ comments: false
 
 ##### 分析案例 Example：拆解马里奥的元素 
 
-![](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589114400635&di=b12d385f2ffcd743c06aeb0478f86f70&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fnews%2Fw%3D638%2Fsign%3D7057b7870cd162d985ee611f29dea950%2Fd6ca7bcb0a46f21fcc56a710f0246b600c33ae17.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/timg?image&quality=80&size=b9999_10000&sec=1589114400635&di=b12d385f2ffcd743c06aeb0478f86f70&imgtype=0&src=http%253A%252F%252Fc.hiphotos.baidu.com%252Fnews%252Fw%253D638%252Fsign%253D7057b7870cd162d985ee611f29dea950%252Fd6ca7bcb0a46f21fcc56a710f0246b600c33ae17.jpg)
 <div align=center><font size="3"><i>《超级马里奥兄弟》</i></font></div>
 `关卡`、`地形`(静态碰撞 动态砖块)、`主角`、`敌人`、`水管`、`金币`、`得分`
 新的游戏开发团队可能因为上面出现的各种问题而陷入争吵，但其实许多东西没必要去纠结，往下推进才是最重要的。

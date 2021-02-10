@@ -18,7 +18,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4octe663j30m80cidgj.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4octe663j30m80cidgj.jpg)
 
 ### 引言
 
@@ -29,7 +29,7 @@ pico-8 的社区是一个满是热情与分享精神的社区，无数玩家与�
 ### 效果
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glr5cnac3hg30ak0aib29.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glr5clytb2j30ao0aqaae.jpg)
 
 
 
@@ -72,7 +72,7 @@ for i=0,11 do
 
 11-13 行，绘制一棵树。pico8 没有直接绘制三角形的函数，这里用 40 根线段拼成了一个三角形。我们先看下简化的代码，`line(x+i,y,x,y-h,i>0 and k+2 or k)` 。`i` 值（`-20` -> `20`）是三角形底边的 `x` 轴偏移量，从线段 起点 `(x-20,y)` 终点 `(x,y-h)` 到  起点 `(x+20,y)` 终点 `(x,y-h)` 共计画了40 根线段组成了三角形，三角形的底边宽 `40`。简化的效果图如下。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glr5clytb2j30ao0aqaae.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glr5clytb2j30ao0aqaae.jpg)
 
 
 

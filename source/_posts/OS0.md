@@ -12,7 +12,7 @@ date: 2020-11-22 20:58:09
 comments: false
 ---
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gky8z6eslsg312w0lwhdu.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gky8z6eslsg312w0lwhdu.gif)
 
 <div align=center>
   <font size="3">
@@ -120,7 +120,7 @@ comments: false
 
 操作系统实际上就是在硬件上对上面的应用进行一层隔离，提供我们通常所见的逻辑和资源，比如进程、文件、地址空间，这都是在操作系统之后给用户程序看到的情况。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gl7l3p1tc6j30gh0l6js7.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gl7l3p1tc6j30gh0l6js7.jpg)
 
 
 
@@ -265,17 +265,17 @@ comments: false
 
 最早的操作系统是在上世纪60年代由UNIX开始的，延伸出多种系统如BSD系列，现在大家见到的比较多的MacOS的前身也是UNIX。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gl9bgme4rmj31ao0t6wer.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gl9bgme4rmj31ao0t6wer.jpg)
 
 
 
 而到了90年代一个名叫Linux的大学生开始做Linux，他想做一个完全由自己掌控的系统。从它开始，一种新的开发模式诞生了，下面这些是Linux的延伸：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gl9bk9hnf2j30qm0asdg9.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gl9bk9hnf2j30qm0asdg9.jpg)
 
 Liunx以很好的开放性为核心思路，获得了巨大的关注与发展。而Windows系统则是完全不同的一类做法，它以专用和封闭的形式来发行操作系统。Windows从DOS系统开始，直至3.0以图形用户接口和应用系统来得到认可。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gl9brf57pvj30zk0k0my8.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gl9brf57pvj30zk0k0my8.jpg)
 
 我们可以看到从操作系统的角度来讲有两种完全不同的风格：开放和封闭。这两种类型我们很难说孰优孰劣，各有各的优缺点。
 

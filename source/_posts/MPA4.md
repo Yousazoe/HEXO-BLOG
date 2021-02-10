@@ -18,7 +18,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn5zj79coyj31hc0u00x5.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn5zj79coyj31hc0u00x5.jpg)
 
 ### 引言
 
@@ -32,7 +32,7 @@ sticky:
 
 这部分教程就是经过风农翻译整理的另一部分内容：《开始画像素画（Making Pixel Art）》。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhurk4n8zj30u008c74z.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhurk4n8zj30u008c74z.jpg)
 
 
 
@@ -44,7 +44,7 @@ sticky:
 
 我们能看到东西是因为有光，当我们画某个事物时，实际上是在表现光在这个物体上的反应。即使没学过这些，你其实也知道光是如何工作的，因为你每天都在看：它会从一些材质上弹开，有时候会折射到其他东西上。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhurql7vrj30rx07tt8i.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhurql7vrj30rx07tt8i.jpg)
 
 
 
@@ -52,13 +52,13 @@ sticky:
 
 你需要试着在脑海里模拟光的表现，就好像你是个人型渲染机器。因为这是非常难的，而且很容易出错，所以还有个好的学习光照的方法，就是用照片参考。拿照片参考是很好的，你不需要去复制照片，但你可以用它来理解特定条件下光的表现。使用照片参考也是个不错的练习。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhuroajwcj30al0ea741.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhuroajwcj30al0ea741.jpg)
 
 ### 基本结构
 
 给图片加明暗时，最好有个可遵循的结构，这里我做了个简单的词汇表，以及每个词的简单定义。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhurosiosj30g90f3742.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhurosiosj30g90f3742.jpg)
 
 
 
@@ -82,7 +82,7 @@ sticky:
 
 我们做个练习，来画一下这个照片：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhurnugnvj30u00r941g.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhurnugnvj30u00r941g.jpg)
 
 
 
@@ -90,7 +90,7 @@ sticky:
 
 像之前的教程，我先画出大的颜色簇，试着去除光照在照片中的效果。线面是整个过程，以及最后的一个缩放版的照片。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhurkhsj0j30hi0h1t8v.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhurkhsj0j30hi0h1t8v.jpg)
 
 
 
@@ -113,7 +113,7 @@ sticky:
 
 下一个画，我们来试点其他的。你要给这个画加上明暗：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhutsmbosj301c01c0ag.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhutsmbosj301c01c0ag.jpg)
 
 
 
@@ -129,37 +129,37 @@ sticky:
 
 我首先画的是背景和投射阴影，有助于我奠定整幅画的基调。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhurq5eacj306005t0mf.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhurq5eacj306005t0mf.jpg)
 
 
 
 之后给每个面选颜色，顶部和侧面应该是一致的颜色，斜面有个渐变。我只用了两个颜色是为了保持简单，并且让色带效果最小（下一节讲）。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhurrz2a2j305t05t0k5.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhurrz2a2j305t05t0k5.jpg)
 
 
 
 接着是轮廓线，比较烦人。我试着把他们现象成其他的小面，把形状软化一点。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhurmczqqj30630610p7.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhurmczqqj30630610p7.jpg)
 
 
 
 现在对比度有些低，我加上了小的镜面高光，并加深了一些阴影。我还加上了简单的抖动，让斜面上的过渡更好。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhurnclc5j30610620sh.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhurnclc5j30610620sh.jpg)
 
 ### 常见错误
 
 下面是加明暗时一些常见的错误，看看你有没有这样做过。注意这里的例子都比较夸张，这些也可能出现在更小的区域里。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhurl9tqgj306105z0mo.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhurl9tqgj306105z0mo.jpg)
 
 **软面**
 
 这通常出现在试图过分的软化物体光照时，或者是做错了方向。平面应该是一致的颜色，曲面应该只在弯曲方向上渐变颜色。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhurm13fvj305x05x0o0.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhurm13fvj305x05x0o0.jpg)
 
 
 
@@ -169,7 +169,7 @@ sticky:
 
 这个最好通过设置明确的光源，以及不要把面的边缘变暗来避免。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhurp9zppj306005x0qt.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhurp9zppj306005x0qt.jpg)
 
 **平光**
 
@@ -179,7 +179,7 @@ sticky:
 
 练习！找更多的照片和其他的照明示例，直接复制，越多越好。去实验，用很有限的调色盘，你能否用一个颜色代替其他颜色？学习是关键，放大图片，看看他们的像素是什么样的，缩放照片看看什么可行，什么不可行。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhurprpryj30e60e6glf.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhurprpryj30e60e6glf.jpg)
 
 
 

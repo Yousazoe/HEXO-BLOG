@@ -16,7 +16,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn5zkn8uthj31hc0u0dju.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn5zkn8uthj31hc0u0dju.jpg)
 
 ### 引言
 
@@ -32,7 +32,7 @@ sticky:
 
 这部分教程就是经过风农翻译整理的另一部分内容：《开始画像素画（Making Pixel Art）》。
 
-![图片](https://tva1.sinaimg.cn/large/008eGmZEly1gn4ci3nmgij30u008c3z7.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4ci3nmgij30u008c3z7.jpg)
 
 
 
@@ -50,7 +50,7 @@ sticky:
 
 色调是用来描述颜色本身的属性。也可以称为颜色的本质，像是红，绿，蓝，而不是它有多亮。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4ci760ruj30b007fmxn.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4ci760ruj30b007fmxn.jpg)
 
 
 
@@ -60,7 +60,7 @@ sticky:
 
 ### 饱和度
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4ci7n5mbj30el0azaay.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4ci7n5mbj30el0azaay.jpg)
 
 低对比度皮肤和高对比度细节
 
@@ -72,7 +72,7 @@ sticky:
 
 ### 亮度
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4ci84ibyj30eb0aywev.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4ci84ibyj30eb0aywev.jpg)
 
 
 
@@ -82,7 +82,7 @@ sticky:
 
 色温并不是 HSV 模型的内容，但也是很重要的颜色特质。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4ci8l2m1j30ep030gln.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4ci8l2m1j30ep030gln.jpg)
 
 
 
@@ -102,7 +102,7 @@ sticky:
 
 我们先简单的画个花瓶，这是我画的：
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4ci6ta3fj307c07cjrb.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4ci6ta3fj307c07cjrb.jpg)
 
 
 
@@ -110,7 +110,7 @@ sticky:
 
 观察这个教堂的照片。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4ci5rrhgj30cv0eh75x.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4ci5rrhgj30cv0eh75x.jpg)
 
 
 
@@ -118,7 +118,7 @@ sticky:
 
 我们来把这个逻辑应用到花瓶上。我们使用色调偏移和饱和度偏移的方式，而不是简单的调整亮度。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4ci4uvn9j30en07hq38.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4ci4uvn9j30en07hq38.jpg)
 
 
 
@@ -134,7 +134,7 @@ sticky:
 
 **单色**
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4ci5b19hj30li0b1jsk.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4ci5b19hj30li0b1jsk.jpg)
 
 
 
@@ -144,7 +144,7 @@ sticky:
 
 **补偿色**
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4ci4dz4xj30lk0ay75e.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4ci4dz4xj30lk0ay75e.jpg)
 
 
 
@@ -156,7 +156,7 @@ sticky:
 
 **类似色**
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4ci68vd0j30ll0awdha.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4ci68vd0j30ll0awdha.jpg)
 
 
 

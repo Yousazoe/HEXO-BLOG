@@ -20,7 +20,7 @@ top:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4nj407c6j311i0u0jwr.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4nj407c6j311i0u0jwr.jpg)
 
 <div align=center>
   <font size="3">
@@ -586,7 +586,7 @@ int main() {
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gl63n7t3stg30my075thy.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gl63n7t3stg30my075thy.gif)
 
 
 
@@ -668,7 +668,7 @@ int main(){
 Write a program which reads a rectangle and a circle, and determines whether the circle is arranged inside the rectangle. As shown in the following figures, the upper right coordinate (W,H)(W,H) of the rectangle and the central coordinate (x,y)(x,y) and radius rr of the circle are given.
 
 
-![Circle inside a rectangle](https://tva1.sinaimg.cn/large/0081Kckwgy1gl6aoy8rm5j30i9054mx2.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gl6aoy8rm5j30i9054mx2.jpg)
 
 
 
@@ -3394,7 +3394,7 @@ Write a program which finds a pattern pp in a ring shaped text ss.
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmquxgnehqj3050056a9w.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmquxgnehqj3050056a9w.jpg)
 
 
 
@@ -4218,7 +4218,7 @@ Print *S*, *L* and *h* in a line respectively. The output should not contain an 
 
 对于周长的求解我们首先要知道未知边的边长，然后三者加起来即可，这里需要用到三角形余弦定理：
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmwtsfa2nmj30eu0890sy.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmwtsfa2nmj30eu0890sy.jpg)
 
 由此我们可以推出：
 
@@ -4534,8 +4534,8 @@ Write a program to simulate rolling a dice, which can be constructed by the foll
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmuhrlov6nj30fc05ma9v.jpg)
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmuhrm1fuvj30dm03twea.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmuhrlov6nj30fc05ma9v.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmuhrm1fuvj30dm03twea.jpg)
 
 
 
@@ -4610,7 +4610,7 @@ You are given integers on the top face and the front face after the dice was rol
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmuhuyzi7ij305603nmwx.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmuhuyzi7ij305603nmwx.jpg)
 
 
 

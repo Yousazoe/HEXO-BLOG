@@ -16,7 +16,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gnbwbahzs4j30m80ci753.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gnbwbahzs4j30m80ci753.jpg)
 
 ### 引言
 
@@ -26,7 +26,7 @@ pico-8 的社区是一个满是热情与分享精神的社区，无数玩家与�
 
 ### 效果
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gnbwapwcm0g30bp0bx7u5.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gnbwapwcm0g30bp0bx7u5.gif)
 
 
 
@@ -55,13 +55,13 @@ fillp(0xa5a5)function _draw() for i=24576,32767 do
 
 1-2 行，`c` 是触手的颜色，顶部到底部由明止暗。`fillp` 是填充样式，点阵图样填充，有种渐变的效果（在最后详细解释）。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gnbwan0ucej30lk0bj752.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gnbwan0ucej30lk0bj752.jpg)
 
 
 
 4-6 行，是残影效果，这里没有用 `cls` 清空画布，直接将屏幕内存中的数值每帧减半，最终降为 `0` 透明，来实现透明效果
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gnbwaoaasnj30kr0b3q3w.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gnbwaoaasnj30kr0b3q3w.jpg)
 
 
 
@@ -69,13 +69,13 @@ fillp(0xa5a5)function _draw() for i=24576,32767 do
 
 9 行，`b/8` 将八只触手映射到 `0-1`，pico8 中三角函数的参数取值 `0-1` 代表着 `0-360°`。在第 11 行的 `circlefill` 圆的绘制函数中，圆 B 的位置 `x,y =  64+cos(b)*k,64+sin(b)*k`。其中原点是屏幕的中心点 `64, 64`；角度 `b` 为每个触手映射的角度，`k` 为圆至屏幕中心的距离。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gnbwamxxpqj30eg0e9aam.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gnbwamxxpqj30eg0e9aam.jpg)
 
 
 
 10 行 计算每个圆至屏幕中心的距离 `k`，我们先把圆的角度 `b` 从中去掉看下结果。`k=19-sin((6-z)/20)*40*(.5+sin(t()/2+z/9)/2)`
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gnbwaozlqwg30bp0bx7u5.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gnbwaozlqwg30bp0bx7u5.gif)
 
 
 
@@ -83,7 +83,7 @@ fillp(0xa5a5)function _draw() for i=24576,32767 do
 
 最后把角度 `b` 加回去，`k=19-sin((6-z)/20)*40*(.5+sin(t()/2+z/9+b*2)/2)` 使得不同的触手在波形上拥有不同的位置。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gnbwaqpv80g30bp0bwtmr.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gnbwaqpv80g30bp0bwtmr.gif)
 
 
 
@@ -91,13 +91,13 @@ fillp(0xa5a5)function _draw() for i=24576,32767 do
 
 最后补充下 `fillp` 的用法。pico8 中用一个 `4*4` 的图来填充 `circ()` `circfill()` `rect()` `rectfill()` `pset()` `line()` 等函数画的图形。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gnbwanwm3yj30eg0e9aam.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gnbwanwm3yj30eg0e9aam.jpg)
 
 
 
 16 个像素点用上图表格里的数字代表，如果想让某个点不着色就将点对应的数值累加，将最终得到的值传给 `fillp`，比如只让对角线 `32768,1024,32,1` 没有颜色，`fillp(32768+1024+32+1)`
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gnbwaq5pm4j30jb0a7my5.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gnbwaq5pm4j30jb0a7my5.jpg)
 
 
 

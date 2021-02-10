@@ -14,7 +14,7 @@ date: 2020-11-26 15:11:00
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gl2lggm8g1j30xf0lp43o.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gl2lggm8g1j30xf0lp43o.jpg)
 
 
 
@@ -378,7 +378,7 @@ Markdown applications don’t agree on how to handle different delimiters in the
 >
 > 2. Marvel at its beauty.
 >
->    ![](https://tva1.sinaimg.cn/large/0081Kckwgy1gl2t6ma2q7j30xf0lpgps.jpg)
+>    ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gl2t6ma2q7j30xf0lpgps.jpg)
 >
 > 3. Close the file.
 
@@ -621,7 +621,7 @@ eat: it was a [hobbit-hole][1], and that means comfort.
 
 渲染效果如下：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gl2t1zhebkj30nj0hnjxc.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gl2t1zhebkj30nj0hnjxc.jpg)
 
 #### 带链接的图片
 

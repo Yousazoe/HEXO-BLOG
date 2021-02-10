@@ -15,7 +15,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn5yziapgij31hc0u0ak5.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn5yziapgij31hc0u0ak5.jpg)
 
 ### 引言
 
@@ -27,15 +27,15 @@ sticky:
 
 佩德罗・梅代鲁斯最为知名的作品莫过于《塞莱斯特山（蔚蓝，Celeste）》，不过他持续在网络上发布的像素美术教程也同样相当知名。这里选择的教程就是经过风农翻译整理内容。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glijhstr5fj30u008c74z.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glijhstr5fj30u008c74z.jpg)
 
 
 
 ### 简单的闪光效果
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glijhu4pzrg30gg0hsqdi.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glijhu4pzrg30gg0hsqdi.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gliji9bylbg30gg0hs130.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gliji9bylbg30gg0hs130.gif)
 
 
 这是个简单的闪光动画，最重要的就是时机的掌握。第三帧可以掠过大部分你想闪的区域。
@@ -44,9 +44,9 @@ sticky:
 
 ### 简单的攻击动画
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glijhwy03pg30e80e87it.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glijhwy03pg30e80e87it.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glijhyq5xhg30e80e8n9u.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glijhyq5xhg30e80e8n9u-20210210112914871.gif)
 
 
 这个稍微复杂点，如何画个最简洁的攻击动画
@@ -61,9 +61,9 @@ sticky:
 
 ### 烟雾
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gliji6rab1g30e80e8gp4.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gliji6rab1g30e80e8gp4-20210210112943160.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gliji0bi5wg30e80e8qgs.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gliji0bi5wg30e80e8qgs.gif)
 
 
 每次处理烟雾，水花，火焰这种复杂系统的动画时，我会把这个系统分解成零件，再把这些部分分别画出来。
@@ -76,7 +76,7 @@ sticky:
 
 ### 攻击动画 tips
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gliji1yks4g30e609ctb7.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gliji1yks4g30e609ctb7.gif)
 
 
 
@@ -100,9 +100,9 @@ sticky:
 
 ### 简单跑步循环
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gliji7o366g30e80e8dlg.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gliji7o366g30e80e8dlg.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gliji64j3ig30e80e8dr9.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gliji64j3ig30e80e8dr9.gif)
 
 
 大家好像非常想要个走/跑的教程，这就来了。走/跑的动画还是很复杂的，我尽力做出了我能做到的最简洁的动作。我计划对这个主题再做几个教程，关注不同的部位，比如手臂，腿，头部运动，倾斜度等等。
@@ -111,7 +111,7 @@ sticky:
 
 现在我解释下为什么选这个跑步循环。可能很多人不会喜欢这个“跳起”帧，更想用“过渡位置”帧，像这种：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gliji3an8cj302m02r0ak.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gliji3an8cj302m02r0ak.jpg)
 
 
 

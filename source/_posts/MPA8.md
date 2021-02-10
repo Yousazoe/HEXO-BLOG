@@ -16,7 +16,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn5zn1bbuvj31hc0u0423.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn5zn1bbuvj31hc0u0423.jpg)
 
 ### 引言
 
@@ -30,7 +30,7 @@ sticky:
 
 这部分教程就是经过风农翻译整理的另一部分内容：《开始画像素画（Making Pixel Art）》。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvdd9dpvj30u008c74z.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvdd9dpvj30u008c74z.jpg)
 
 
 
@@ -48,11 +48,11 @@ sticky:
 <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
 ```
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvdbgy43j30330310pw.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvdbgy43j30330310pw-20210210102433869.jpg)
 
 而位图图像，才是像素画能够存在的原因。位图把图像想象成很大的网格，打印在屏幕上，每个像素都单独存储。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvdh3fwmj30jn0770s1.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvdh3fwmj30jn0770s1-20210210102439241.jpg)
 
 
 
@@ -64,7 +64,7 @@ sticky:
 
 压缩可以是有损或者无损的。有损压缩一般对于照片或者大幅插画是可以接受的，但是像素画就不可以。用 JPG 格式保存像素画会造成随机的颜色变化，图形虚影。在压缩像素画时，我们必须检查是否用的是无损压缩，比如 PNG 格式。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvdcrltyj30en07lmx2.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvdcrltyj30en07lmx2.jpg)
 
 总的来说，你的编辑器提供的图像格式，比如 Aseprite 的.aseprite 格式，或者 GraphicGale 的.gal 格式，可以安全的保存所有的图层和元数据。
 
@@ -72,7 +72,7 @@ sticky:
 
 在 Aseprite 里用保存对话框进行保存（Ctrl + S，或者 Ctrl + Shift + S 做另存为新文件）
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvdgjejzj30hz0avdg0.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvdgjejzj30hz0avdg0.jpg)
 
 
 
@@ -82,11 +82,11 @@ sticky:
 
 在完成了你的精灵图之后，你可能想要发布到什么地方，或者发给谁，但如果直接保存成 `.png` 文件，会有两个不好的地方：第一，你的图像会保存成一个扁平的文件，就是说失去了图层和元数据，第二，你的 `png` 文件可能会长这样：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvf351jhj30180180bx.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvf351jhj30180180bx.jpg)
 
 导出做预览的正确方式是用导出对话框，在“文件 -> 导出”（`File` ->` Export`）菜单
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvdidzz7j30b809ua9u.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvdidzz7j30b809ua9u.jpg)
 
 
 
@@ -98,7 +98,7 @@ sticky:
 
 **Resize 缩放**：像素画对于目前的显示器来说通常都太小，所以需要缩放。Aseprite 提供了很多的分辨率供你选择。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvdixafaj30ft0760oy.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvdixafaj30ft0760oy.jpg)
 
 
 
@@ -134,25 +134,25 @@ sticky:
 
 当把动画保存为 `png` 时，Aseprite 会创建一个图片序列，看起来这样:
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvdbuf77j30ep045dfm.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvdbuf77j30ep045dfm.jpg)
 
 
 
 一般这就行了，不过我喜欢文件名从 `0` 开始，而且我喜欢两位数字。这个很容易实现：在文件名这，只要输入文件名后面加上"`00`"。这里我把文件名写为 `alert00.png`，结果是这样：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvdhjw9lj30fs023gld.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvdhjw9lj30fs023gld.jpg)
 
 
 
 另外一个有用的技巧是加多个标签。在 Aseprite 里，你可以选择多组帧加上标签。这样一个文件里可以保存多个动画。像这样：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvddrdl3j30kj03i3ya.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvddrdl3j30kj03i3ya.jpg)
 
 
 
 这有助于整理，导出也很方便，只要输入 `boss_{tag}{tagframe00}.png`，aseeprite 会这样导出：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvdccrpkj30j10dijsi.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvdccrpkj30j10dijsi.jpg)
 
 
 
@@ -162,7 +162,7 @@ sticky:
 
 有些游戏引擎推荐用精灵表，而不是多张图片，我们可以用“文件>导出精灵表”（`File` > `Export Sprite Sheet`）命令自动导出。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvdec521j30m10e3a9x.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvdec521j30m10e3a9x.jpg)
 
 
 
@@ -174,7 +174,7 @@ sticky:
 
 ### 切割工具和命令行
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvdi043kj309m06wjr5.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvdi043kj309m06wjr5.jpg)
 
 
 
@@ -182,13 +182,13 @@ sticky:
 
 首先要把精灵放到一个文件，挨着。别互相重叠到一个矩形区域就好。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvdepvv0j30gg0cx749.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvdepvv0j30gg0cx749.jpg)
 
 
 
 接着选择切割工具，开始在每个物体上做选取，注意不要把其他物体的部分包括进来。之后你可以双击其中一个，或者右键点击查看属性，给它命名。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhvdfbb6uj30u00cg0vg.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhvdfbb6uj30u00cg0vg.jpg)
 
 
 

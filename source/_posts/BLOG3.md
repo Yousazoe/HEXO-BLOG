@@ -12,7 +12,7 @@ categories:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4nnpskhxj311i0gywkf.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4nnpskhxj311i0gywkf.jpg)
 
 <div align=center>
   <font size="3">

@@ -11,7 +11,7 @@ date: 2020-05-16 21:48:22
 comments: false
 ---
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5u3va259j30xc0irh5u.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5u3va259j30xc0irh5u.jpg)
 
 <div align=center>
   <font size="3">
@@ -30,7 +30,7 @@ comments: false
 
 ### Aseprite简介
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1geymabsfdej313g0m8glk.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1geymabsfdej313g0m8glk.jpg)
 
 目前主流的绘制像素作品的软件有两类，一类是 Adobe 公司著名的图像编辑软件  Phtotshop；另一类就是专注于像素绘制的轻量级软件,代表软件就是今天要介绍的 Aseprite，它具有以下的优点：
 
@@ -44,13 +44,13 @@ comments: false
 
 ### 基础工具
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5wt3fyj9j313g0m83yh.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5wt3fyj9j313g0m83yh.jpg)
 
 
 
 #### 铅笔工具 Pen tool
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5wydtwl7j313g0m8748.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5wydtwl7j313g0m8748.jpg)
 
 + 基本的绘图工具
 + 快捷键：`B`
@@ -59,17 +59,17 @@ comments: false
 
 如果右键点击没有擦除，确保背景颜色设置为Mask。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xl74nwmj313g0m8dfs.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xl74nwmj313g0m8dfs.jpg)
 
 + 笔刷大小：可以通过输入数字或者滚动鼠标滚轮改变大小
 + 笔刷形状：可以改变为正方形或线形（可以改变角度）
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xlg41xrj313g0m8dfs.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xlg41xrj313g0m8dfs.jpg)
 
 + Pixel-Perfect：勾选后再绘制会避免多个像素累积。它仍可能会产生锯齿状的线条，但还是可以让你更加轻松方便地绘制
 + 对称选项：View -- Symmetry Options 蓝线为对称轴进行镜像（垂直/水平）绘制
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xlm8jq1j313g0m8glk.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xlm8jq1j313g0m8glk.jpg)
 
 + Alpha：透明度
 + Opacity：不透明度
@@ -82,14 +82,14 @@ comments: false
 
 #### 直线工具 Line tool
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xlywbfxj313g0m8748.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xlywbfxj313g0m8748.jpg)
 
 + 绘制直线的工具
 + 快捷键：`L`
 
 按下鼠标左键并拖拽就可以画出一条直线。当按住`Shift`画直线时会以一定的角度进行变化；而当按住`Ctrl`画直线时线从中心开始画而不是某一点。`Ctrl`和`Shift`也可以组合使用，画出一条从中心出发并且有一定角度的线。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xmtn8a4j313g0m8t8n.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xmtn8a4j313g0m8t8n.jpg)
 
 + 曲线工具
 + 快捷键：`Shift` + `L`
@@ -102,7 +102,7 @@ comments: false
 
 #### 形状工具 Shape tool
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xmxthn2j313g0m8dfs.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xmxthn2j313g0m8dfs.jpg)
 
 + 矩形工具
 + 绘制矩形并填色
@@ -110,9 +110,9 @@ comments: false
 
 第一次按`U`绘制的是空心矩形，再按一次`U`绘制的是实心矩形（拖拽的时候仍然是空心，释放鼠标后变成实心）。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xnsqkufj313g0m8dfs.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xnsqkufj313g0m8dfs.jpg)
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xnqe6gtj313g0m8wef.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xnqe6gtj313g0m8wef.jpg)
 
 + 椭圆工具
 
@@ -126,7 +126,7 @@ comments: false
 
 #### 轮廓线工具 Contour
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xnmpi9ej313g0m8748.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xnmpi9ej313g0m8748.jpg)
 
 + 轮廓线工具
 + 快速填色
@@ -145,9 +145,9 @@ comments: false
 
 #### 鼠标操作 Mouse
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xnn3mpwj313g0m8dfr.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xnn3mpwj313g0m8dfr.jpg)
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xnlo6frj313g0m8748.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xnlo6frj313g0m8748.jpg)
 
 + 移动画布：鼠标中键 / 空格 + 鼠标左键
 + 居中适应屏幕：`Space`
@@ -160,7 +160,7 @@ comments: false
 
 #### 橡皮工具 Eraser
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xno2ecdj313g0m80so.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xno2ecdj313g0m80so.jpg)
 
 + 快捷键：`E`
 
@@ -172,7 +172,7 @@ comments: false
 
 #### 吸管工具 Eyedropper
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xrkktzzj313g0m8748.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xrkktzzj313g0m8748.jpg)
 
 + 快捷键：`Alt` / `I`
 
@@ -184,7 +184,7 @@ comments: false
 
 #### 油漆桶工具 Paint Bucket
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xnnmhqgj313g0m8gll.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xnnmhqgj313g0m8gll.jpg)
 
 + 快捷键：`G`
 + Contiguous：连续选项
@@ -197,7 +197,7 @@ comments: false
 
 #### 选择工具 Selection
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xnoko35j313g0m8gll.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xnoko35j313g0m8gll.jpg)
 
 + 一般选择工具
 
@@ -205,7 +205,7 @@ comments: false
 
 拖拽会出现蚂蚁线的矩形，拖动就可以移动你的选区。选中区域后使用画笔工具就只在选区内绘制；也可以配合油漆工具填充颜色。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf5xnoykuuj313g0m8weg.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf5xnoykuuj313g0m8weg.jpg)
 
 + 魔术棒
 
@@ -219,23 +219,23 @@ comments: false
 
 #### 图层基础
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggoifkhcb2j313g0m8mx3.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggoifkhcb2j313g0m8mx3.jpg)
 
 之前说过 Aseprite 与 Adobe 公司的 Flash比较相似，所有有接触过的朋友可能会问：图层在哪里显示呢？答案是按下`Tab`键即可显示图层与时间轴。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggoih50gb7j313g0m8dfr.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggoih50gb7j313g0m8dfr.jpg)
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggoiieh5ohj313g0m8748.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggoiieh5ohj313g0m8748.jpg)
 
 
 
 ### 复习回顾
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggoi3waphej313g0m83yg.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggoi3waphej313g0m83yg.jpg)
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggoi49gcflj313g0m8aa1.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggoi49gcflj313g0m8aa1.jpg)
 
 
 

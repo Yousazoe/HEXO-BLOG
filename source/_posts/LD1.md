@@ -16,7 +16,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gh9djvu6vvj30m80cin3k.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gh9djvu6vvj30m80cin3k.jpg)
 
 
 
@@ -55,7 +55,7 @@ Ludum Dare 是国外知名的独立游戏开发竞赛，首届比赛举办于200
 
 用手机打开官网，页面顶部赫然写着比赛主题：**A Small World**。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gh9dwroc7cj30z30deq53.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gh9dwroc7cj30z30deq53.jpg)
 
 这是什么？
 
@@ -67,7 +67,7 @@ Ludum Dare 是国外知名的独立游戏开发竞赛，首届比赛举办于200
 
 我并不打算做一个和地球/星球相关的游戏，这个角度已经被用烂了。既然是独立游戏挑战赛，当然是要做一些自己更喜欢、脑洞更大一点的游戏。在经过了20分钟的思考后，我决定做一款献给我们家主子“二狗子”的游戏，因为我的家对于她来说就是整个世界。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gh9dz40f20j30dc07i0tf.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gh9dz40f20j30dc07i0tf.jpg)
 
 大概的思路是，二狗子为了展现自己是这个世界统治者，决心收集世界中的所有“财宝”。但愚蠢的人类不会让她把东西都藏起来，因此二狗子必须要在人类的眼皮子底下获得这些财宝，而且不能被抓住。
 
@@ -87,7 +87,7 @@ Ludum Dare 是国外知名的独立游戏开发竞赛，首届比赛举办于200
 
 晚饭过后，我开始为游戏添加一些小细节，例如鼠标移到可交互物体上出现的提示框、在OffMesh路径节点上进行跳跃控制等，然后对之前完成的内容进行了一系列测试。在这个过程中，我还重构了一部分代码。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gh9dxjd48sj30go09475p.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gh9dxjd48sj30go09475p.jpg)
 
 #### 坑
 
@@ -127,7 +127,7 @@ AI系统我使用了状态机的设计：
 
 我一边看着官方的帮助文档，一边尝试着建模还原我住的小公寓。考虑到场景的可玩性和复杂度，我去掉了家里的厨房和厕所。建模、导出、改贴图、在场景中放置……一件件家具被创造出来，游戏场景也越来越充实。看着自己创造的小世界，一阵强烈的满足感袭来——我突然意识到这就是激励我开始做游戏的初衷，也是对“a small world”这个主题的最好诠释。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gh9dy5qr54j30go093jse.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gh9dy5qr54j30go093jse.jpg)
 
 随着对建模越来越熟练，更多物件被创造出来：猫咪玩具、散落的臭袜子、手机、猫咪二狗子……媳妇的“这不是满屏马赛克么”的吐槽并没有影响我对体素艺术的热情。
 
@@ -149,7 +149,7 @@ AI系统我使用了状态机的设计：
 
 窗外射进了清晨的曙光，我也终于进入了最终的测试阶段。我对于自己的成果并不满意：跳跃动画和位移的衔接并不流畅、UI过于简陋、人类的视线检测很不准确、模型碰撞的检测范围经常出现错误、没有用更合适的方式控制摄影机跟踪……但此时已经是早上七点多，距离提交只有不到两个小时了。我不得不放弃了很多细节调整，甚至放弃了忘了做的人类模型和动画，而只是用一个简陋胶囊体代替。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gh9dyp2ww2j30go094405.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gh9dyp2ww2j30go094405.jpg)
 
 时间一分一秒的走着，往往觉得只做了一个很小的调整和修复，但转头发现时间已经过去了二十多分钟。我感觉缓缓前行的时间像一台巨大的压路机向我逼来，而我必须在这恐怖的压力下拖着身躯在泥泞中奋力爬行。
 

@@ -13,7 +13,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggxxkrdi94j312w0ihn3n.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggxxkrdi94j312w0ihn3n.jpg)
 
 <div align=center>
   <font size="3">
@@ -135,7 +135,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggyfvj8s6fj30xc0id15c.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggyfvj8s6fj30xc0id15c.jpg)
 
 
 
@@ -211,7 +211,7 @@ comments: false
 
 > eg. 瞬时操作少，操作方式简单；在合适的时机，位置使用合适的卡牌
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggygkr3u8aj30xc0i3naz.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggygkr3u8aj30xc0i3naz.jpg)
 
 
 

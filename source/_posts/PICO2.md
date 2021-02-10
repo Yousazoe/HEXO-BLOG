@@ -16,7 +16,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkqxm3p0xkj30m80cidgo.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkqxm3p0xkj30m80cidgo.jpg)
 
 
 
@@ -32,7 +32,7 @@ pico-8 的社区是一个满是热情与分享精神的社区，无数玩家与�
 
 效果截图：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkr3rkhbppg30hq07maji.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkr3rkhbppg30hq07maji.gif)
 
 
 
@@ -44,7 +44,7 @@ pico-8 的社区是一个满是热情与分享精神的社区，无数玩家与�
 
 一个有趣的植物沿着物体生长的 gfx，作者在 twitter 上贴了代码
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkr3rlam8lj30u00e0gml.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkr3rlam8lj30u00e0gml.jpg)
 
 
 
@@ -78,7 +78,7 @@ v=y-1for a=u-1,u+1 do
 
 这样算法的意图就比较明显了，在显示范围内随机取点，在该点上方左中右方向上延伸，以模拟植物向上分叉生长的感觉。我们可以把 `u` 改成  `u=x` 使得植物只向上方生长。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkr3ws7afsg30hs08r45w.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkr3ws7afsg30hs08r45w.gif)
 
 也可以令 `v=y+1` 使像素点向下延伸。
 
@@ -92,7 +92,7 @@ v=y-1for a=u-1,u+1 do
 - `pget(u, v) == 6 or rnd() < 0.1` 点 `(u, v)` 的像素如果是字体颜色 `6`，则可以着色，否则只有 `0.1` 的概率会着色。这里模拟植物优先在字体表面增长，空白部位只有很少的草在增长。如下图将字体颜色改成粉色 `14`，草就无法在字体上生长。
 - `c < 6` 点 `(u, v)` 周围九宫格范围内的草的数量，如果多余 `6` 个则不在生长，用于控制草的密度。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkr481phydg30hs08r102.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkr481phydg30hs08r102.gif)
 
 
 
@@ -106,5 +106,5 @@ v=y-1for a=u-1,u+1 do
 
 这种随机遍历每个像素点来实现的特效会消耗大量的 cpu，用在游戏中的话还需要做相应的简化。虽然这种奇技淫巧看起来很难用到游戏里，但是这也是可以逐像素操作的 pico-8 魅力所在。当然在其他游戏引擎中，就可以用像素着色器（Shader）更有效率的实现这种算法，使其变得可用。作者使用 `u`, `v` 做变量名，应该也是 Shader 写法的影响。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkr4eaxqy4g30dy05c0wm.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkr4eaxqy4g30dy05c0wm.gif)
 

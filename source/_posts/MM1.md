@@ -14,7 +14,7 @@ date: 2020-10-24 13:41:27
 comments: false
 ---
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk0dpddbq1j30xc0m80tg.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk0dpddbq1j30xc0m80tg.jpg)
 
 <div align=center>
   <font size="3">
@@ -155,7 +155,7 @@ $N(t)$表示时间 $t$ 处人口的数量，换个符号以区别于马尔萨斯
 >
 > $C=\frac{K-P_0}{P_0}$
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk9yk47wlkj30ev08sq3j.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk9yk47wlkj30ev08sq3j.jpg)
 
 回到之前的两个问题，第一个问题依然可以直接计算代入即可；第二个问题中令 $t$ 趋于无穷预测未来趋势，作图可以发现$K$ 是一个渐进线：如果初值比 $K$ 值小，人口会以“S”型曲线增长直至达到 $K$ 值饱和； 如果初值已经超过 $K$ 值，它会比较快速的下降到 $K$ 值之后稳定。
 
@@ -179,23 +179,23 @@ $N(t)$表示时间 $t$ 处人口的数量，换个符号以区别于马尔萨斯
 
 取定参数 $K$ ，考虑不同的参数 $r$ 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk9yjjz3r2j30gn08k3zt.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk9yjjz3r2j30gn08k3zt.jpg)
 
 可以发现 $t$ 越来越大时愈发趋近于 $K$ 。让我们再看一看 $r$ 变大一点的效果：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk9yj5csmcj30fl080dhk.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk9yj5csmcj30fl080dhk.jpg)
 
 我们可以发现在极限状态下呈现出一定的周期性，极限也不一定是之前稳态的 $K$ 了，更像是一种平均值，所以严格来说它并没有极限，或者说是2周期的解，每两步就回来。那如果 $r$ 继续增大呢？
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk9ylqp2m0j30gb07otaz.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk9ylqp2m0j30gb07otaz.jpg)
 
 我们可以观察到它还是周期的，但不再是2周期的了，而是4周期的。那我们继续让 $r$ 增大：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk9ygqasbdj30gh085ac9.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk9ygqasbdj30gh085ac9.jpg)
 
 随着 $r$ 的不断增大，最后甚至会出现“混沌”的状态：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk9z26wrn9j30fj07576t.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk9z26wrn9j30fj07576t.jpg)
 
 也就是说如果对这个问题做一个小的扰乱比如初始值，整个曲线后面变化会非常大，也可以说是对初值敏感的依赖（“混沌”的标准）。所以从离散化的模型我们可以得到这么丰富的现象，结果非常意外。
 

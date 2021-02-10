@@ -16,7 +16,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkcy9nokcuj30u00w9hag.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkcy9nokcuj30u00w9hag.jpg)
 
 <div align=center>
   <font size="3">
@@ -50,7 +50,7 @@ comments: false
 
   GPS一共6条轨道，每条轨道4颗卫星，一共24颗卫星。
 
-  ![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkdgum5vcqj30fi0ahmxm.jpg)
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkdgum5vcqj30fi0ahmxm.jpg)
 
   
 
@@ -58,7 +58,7 @@ comments: false
 
   GLONASS一共3条轨道，每条轨道8颗卫星，一共24颗卫星。
 
-  ![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkdgwdsot0j30cv08xac9.jpg)
+  ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkdgwdsot0j30cv08xac9.jpg)
 
   
 

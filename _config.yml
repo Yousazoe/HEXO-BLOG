@@ -109,8 +109,11 @@ deploy:
 - type: git
   repo:
       github: git@github.com:Yousazoe/yousazoe.github.io.git
+      vercel: git@github.com:Yousazoe/vercel-repo.git
       coding: git@e.coding.net:yousazoe/yousazoe/yousazoe.git
   branch: master
+
+
 
 # 通用站点地图
 sitemap:

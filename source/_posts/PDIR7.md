@@ -16,7 +16,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn5zdb4ui8j318g0p046e.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn5zdb4ui8j318g0p046e.jpg)
 
 ### 引言
 
@@ -28,7 +28,7 @@ sticky:
 
 佩德罗・梅代鲁斯最为知名的作品莫过于《塞莱斯特山（蔚蓝，Celeste）》，不过他持续在网络上发布的像素美术教程也同样相当知名。这里选择的教程就是经过风农翻译整理内容。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm9qfvi92oj30u008c3z7.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm9qfvi92oj30u008c3z7.jpg)
 
 
 
@@ -36,9 +36,9 @@ sticky:
 
 ### 液体 / 粘液
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm9qetza7hg30e80e8qhl.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm9qetza7hg30e80e8qhl.gif)
 
-
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/pic-pixel-tutorial-000302032zg.gif)
 
 这期是关于粘液和其他浓稠液体！
 
@@ -50,9 +50,9 @@ sticky:
 
 ### 岩石构成
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm9qewib7rg30e80e8e5k.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm9qewib7rg30e80e8e5k.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm9qg9jnrgg30e80e8khw.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm9qg9jnrgg30e80e8khw.gif)
 
 
 第 31 个教程！（风农：这哥们的计数方式跟我计的不一样。）
@@ -69,9 +69,9 @@ Pinterest 或者 google 图片都是不错的地方。
 
 ### 植物 2
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm9qeyrjeig30e80e8wy7.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm9qeyrjeig30e80e8wy7.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm9qf78nveg30e80e8h5q.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm9qf78nveg30e80e8h5q.gif)
 
 
 这是植物教程的第二部分! 
@@ -92,9 +92,9 @@ Pinterest 或者 google 图片都是不错的地方。
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm9qhmeu7kg30e80e8gxf.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm9qhmeu7kg30e80e8gxf.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm9qf1j3gpg30e80e8gy8.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm9qf1j3gpg30e80e8gy8.gif)
 
 
 本来想讲更多点，不过没地方了:P
@@ -111,9 +111,9 @@ Pinterest 或者 google 图片都是不错的地方。
 
 ### 城市背景
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm9qf237ddg30e80e8x2m.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm9qf237ddg30e80e8x2m.gif)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm9qf3ibz2g30e80e8azu.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gm9qf3ibz2g30e80e8azu.gif)
 
 
 我决定分享下我画城市背景和瓦片的过程，而不是单纯的解释如何画单个东西。

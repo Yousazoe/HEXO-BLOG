@@ -16,7 +16,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk6mtusj1xj30sg0hs11h.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk6mtusj1xj30sg0hs11h.jpg)
 
 
 
@@ -36,13 +36,13 @@ comments: false
 
 对Pico-8最好的解释，就是它是一款并不真实存在的游戏机的模拟器。它的具有非常鲜明的8-bit风格，因此你可以把它像想为类似Game Boy Color这样的小掌机。它的提供一块128x128像素，16色的显示屏，以及四通道的音乐芯片。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk6myh5qnfj30g40f03yb.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk6myh5qnfj30g40f03yb.jpg)
 
 不过，Pico-8却不仅仅是某种架空历史的实践，它设计的出发点与市面上已有的类似设备有着很大的不同。它并没有试图去最大化的利用有限的逻辑功能，而是提供了一批积木式的代码部件，尽可能的挖掘使用的乐趣。开发商希望随着时间的推移，Pico-8的技术框架将形成一种独特的审美观：极简主义并有着丰富的表现力。
 
 ### 第一印象
 
-![](https://pic1.zhimg.com/80/v2-9e2c70b8b1f9f12e73dba7cc4d0ee41c_720w.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/v2-9e2c70b8b1f9f12e73dba7cc4d0ee41c_720w.jpg)
 
 Pico-8乍看上去有一点“精神分裂”。启动之后它给人的感觉并不是一台游戏机，而更像是一台带有键盘鼠标的家用电脑。它使用命令解释器来加载软件和输出提示，举例来说，按下ESC按钮，你会打开一个文本编辑器，它具有自己独立的区域来存储代码、图像和声音内容。不过，只有系统内置的应用程序可以访问键盘、鼠标和完整的文件系统——对于外部加载的应用程序来说，Pico是一台使用ROM卡带和双按钮手柄的游戏机。
 
@@ -50,7 +50,7 @@ Pico使用Lua作为它的开发语言，这款为游戏脚本而生的语言虽�
 
 分发Pico-8平台的游戏和软件主要有两种方式，一种方式被称作“卡带”（cartridges）或者“卡”（carts），它实际上是一张PNG图片，看起来像是一张带有封面贴纸的游戏卡，“卡带”图片使用了文件的低位（lower bits）来存储程序代码、图像和声音数据，类似某种文件指纹。而另一种方式则是将软件导出为HTML5格式并使用现代浏览器来运行，以这种方式运行的软件可以不需要Pico-8环境。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk6negts6uj30g40f0q43.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk6negts6uj30g40f0q43.jpg)
 
 
 
@@ -66,9 +66,9 @@ Pico最明显的技术特征就是128x128像素的屏幕分辨率以及固定的
 
 图形数据由8x8像素的精灵组成，它们可以包含调色板中的任意颜色。系统可以支持最多256个精灵，而地图则由128x32个精灵组成。如果只使用128个精灵的话，地图的尺寸还可以再翻倍。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk6nfqxlfdj30g40f0tby.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk6nfqxlfdj30g40f0tby.jpg)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk6ng4qq1bj30g40f0jsz.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk6ng4qq1bj30g40f0jsz.jpg)
 
 在声音方面，与“精灵”对应的是“声效”（sound effect - sfx），每个声效由32个音符位置（note locations）组成，每个音符位置都包含了音符和它的波形、音量和特效，每一个选项都有8种不同的设置可选，播放的速度也可以修改，较慢的播放速度更适合演奏音乐而不是音效。
 
@@ -82,9 +82,9 @@ Pico最明显的技术特征就是128x128像素的屏幕分辨率以及固定的
 
 Pico-8并不能以电脑处理器的全速执行Lua代码。执行不同函数所需的时间已经被预先设定好。而这种速度限制也可以减少典型的Pico软件开发时所可能出现的问题，同时也将其对硬件的需求标准化，并避免了硬件需求的螺旋上升。按照作者的描述，第一代的树莓派就足以让最复杂的Pico软件全速运行了。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk6ngt65gaj30g40f0q55.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk6ngt65gaj30g40f0q55.jpg)
 
-![](https://pic4.zhimg.com/80/v2-6d32552c3b1c59afe54646f691845d57_720w.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/v2-6d32552c3b1c59afe54646f691845d57_720w.jpg)
 
 ### 如何编写代码？
 
@@ -134,11 +134,11 @@ END
 
 小型2D游戏的开发者们并不需要太在意命令执行的速度，只有当将要达到平台极限的时候才会出现问题。pset()函数刷新屏幕上所有像素所需的时间大概是正常情况下屏幕刷新的1.5倍。直接使用poke()函数写入显存则比一般情况下快将近三倍。然而，使用memcpy()和memset()函数的话，速度将会快上10倍，并且绘制背景图像的命令map()的速度也是一样快。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk6nhcialrj30g40f0gmw.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk6nhcialrj30g40f0gmw.jpg)
 
-![](https://pic4.zhimg.com/80/v2-ba70fa875f4d1417f1cad188ee7671c3_720w.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/v2-ba70fa875f4d1417f1cad188ee7671c3_720w.jpg)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk6nhra2naj30g40f0dh5.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk6nhra2naj30g40f0dh5.jpg)
 
 ### 像素方块的乐趣
 
@@ -154,11 +154,11 @@ Pico的许多功能都会让人联想起1980年代的家用电脑，但它却没
 
 但瑕不掩瑜，我还是推荐大家尝试Pico，即使新手程序员也是如此——至少是其中那些喜欢8-bit像素方块美术风格同时也不怕阅读文字说明的人。Lua语言没有明显的缺点，而Pico简化的接口鼓励开发者自行解决问题而不是寻找现成的方案。对于更有经验的开发者而言，Pico提供了一种轻松愉快的消遣方式，而其结果则比简单的涂鸦和水彩画丰富的多。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk6niel7jvj30g40f0wgc.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk6niel7jvj30g40f0wgc.jpg)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk6niqt745j30g40f0wfc.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk6niqt745j30g40f0wfc.jpg)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk6nivzxeej30g40f0mxs.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk6nivzxeej30g40f0mxs.jpg)
 
 
 
@@ -170,15 +170,15 @@ Pico-8在开发之时就曾经参与众筹，并在发布之前就聚集了一�
 
 Pico-8同样有着自己的发烧友杂志《Pico-8 Fanzine》，它收到了包括Lexaloffle的主力开发者“zep”在内的许多投稿。独立平台冒险游戏VVVVV的开发者Terry Cavanagh则是其中最有名的作者之一。发烧友杂志的作者和读者都是该平台的爱好者，截止到写作这篇文章的时候，这份发烧友杂志已经发行了三期。这份杂志和其他杂志类似，也包含了编写游戏的指导、采访、游戏测评、不同类型的Pico-8编程文章，当然还有爱好者们创作的美术作品。
 
-![](https://pic3.zhimg.com/80/v2-3714e51f5188b199cf6927db5c5346e2_720w.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/v2-3714e51f5188b199cf6927db5c5346e2_720w.jpg)
 
 行文至此，我想许多读者们会非常确定的认为这款充满热血而开放的开发者文化的软件玩具一定是免费甚至开源的。但情况却并非如此，Pico-8是一款商业产品，目前正以$20的标价提供下载。二进制文件可以在三种重要的x86操作系统上运行：Windows，Mac OS和Linux。许多人都希望能推出一款基于硬件的Pico-8游戏机，但到目前为止，Pico-8仍然只能提供二进制格式的软件运行环境。
 
 当然Pico是一款简单的平台，对其进行逆向工程未必很困难，并且Lua解释器本身已经是开源的。不过这一项目正被“友善光环”所围绕，因此没有多少黑客敢于开发免费和开源的Pico变种。相比之下我们更期待Lexaloffle自己会在客户们逐渐丧失兴趣的时候会将Pico开源。当社区衰退，开发也不再活跃之时，Pico可能会成为游戏开发的一个有趣的小众选项，乃至进入教育市场。
 
-![](https://pic2.zhimg.com/80/v2-106cf0db903b13308093c99861c4dc41_720w.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/v2-106cf0db903b13308093c99861c4dc41_720w.jpg)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk6njfmiooj30g40f0abi.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk6njfmiooj30g40f0abi.jpg)
 
 ### 虚构平台的未来
 
@@ -192,9 +192,9 @@ Pico的功能鼓励人们在其上开发有趣可爱而又怀旧的作品，但�
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk6njvray1j30g40f03ze.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk6njvray1j30g40f03ze.jpg)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk6nk2wky5j30g40f040o.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk6nk2wky5j30g40f040o.jpg)
 
 
 

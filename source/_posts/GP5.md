@@ -11,7 +11,7 @@ translate_title: the-application-of-random-numbers-in-games
 date: 2020-05-06 17:43:09
 comments: false
 ---
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gekvei5q74j30xc0j30ys.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gekvei5q74j30xc0j30ys.jpg)
 <div align=center>
   <font size="3">
     <i>
@@ -45,7 +45,7 @@ comments: false
 ##### 随机生成的游戏内容
 `我的世界` 的整个世界都是拿随机数生成的，由一个种子根据一定的随机数算法来生成整个世界。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gekzwifkr9j30xc0go0u0.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gekzwifkr9j30xc0go0u0.jpg)
 
 #### 两种伪随机概念
 ##### 生成原理上的真随机与伪随机
@@ -85,7 +85,7 @@ comments: false
     - 第一次抽取决定是几级铭文
     - 第二次抽取决定是具体哪种铭文
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gekybanpzig30xc0hv0ue.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gekybanpzig30xc0hv0ue.gif)
 
 ### 随机数生成器
 #### 伪随机数生成器
@@ -166,7 +166,7 @@ Mersenne是Makoto Mastsumoto（松本）和Takuji Nishimura（西村）于1997�
   - 通常会自行实现伪随机数生成器，第三方库无意的调用系统随机数很可能破坏同步状态。
   - 随机数种子需要同步，同步给第三方。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gelg9u2n0nj30xc0dxgnj.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gelg9u2n0nj30xc0dxgnj.jpg)
 
 ### 随机数分布与应用
 #### 均匀分布
@@ -239,7 +239,7 @@ Mersenne是Makoto Mastsumoto（松本）和Takuji Nishimura（西村）于1997�
 + 选中第2个元素，将其与`n-1`个元素中作任意一个交换（包括第2个元素自己）。
 + 重复上面步骤，直到剩1个元素为止。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gekzwflh2oj30xc0p0dot.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gekzwflh2oj30xc0p0dot.jpg)
 
 <div align=center>
   <font size="3">
@@ -248,4 +248,4 @@ Mersenne是Makoto Mastsumoto（松本）和Takuji Nishimura（西村）于1997�
     </i>
   </font>
 </div>
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gekyba8kcdj30xc0got99.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gekyba8kcdj30xc0got99.jpg)

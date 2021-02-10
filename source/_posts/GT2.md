@@ -10,7 +10,7 @@ date: 2020-05-29 20:31:48
 comments: false
 ---
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gf9lwaptxij30zk0k0401.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gf9lwaptxij30zk0k0401.jpg)
 
 ### 引言
 
@@ -32,7 +32,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ghyp8ctbcmj31ds0n0wib.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ghyp8ctbcmj31ds0n0wib.jpg)
 
 
 
@@ -48,7 +48,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ghzyns7kw0j31ds0n0b2a.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ghzyns7kw0j31ds0n0b2a.jpg)
 
 
 
@@ -68,7 +68,7 @@ comments: false
 
 
 
-![](http://www.fatherandsongame.com/img/gallery/01.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/01.jpg)
 
 
 
@@ -76,7 +76,7 @@ comments: false
 
 #### 面包师 Terentius Neo 和他妻子的壁画
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gfaa7ug22mj30ww0irwij.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gfaa7ug22mj30ww0irwij.jpg)
 
 画上面包师及其妻子均手握书写工具，这表明他们是接受了教育的，纵使经济尚可，依旧努力掩饰自己出身卑微的情况。这幅双人肖像是在该地区发现的唯一此类画作，也是展览的亮点之一。展览策划人保罗·罗伯茨（Paul Roberts）认为，这幅画从独特的视角展现了公元1世纪庞贝城的居民生活：
 
@@ -88,7 +88,7 @@ comments: false
 
 #### 法尔内塞赫拉克勒斯 / Ercole Farnese
 
-![](https://www.analisidellopera.it/wp-content/uploads/2019/12/Lisippo_Ercole_Farnese.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/Lisippo_Ercole_Farnese.jpg)
 
 古罗马的皇帝怀着对赫拉克勒斯的崇敬，在罗马的卡拉卡拉浴场修建了该雕像。罗马灭亡后直至文艺复兴，人们开始对浴场进行考古挖掘。雕像的头部和躯干相继被发现，但双腿没有找到，于是文艺复兴运动主要的资助人之一红衣主教 **法尔内塞** 让米开朗基罗的学生波尔塔把雕像的这几部分运往罗马的 **法尔内塞宫**。米开朗基罗让波尔塔为雕像雕刻了一双新腿（双腿原件不久就被找到了），而自己在宫里的庭院中建了一个特殊的建筑来展示这个3米多高的巨人，雕像也因此命名为**法尔内塞赫拉克勒斯（Farnese Hercules）**，现收藏于 [那不勒斯国家考古博物馆](https://www.museoarcheologiconapoli.it/en/)。
 
@@ -106,7 +106,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gi1wjbinunj30sg0lcgrf.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gi1wjbinunj30sg0lcgrf.jpg)
 
 
 
@@ -134,4 +134,4 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gfaa68p2kzj31hc0u015n.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gfaa68p2kzj31hc0u015n.jpg)

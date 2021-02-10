@@ -13,7 +13,7 @@ comments: false
 date: 2020-10-22 10:02:25
 ---
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk9kpgb76dj31400p0q6v.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk9kpgb76dj31400p0q6v.jpg)
 
 
 
@@ -35,7 +35,7 @@ Madeline 攀登塞莱斯特山 （Celeste Mountain）的旅程中，帮助她克
 
 《Celeste》是经典多人游戏《TowerFall》的制作者推出的又一力作。这款手工打造的平台游戏节奏极为紧凑，玩家需要在 Madeline 攀登塞莱斯特山 (Celeste Mountain) 的旅程中，帮助她克服内心深处的恐惧。
 
-<img src="https://tva1.sinaimg.cn/large/0081Kckwgy1gk0cdzxf2ej30go03hdia.jpg" style="zoom:150%;" />
+<img src="https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk0cdzxf2ej30go03hdia.jpg" style="zoom:150%;" />
 
 
 
@@ -51,7 +51,7 @@ Madeline 攀登塞莱斯特山 （Celeste Mountain）的旅程中，帮助她克
 
 *就是这样，Madeline。保持呼吸。你能行。*
 
-<img src="https://tva1.sinaimg.cn/large/0081Kckwgy1gk0ce0d8aoj30go03hju8.jpg" style="zoom:150%;" />
+<img src="https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk0ce0d8aoj30go03hju8.jpg" style="zoom:150%;" />
 
 ### 测评
 
@@ -84,7 +84,7 @@ Madeline 攀登塞莱斯特山 （Celeste Mountain）的旅程中，帮助她克
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkq0kvcgdbj31hc0u0dma.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkq0kvcgdbj31hc0u0dma.jpg)
 
 
 
@@ -94,7 +94,7 @@ Madeline 攀登塞莱斯特山 （Celeste Mountain）的旅程中，帮助她克
 
 如果玩家因为自己的操作原因卡关了，没有关系，官方很贴心的提供了自带的“作弊器”：帮助模式。在帮助模式下你可以修改冲刺的次数、体力无限以及无敌。开发者坦言
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkpwg14qtqj31hc0u0dhz.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkpwg14qtqj31hc0u0dhz.jpg)
 
 
 
@@ -102,29 +102,29 @@ Madeline 攀登塞莱斯特山 （Celeste Mountain）的旅程中，帮助她克
 
 了解过 [《蔚蓝》的开发故事](https://www.bilibili.com/video/BV1fJ41137HE/) 我们可以知道虽然第一章就充分的把游戏的核心玩法展示了出来，但即使他们做到了第三章都还没想好游戏主旨，甚至都没确定故事的脉络：“我们需要更多的故事剧情，比如开头取笑你的老奶奶。但我们不知道剧情走向，直到第三章故事脉络才定下来。于是我们回头重写某些对话直到满意为止”。尽管黑化版Madline作为分身是主角的阴暗面，但她最初只是游戏机制，纯粹来自有趣的玩法设计，然后故事慢慢成形。直至开始明确游戏的核心和主旨时，他们才把另一个Madline作为角色加入进去。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gklnxw9ww4j31hc0u0wj0.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gklnxw9ww4j31hc0u0wj0.jpg)
 
 从第二章开始，在梦境中Madline开始不断的与另一个自己战斗，并且在不同的关卡有着不同形式的体现。第二章Madline凝视镜子中的自己，另一个自己从镜子里跳出来，玩家需要避免在一定时间内走过重复的路径，拉开了紧张刺激的的追逐战的序章。抛开追逐的玩法，单谈“逃避过去的自己”本身就已经很值得玩家去思考了。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkloaeih2kj31hc0u0q75.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkloaeih2kj31hc0u0q75.jpg)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkpwekrnu3j31hc0u00vr.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkpwekrnu3j31hc0u00vr.jpg)
 
 第三章在酒店中虽然没有直接和黑化Madline的“战斗”，但我们却看到了另一个深陷过去辉煌无法自拔的老板亡灵，那些不能触碰的黑色灵体则象征了老板的怨念。整章除了难度颇增，画面表现上也非常压抑，到最后老板精神崩溃化身恶灵时，许多黑色的灵体喷涌而出，也能看出老板是个内心脆弱并且很难控制自己情绪的人。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkwubhuzrlj31hc0u0tdy.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkwubhuzrlj31hc0u0tdy.jpg)
 
 ![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkpwy5w6itj31hc0u077v.jpg)
 
 穿过酒店，玩家来到了第四章黄金山脊。这一章给人的感觉就是很空灵，没有人烟（除了开头的老婆婆）、没有黑化的自己、没有黑色的灵体、没有发怒的酒店老板，只有自己和山......还有凛冽的狂风。在没有任何干预的情况下，玩家要做的仅仅是与山本身去战斗，而攀登山脉本就是如此（在生活中进行长距离跑步，脑中也是放空的，只专注于跑步这一件事。个人认为两者有极其相似的地方）。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkwte6z225j31hc0u0jvk.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkwte6z225j31hc0u0jvk.jpg)
 
 来到第五章山脉的深处，这里所有人内心中的扭曲被无限放大，Madline需要面对更棘手的食人鱼（内心挣扎的具象化），而同行的自拍大叔也因为自己的心理问题被水晶封印了起来。游戏画面整体的色调也由原来的明亮轻快回到和第三章类似的以黑色和红色为主的阴暗配色。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkwudebkh0j31hc0u0tec.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkwudebkh0j31hc0u0tec.jpg)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gkwu4zn7tnj31hc0u0jwm.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gkwu4zn7tnj31hc0u0jwm.jpg)
 
 
 
@@ -143,7 +143,7 @@ Madeline 攀登塞莱斯特山 （Celeste Mountain）的旅程中，帮助她克
 - 推特原文：[@MattThorson](https://twitter.com/MattThorson/status/1238338574220546049)
 - 微博译文：[@什么谜之声被抢注了](https://weibo.com/3195876175/IyygVzjRf)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gki2psrub8j318g0b2gzs.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gki2psrub8j318g0b2gzs.jpg)
 
 
 
@@ -153,19 +153,19 @@ Madeline 攀登塞莱斯特山 （Celeste Mountain）的旅程中，帮助她克
 
 + 译注：得名于华纳兄弟动画中《飞奔鸵鸟与大灰狼》中常见的“从悬崖上跑出一段时间后才反应过来自己应该掉下去”。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gki2xx4e6vg30b40694on.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gki2xx4e6vg30b40694on.gif)
 
 #### 2、起跳缓冲（Jump buffering）
 
 如果玩家在角色落地前的短暂时间内按住跳跃键，那么角色将在落地的瞬间立即起跳。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gki45pq68kg30b4069ax3.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gki45pq68kg30b4069ax3.gif)
 
 #### 3、跳跃高点重力减半（Halved gravity jump peak）
 
 玩家按住跳跃键不放时，角色起跳到最高点时将只受一半重力影响。这给了玩家更多时间调整落地，同时看起来也更顺眼。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gki4qyng21g30b40697uu.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gki4qyng21g30b40697uu.gif)
 
 
 
@@ -173,7 +173,7 @@ Madeline 攀登塞莱斯特山 （Celeste Mountain）的旅程中，帮助她克
 
 如果角色起跳时在障碍物边角上磕了脑袋，游戏会试图把你挪到障碍物的旁边。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gki4qo8myog30b40697j7.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gki4qo8myog30b40697j7.gif)
 
 
 
@@ -181,13 +181,13 @@ Madeline 攀登塞莱斯特山 （Celeste Mountain）的旅程中，帮助她克
 
 同上，如果冲刺时磕到边角，也会被游戏托上平台。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gki4rmhcyig30b40691kx.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gki4rmhcyig30b40691kx.gif)
 
 #### 6、
 
 在《Celeste》中所有半实体的平台（即可以站立，但不会阻挡），如果在冲刺时平台处于角色身体中间，则角色也会直接被托上平台。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gki4vfgha1g30b40691kx.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gki4vfgha1g30b40691kx.gif)
 
 
 
@@ -195,13 +195,13 @@ Madeline 攀登塞莱斯特山 （Celeste Mountain）的旅程中，帮助她克
 
 从高速移动的平台上起跳会让你获得这个平台移动速度的加成。玛德琳会把这份动量短暂地“储存”起来，所以即使是在平台停止移动之后，仍有大约几帧的时间可以完成这种加速跳。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gki4wnyaskg30b40694qq.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gki4wnyaskg30b40694qq.gif)
 
 #### 8、
 
 其实你不需要贴墙就可以蹬墙跳，在离墙2个像素的地方就可以了（这听起来很少，但别忘了《Celeste》的分辨率是320x180 :P）。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gklmnuc47kg30b40691kx.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gklmnuc47kg30b40691kx.gif)
 
 
 
@@ -209,7 +209,7 @@ Madeline 攀登塞莱斯特山 （Celeste Mountain）的旅程中，帮助她克
 
 如果你进行一次“超级蹬墙跳”（在向上冲刺时蹬墙跳），因为这一操作的精度和难度更高，我们会允许你在离墙更远的地方进行这一操作（应该是5像素，这可超过格子宽度的一半了！）
 
-![img](https://tva1.sinaimg.cn/large/0081Kckwgy1gki4zy7t20g30b4069x6p.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gki4zy7t20g30b4069x6p.gif)
 
 #### 10、
 
@@ -219,7 +219,7 @@ Madeline 攀登塞莱斯特山 （Celeste Mountain）的旅程中，帮助她克
 
 ……所以如果你在游戏中竖直向上跳，然后按下与墙相反的方向键的话，游戏会把你竖直跳消耗的体力返还，然后给你施加横向跳的额外速度。也就是说，在一次跳跃完成之后，游戏改变了跳跃的类型。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gki50u45gfg30b4069hdu.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gki50u45gfg30b4069hdu.gif)
 
 
 
@@ -233,7 +233,7 @@ Madeline 攀登塞莱斯特山 （Celeste Mountain）的旅程中，帮助她克
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk1q1ufioxj30p00gotha.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk1q1ufioxj30p00gotha.jpg)
 
 <div align=center>
   <font size="3">
@@ -246,7 +246,7 @@ Madeline 攀登塞莱斯特山 （Celeste Mountain）的旅程中，帮助她克
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gk1q1dmq58j30p00ehgnj.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gk1q1dmq58j30p00ehgnj.jpg)
 
 <div align=center>
   <font size="3">

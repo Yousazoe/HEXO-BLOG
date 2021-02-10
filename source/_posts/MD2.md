@@ -14,7 +14,7 @@ date: 2020-11-26 19:54:43
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gl2tm1nc2nj31360go78r.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gl2tm1nc2nj31360go78r.jpg)
 
 
 
@@ -36,7 +36,7 @@ Markdown 是一种轻量级的标记语言，可用于在纯文本文档中添�
 
 例如，要表示标题，只须在短语前面添加一个井号即可（例如， `# Heading One`）。或者要加粗一个短语，只须在短语前后各加两个星号即可（例如，`**this text is bold**`）。可能需要一段时间才能习惯在文本中看到 Markdown 语法，尤其是如果你已习惯了所见即所得的应用程序。以下屏幕截展示了 Markdown 文件在 [Atom 文本编辑器](https://atom.io/) 中显示的效果。
 
-![Markdown file in the Atom text editor](https://tva1.sinaimg.cn/large/0081Kckwgy1gl2troxzhbj31360go78r.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gl2troxzhbj31360go78r.jpg)
 
 你可以使用文本编辑器为纯文本文件添加 Markdown 格式的元素。或者，你也可以安装针对 macOS、Windows、Linux、iOS 和 Android 操作系统的 Markdown 应用程序。或者还可以使用一些基于 Web 的应用程序用于 Markdown 编写。
 
@@ -60,7 +60,7 @@ Markdown 入门的最佳方式就是多使用它。由于有大量免费工具�
 
 你甚至都不需要下载任何程序，就可以使用几种在线的 Markdown 编辑器来编写 Markdown。[Dillinger](https://dillinger.io/) 是最好的在线 Markdown 编辑器之一。进入其站点就可以开始在左侧窗格中书写了。渲染后的文档在右侧窗格预览。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gl2trprsuuj30s90mugnd.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gl2trprsuuj30s90mugnd.jpg)
 
 阅读本指南时，你可以打开 Dillinger 网站。这样，你就可以一边学习 Markdown 语法一边练习了。熟悉 Markdown 之后，你可以在台式计算机或移动设备上安装支持 Markdown 的应用程序。
 
@@ -76,7 +76,7 @@ Markdown 应用程序使用一种称为 *Markdown 处理器*（也通常称为�
 
 **注意：** Markdown 应用程序和处理器是两个单独的组件。为了简洁起见，在下图中，我将它们组合为一个元素（即 “Markdown应用程序”）。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gl2trq3ugbj30c00ewwec.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1gl2trq3ugbj30c00ewwec.jpg)
 
 总而言之，这是一个四步的过程：
 

@@ -14,7 +14,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggzkai33lfj31hc0u0nlz.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggzkai33lfj31hc0u0nlz.jpg)
 
 
 
@@ -100,7 +100,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggzl875hnfj31hc0moai2.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggzl875hnfj31hc0moai2.jpg)
 
 
 

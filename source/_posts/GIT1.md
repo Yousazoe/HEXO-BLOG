@@ -13,7 +13,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn4o7e7de2j30rs0bo404.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn4o7e7de2j30rs0bo404.jpg)
 
 ### 引言
 
@@ -27,7 +27,7 @@ sticky:
 
 起因是自己给Typora换了一个类似于hexo-next主题：
 
-![](https://tva1.sinaimg.cn/large/008eGmZEgy1gmeevxbz6mj30w30u0afk.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEgy1gmeevxbz6mj30w30u0afk.jpg)
 
 
 
@@ -35,7 +35,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEgy1gmeeppmsdbj31fh0u0akw.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEgy1gmeeppmsdbj31fh0u0akw.jpg)
 
 
 
@@ -101,7 +101,7 @@ Here are some ideas to get you started:
 
 新建一个与自己Github用户名相同的仓库，下面的消息提示你这是Github为你预留的特殊仓库，该仓库的README就是我们前面看见的主页的展示。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEgy1gme9mhz5nzj31540i477l.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEgy1gme9mhz5nzj31540i477l.jpg)
 
 > *You found a secret! Yousazoe/Yousazoe is a ✨special ✨ repository that you can use to add a README.md to your GitHub profile. Make sure it’s public and initialize it with a README to get started.*
 
@@ -376,7 +376,7 @@ GitHub 更多置顶 允许你在使用 GitHub readme profile 时，在个人资�
 
 ### 统计代码时长
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmibz5cvu6j311y0go0uo.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmibz5cvu6j311y0go0uo.jpg)
 
 
 
@@ -394,7 +394,7 @@ GitHub 更多置顶 允许你在使用 GitHub readme profile 时，在个人资�
 
    当注册好账号后，你会得到属于自己专属的API Key。然后在需要监控工作的IDE里安装WakaTime的插件，并配上自己的Key。官方上有非常详细的配置步骤
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmicknuaqhj31180h6ta2.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmicknuaqhj31180h6ta2.jpg)
 
 
 
@@ -402,7 +402,7 @@ GitHub 更多置顶 允许你在使用 GitHub readme profile 时，在个人资�
 
 除Clion外，WakaTime还支持很多其他的开发环境，如下：
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmiclt40r9j317j0u01ar.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmiclt40r9j317j0u01ar.jpg)
 
 
 
@@ -410,7 +410,7 @@ GitHub 更多置顶 允许你在使用 GitHub readme profile 时，在个人资�
 
    从项目里点击`Setting -> Secrets -> New secret` 创建一个。其中name需要填写`WAKATIME_API_KEY`，value就把WakaTime官网生成的API Key粘贴进去就行。
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmic6t6izdj32100s0439.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmic6t6izdj32100s0439.jpg)
 
 
 
@@ -422,7 +422,7 @@ GitHub 更多置顶 允许你在使用 GitHub readme profile 时，在个人资�
 
    我们还需要在项目里配置Actions。点击 `Actions -> New workflow`
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmicoqbv1kj326m0qate8.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmicoqbv1kj326m0qate8.jpg)
 
 把默认的内容全部删除，把下面的内容粘贴上：
 
@@ -456,7 +456,7 @@ jobs:
 
 5. 点击 Waka Readme ，再点击run
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gmicqq1u29j32340r6jx3.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmicqq1u29j32340r6jx3.jpg)
 
  当你看到正常跑起来之后，就离胜利不远啦！
 

@@ -14,7 +14,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn8znqrfhdg30xc0erqv6.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn8znqrfhdg30xc0erqv6.gif)
 
 本课程旨在围绕各类数据结构的设计与实现，揭示其中的规律原理与方法技巧；同时针对算法设计及其性能分析，使学生了解并掌握主要的套路与手段。本文将讲解数据结构入门的一些基本概念。
 <!-- more -->
@@ -47,7 +47,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggp6kpw906j30f00hbgu5.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggp6kpw906j30f00hbgu5.jpg)
 
 可以很容易的看出，12段绳索最终构成了一个勾三股四弦五的直角三角形，垂线也就显而易见了。而在这个过程中，12段绳索扮演的角色就是计算机。
 
@@ -69,7 +69,7 @@ comments: false
 >
 > 经C'做B'B的平行线，交AB于C
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggp72casx7j30gt0br79e.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggp72casx7j30gt0br79e.jpg)
 
 
 
@@ -94,7 +94,7 @@ comments: false
 > 2. 把大象赶到冰箱里去
 > 3. 关上冰箱门
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggp7pk1t09j30st0a9q8p.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggp7pk1t09j30st0a9q8p.jpg)
 
 表面上看上面的过程已经构成了一个算法，因为它确实可以描述出来而且说的比较清楚。但是这里有一个致命的点，也就是这个小品的笑点所在，就是实际上它其中的动作有一条是不能兑现的：把大象赶到冰箱里去。所以这种算法是没有任何意义的，因为它是不可行的。
 
@@ -251,7 +251,7 @@ int hailstone(int n)
 
   
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggrhdpxhkpj310y0a6tbn.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggrhdpxhkpj310y0a6tbn.jpg)
 
 
 
@@ -261,7 +261,7 @@ int hailstone(int n)
 
 + 算法：全'1'的后缀反转为全'0'，原最低位的'0'或'#'翻转为'1'
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggrhtfknz5j30l10hpgs0.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggrhtfknz5j30l10hpgs0.jpg)
 
 
 
@@ -323,7 +323,7 @@ STOP			//retuen R[0] = x
 
 按照算法我们最终可以得到下表：
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggro6ht5q3j30dg0h6782.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggro6ht5q3j30dg0h6782.jpg)
 
 执行过程可以记录为一张表，表的行数即是所执行基本指令的总条数，能够客观度量算法的执行时间。
 
@@ -366,7 +366,7 @@ STOP			//retuen R[0] = x
 
 如果用一张图来表示，也就是用横轴表示问题的规模、纵轴表示相应的计算成本，那么数据结构和算法具体的任何一个组合，都可以得到这样一条曲线：
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggs13nhz08j30x007udho.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggs13nhz08j30x007udho.jpg)
 
 我们关心的并不是这条曲线局部的、细微的、包括暂时的一些趋势，而是看它主要的、长远的变化趋势。
 
@@ -385,7 +385,7 @@ $T(n)=O(f(n))$  充要条件是 ${\exists}c > 0$，当$n>>2$后，有$T(n)<cf(n)
 + 常系数可忽略：$O(f(n))=O(cf(n))$
 + 低次项可忽略：$O(n^a+n^b)=O(n^a)，a>b>0$
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggsm5u1p5pj30wv07btbj.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggsm5u1p5pj30wv07btbj.jpg)
 
 可以认为大O记号是对计算成本的悲观估计。
 
@@ -397,7 +397,7 @@ $T(n)=O(f(n))$  充要条件是 ${\exists}c > 0$，当$n>>2$后，有$T(n)<cf(n)
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggsmd3sdswj30x709u0x5.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggsmd3sdswj30x709u0x5.jpg)
 
 
 
@@ -472,7 +472,7 @@ $T(n)=O(f(n))$  充要条件是 ${\exists}c > 0$，当$n>>2$后，有$T(n)<cf(n)
 
 这类算法的计算成本增长极快，通常被认为不可接受。从$O(n^c)$到$O(2^n)$，是从**有效算法**到**无效算法**的分水岭。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggspmy1x9gj30ah0bk40n.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggspmy1x9gj30ah0bk40n.jpg)
 
 很多问题的$O(2^n)$算法往往显而易见，然而设计出$O(n^c)$算法却极其不易，伸直有时注定只能是徒劳无功。
 
@@ -490,7 +490,7 @@ $T(n)=O(f(n))$  充要条件是 ${\exists}c > 0$，当$n>>2$后，有$T(n)<cf(n)
 
   50个州加1个特区，共**538**票。获得**270**张选举人票，即可当选。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggt38qx8nxj30mh0f1dfv.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggt38qx8nxj30mh0f1dfv.jpg)
 
 若共有两位候选人，是否可能恰好各得**269**票？也就是说是否有一个办法能把所有的州按照选举人分成两部分，使得它们各自所积累起来的选举人票恰好是各自一半？
 
@@ -572,7 +572,7 @@ for(int i = 0;i < n;i++)
 
 我们可以用一个二维矩形来表示。i外循环的控制变量，j内循环的控制变量构成对应的两个维度。矩形中的每一个点都对应于内部这个$O(1)$的操作的一次执行，而整个二重循环其实就等效于这个矩形被填充的过程。因此我们可以建立联系，这段代码的时间复杂度就等于矩形的面积。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggu89jq57kj30a608eq3c.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggu89jq57kj30a608eq3c.jpg)
 
 
 
@@ -586,7 +586,7 @@ for(int i = 0;i < n;i++)
 
 该过程依然可以表述为一个二维图形。外循环控制变量i依然是从0一直变化到n，而内循环的控制变量j则呈一个算术级数，不断线性递增的规律。这段代码的执行时间应该等于这个被填充的三角形总体的面积。
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggu8moosfij30ax080dgi.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggu8moosfij30ax080dgi.jpg)
 
 ```c
 for(int i = 0;i < n;i++)
@@ -596,7 +596,7 @@ for(int i = 0;i < n;i++)
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggu8tlbk8mj309h086750.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggu8tlbk8mj309h086750.jpg)
 
 
 
@@ -610,7 +610,7 @@ for(int i = 0;i < n;i <<= 1)
 
 $1 + 2 + 4 + ... + 2 ^ {\lfloor{log_2(n-1)}\rfloor}=\Sigma^{\lfloor{log_2(n-1)}\rfloor}_{k=0}2^k (k = log_2n) = 2^{\lceil log_2n \rceil}-1=O(n)$
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggu98u38isj30cs09iaaw.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggu98u38isj30cs09iaaw.jpg)
 
 
 
@@ -653,7 +653,7 @@ void bubblesort(int A[],int n)
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gguaga9mbeg30my075wqv.gif)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gguaga9mbeg30my075wqv.gif)
 
 
 
@@ -665,7 +665,7 @@ void bubblesort(int A[],int n)
 + **单调性**：经过**k**轮扫描交换后，问题规模缩减至**n-k**
 + **正确性**：经过至多**n**趟扫描后，算法必然终止，且能给出正确解答
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gguce621vaj30we09qtfg.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gguce621vaj30we09qtfg.jpg)
 
 
 
@@ -838,7 +838,7 @@ sum(int A[],int lo,int hi)	//入口形式为sum(A,0,n-1)
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gh87dsod9jj30r607wjtb.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gh87dsod9jj30r607wjtb.jpg)
 
 
 
@@ -846,7 +846,7 @@ sum(int A[],int lo,int hi)	//入口形式为sum(A,0,n-1)
 
 以某个具体数值（0～7）为例，画出递归实例彼此调用的关系图：
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gh87insfhkj30zi0aln2s.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gh87insfhkj30zi0aln2s.jpg)
 
 可以发现，0到7的求和问题被化简为0到3的求和问题以及4到7的求和问题；后者又进而被划分为4到5以及6到7之间的求和问题......直到最后变成递归基的形式，也就是说`lo`分别等于`hi`。
 

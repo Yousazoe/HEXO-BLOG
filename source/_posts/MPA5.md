@@ -16,7 +16,7 @@ sticky:
 
 
 
-![](https://tva1.sinaimg.cn/large/008eGmZEly1gn5zjv505rj31hc0u0427.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn5zjv505rj31hc0u0427.jpg)
 
 ### 引言
 
@@ -30,7 +30,7 @@ sticky:
 
 这部分教程就是经过风农翻译整理的另一部分内容：《开始画像素画（Making Pixel Art）》。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhuxvnuszj30u008c74z.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhuxvnuszj30u008c74z.jpg)
 
 
 
@@ -46,13 +46,13 @@ sticky:
 
 在像素画里的 anti-alias 的 alias 我们一般说的是锯齿，或者说台阶效果。一种在低分辨下很容易注意到的效果。这个效果本身没有好坏，有时甚至是某种故意追求的风格，但有时候也会让画面很难看懂。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhuxu5ffrj30dp07fjr5.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhuxu5ffrj30dp07fjr5.jpg)
 
 上面的例子里能看到，第一个图有很多尖锐的边，尤其是火焰周围。有些区域甚至很难理解在发生什么。
 
 这是因为像素画是事物的低分辨率表现。如果你这样想，就可以区分出“有意的线”和实际像素。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhuxs0u51j30fi07kwe9.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhuxs0u51j30fi07kwe9.jpg)
 
 基本上整个像素画流程就包括了把线转化到低分辨率画布上，并**决定哪些像素要填充**。有些像素明显在线的范围内，所以要填充。有些明显在外面，就不用填充。问题是那些刚刚贴到线上或者一半在线上的，才是问题所在。抗锯齿就是用中间色来填充这些像素，来创造一种柔和过渡的错觉。
 
@@ -60,7 +60,7 @@ sticky:
 
 简单讲: 有时候画的线不能完全符合像素网格，就需要使用中间色来让它看起来好点。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhuxst7nsj306a09r741.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhuxst7nsj306a09r741.jpg)
 
 这个问题没有单一的解决方法，你可以用多种方法表现“想要的线”，取决于你的分辨率，画风，以及可用的颜色有多少。
 
@@ -68,17 +68,17 @@ sticky:
 
 一个画反锯齿的好方法是搜索任何比 `1-1` 长的台阶图案：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhuxyf0g9j30rp04j0qh.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhuxyf0g9j30rp04j0qh.jpg)
 
 
 
 找到 `2` 个像素或者更长的台阶之后，可以开始柔化他们，通过在台阶末尾添加半色的像素。要添加的像素数量取决于台阶的长度，以及可用的颜色。有时候这样会让物体扩张太多，这样的话你可以用半色的像素替代一个（有时更多）原来图案里的像素。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhuxsa2xaj30rg04c0jq.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhuxsa2xaj30rg04c0jq.jpg)
 
 改变颜色或者饱和度影响不大，只要你是正确的在插值颜色的亮度。这在使用非常小的调色盘时很有用。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhuxuo4saj30ak0aiq2p.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhuxuo4saj30ak0aiq2p.jpg)
 
 
 
@@ -88,7 +88,7 @@ sticky:
 
 **太多抗锯齿**
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhuxv3quwj30f00e7jr5.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhuxv3quwj30f00e7jr5.jpg)
 
 
 
@@ -98,7 +98,7 @@ sticky:
 
 **抗锯齿太短**
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhuxtkq1xj30oa0ae3yd.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhuxtkq1xj30oa0ae3yd.jpg)
 
 
 
@@ -108,7 +108,7 @@ sticky:
 
 **半色亮度错误**
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhuxwdze1j30gl0gn742.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhuxwdze1j30gl0gn742.jpg)
 
 
 
@@ -120,7 +120,7 @@ sticky:
 
 **色带**
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glhuxx4ggpj30cu0bi0ni.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0081Kckwgy1glhuxx4ggpj30cu0bi0ni.jpg)
 
 
 
