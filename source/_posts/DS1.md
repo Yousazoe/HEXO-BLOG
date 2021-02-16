@@ -1,7 +1,7 @@
 ---
 title: 绪论
 tags:
-  - Algorithm
+- Algorithm
 categories: 数据结构 (Data Structure)
 index_img: 
 banner_img: https://tva1.sinaimg.cn/large/007S8ZIlly1ggojv4d2chg30xc0erqv6.gif
@@ -15,6 +15,8 @@ comments: false
 
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gn8znqrfhdg30xc0erqv6.gif)
+
+### 引言
 
 本课程旨在围绕各类数据结构的设计与实现，揭示其中的规律原理与方法技巧；同时针对算法设计及其性能分析，使学生了解并掌握主要的套路与手段。本文将讲解数据结构入门的一些基本概念。
 <!-- more -->

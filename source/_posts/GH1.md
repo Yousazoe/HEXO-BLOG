@@ -36,6 +36,8 @@ comments: false
 
 <!-- more -->
 
+<br/>
+
 > 本文是观看完 [Gaming Historian](https://www.youtube.com/channel/UCnbvPS_rXp4PC21PG2k1UVg) 的 [The Story of Tetris | Gaming Historian](https://www.youtube.com/watch?v=_fQtxKmgJC8&feature=youtu.be) 后深受触动，决定整理一份文字版以供大家参考，中文制译可以移步 [卡姐Cara](https://space.bilibili.com/180052141) 的 [《俄罗斯方块》的故事](https://www.bilibili.com/video/BV1CW411j73x)，有条件的读者可以支持上面的作者和译者。
 
 

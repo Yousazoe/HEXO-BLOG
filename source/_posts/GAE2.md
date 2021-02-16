@@ -3,7 +3,7 @@ title: 游戏分析方法
 top: false
 mathjax: false
 tags:
-  - Game
+- Game
 categories: 游戏分析与测评 (Game Analysis and Evaluation)
 abbrlink: f40ec98b
 translate_title: game-analysis-method

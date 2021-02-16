@@ -4,11 +4,11 @@
 
 # Site
 title: Fl0w3r
-subtitle: '牵马观潮落，提剑纵天涯'
-description: '藏剑若锋，养心若鱼'
+subtitle: 'carpe diem'
+description: 'done is better than perfect'
 keywords:
 author: Yousazoe
-language: zh-CN
+language: en
 timezone: 'Asia/Shanghai'
 
 # URL
@@ -181,3 +181,26 @@ baidu_url_submit:
   host: yousazoe.top 	     ## 百度站长平台中注册的域名
   token: slBbq5f8WxljPytW	 ## 准入秘钥
   path: baidu_urls.txt 		 ## 文本文档的地址， 新链接会保存在此文本文档里
+
+# Live2D
+## https://github.com/EYHN/hexo-helper-live2d
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-hijiki # 模型：https://huaji8.top/post/live2d-plugin-2.0/
+  display:
+    position: right
+    width: 100
+    height: 200
+  mobile:
+    show: true
+
+#MeingJS支持
+aplayer:
+  meting: true

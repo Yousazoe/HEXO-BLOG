@@ -4,9 +4,9 @@ title: 从C到C++简明教程
 abbrlink: 293466a9
 date: 2021-01-29 16:13:49
 tags:
- - C++
- - LeetCode
- - Algorithm
+- Cpp
+- LeetCode
+- Algorithm
 categories: LeetCode题解 (LeetCode Solution)
 ---
 
@@ -25,6 +25,10 @@ categories: LeetCode题解 (LeetCode Solution)
   </font>
 </div>
 
+
+### 引言
+
+关于由C转向C++的一些拓展与注意事项。
 
 
 <!--more-->

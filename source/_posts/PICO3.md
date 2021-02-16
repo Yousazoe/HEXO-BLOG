@@ -4,7 +4,6 @@ tags:
   - Lua
   - Pico-8
   - Reprint
-  - Game Engine
 categories:  Pico-8 游戏引擎 (Pico-8 Game Engine)
 banner_img: 'https://tva1.sinaimg.cn/large/0081Kckwgy1gljxgzq715j30m80ciaat.jpg'
 abbrlink: 2a6e7125

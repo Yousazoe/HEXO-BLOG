@@ -2,10 +2,10 @@
 title: Introduction to Programming I
 date: 2020-11-25 23:21:02
 tags:
-  - Algorithm
-  - AOJ
-  - Online Judge
-  - C++
+- Algorithm
+- AOJ
+- Online Judge
+- Cpp
 categories: 会津大学在线测评 (Aizu Online Judge)
 index_img: 
 banner_img: https://tva1.sinaimg.cn/large/0081Kckwgy1gl1tzdi89aj311i0u07bw.jpg

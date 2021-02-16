@@ -1,11 +1,10 @@
 ---
 title: Hero-NexT主题配置
 tags:
-  - Hexo
-  - NexT
-  - Blog
-categories: 
-  - 博客搭建 (Blog Building)
+- Hexo
+- NexT
+- Blog
+categories: 博客搭建 (Blog Building)
 abbrlink: 3bcb4b40
 date: 2021-01-26 16:55:34
 ---

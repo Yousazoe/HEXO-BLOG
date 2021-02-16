@@ -6,7 +6,6 @@ tags:
   - Game
   - Pico-8
   - Reprint
-  - Game Engine
 categories: Pico-8 游戏引擎 (Pico-8 Game Engine)
 abbrlink: 18a71cc2
 translate_title: pico8—a-magical-fictional-game-console

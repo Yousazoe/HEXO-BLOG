@@ -1,7 +1,7 @@
 ---
 title: Entry Point
 tags:
-  - C++
+  - Cpp
   - Game Engine
 categories: 游戏引擎开发 (Game Engine Series)
 abbrlink: 8e968f45

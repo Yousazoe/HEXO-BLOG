@@ -1,9 +1,9 @@
 ---
 title: Hexo-Fluid博客建站记录
 tags:
-  - Hexo
-  - Fluid
-  - Blog
+- Hexo
+- Fluid
+- Blog
 categories: 博客搭建 (Blog Building)
 index_img: 
 banner_img: https://tva1.sinaimg.cn/large/008eGmZEly1gmz9s67xosj31hc0u0npd.jpg

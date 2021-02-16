@@ -22,11 +22,11 @@ sticky:
 
 <!--more-->
 
-
+<br/>
 
 > 本文是观看完 [Gaming Historian](https://www.youtube.com/channel/UCnbvPS_rXp4PC21PG2k1UVg) 的 [Who Invented the D-Pad? | Gaming Historian](https://www.youtube.com/watch?v=CnmMDzgTB7o&feature=youtu.be) 后深受触动，决定整理一份文字版以供大家参考，中文制译可以移步 [卡姐Cara](https://space.bilibili.com/180052141) 的 [谁发明了方向键？](https://www.bilibili.com/video/BV1Kx411u7oR)，有条件的读者可以支持上面的作者和译者。
 
-
+<br/>
 
 十字键，又称为方向键，已经是一种业界标准，它几乎在每只游戏手柄上，即使是PlayStation 4这样的现代游戏主机也会包含。它是Nintendo1982年的发明，但方向键并非一问世就改变游戏界，那时它只是为解决涉及难题而生。实际上，在方向键面试后，任天堂都没立刻意识到它的潜力，这里有何故事？让我们一起看看这个简单但革命性发明背后的历史吧。
 

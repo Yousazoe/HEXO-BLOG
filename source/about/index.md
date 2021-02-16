@@ -1,5 +1,5 @@
 ---
-title: 关于我
+title: About me
 date: 2021-01-26 10:46:40
 comment: false
 ---
@@ -8,4 +8,14 @@ comment: false
 
 <br/>
 
+
+
+### 🖥️ Coding
+
 <center><img src="http://ghchart.rshah.org/409ba5/yousazoe" alt="" /></center>
+
+<br/>
+
+### 🎧 Music
+
+{% meting "5350868431" "netease" "playlist" "theme:#FF4081" "mode:circulation" "mutex:true" "listmaxheight:340px" "preload:auto" %}

@@ -5,8 +5,8 @@ mathjax: true
 abbrlink: 7406020a
 translate_title: foundations-of-computer-graphics-unit0
 tags:
-  - Computer Graphics
-  - Mooc
+- Computer Graphics
+- Mooc
 categories: 计算机图像学 (Foundations of Computer Graphics)
 date: 2020-11-16 00:19:47
 comments: false

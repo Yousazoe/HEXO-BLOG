@@ -5,7 +5,7 @@ mathjax: true
 tags:
   - PAT
   - Online Judge
-  - C++
+  - Cpp
 categories: 计算机程序设计能力考试 (Programing Ability Test)
 abbrlink: d04381bb
 translate_title: pat-basic-level-practice

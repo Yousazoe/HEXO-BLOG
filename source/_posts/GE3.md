@@ -1,7 +1,7 @@
 ---
 title: Logging
 tags:
-  - C++
+  - Cpp
   - Game Engine
 categories: 游戏引擎开发 (Game Engine Series)
 abbrlink: 5285b66
@@ -32,7 +32,7 @@ top:
 
 ### 引言
 
-上次我们为程序定义了实际的切入点，今天我们来看一下日志记录以及如何使用。
+这个系列我们将从零开始开发一个自己的游戏引擎。上次我们为程序定义了实际的切入点，今天我们来看一下日志记录以及如何使用。
 
 <!--more-->
 

@@ -2,7 +2,7 @@
 layout: game
 title: 中国游戏市场简析
 tags:
-  - Game
+- Game
 categories: 游戏分析与测评 (Game Analysis and Evaluation)
 translate_title: a-brief-analysis-of-the-chinese-game-market
 date: 2020-05-05 23:38:05

@@ -3,8 +3,8 @@ title: 策略游戏如何成为时间杀手
 top: false
 mathjax: false
 tags:
-  - Game
-  - RTS
+- Game
+- RTS
 categories: 游戏分析与测评 (Game Analysis and Evaluation)
 abbrlink: b542e368
 translate_title: how-a-strategy-game-became-time-killer
@@ -73,6 +73,9 @@ comments: false
 > - 1976 
 >   - 华特伯莱特编写了第一款战棋游戏完全再现的电脑游戏 **《帝国》（Empire）**
 
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/155be2104675239.5f6899beca130.jpg)
+
+
 
 ##### 成长 - 1980s *日本光荣奠定影响力，欧美4X模式兴起*
 
@@ -84,6 +87,9 @@ comments: false
 > - 1982 - 1991
 >   - 席德梅尔创办的公司基本完成了将战旗移植到电脑的转换工作，建立起欧美SLG游戏的一套风格
 >   - 紧接着，他推出了回合制4X策略游戏 **《文明》**
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/2K+Blog+Thumb.png)
+
 
 
 ##### 繁荣 - 1990s *战旗JRPG的风潮与RTS的战国时代*
@@ -164,7 +170,7 @@ comments: false
 
 - 资源：发现 -> 获取 -> 利用 -> 争夺
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggzqpanmkkj30jk0b042q.jpg)
+
 
 
 
@@ -209,7 +215,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ggzqtqzaudj30jk0c8dkq.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/bb5dfc87d56a3f7da57a99cc79bbc039.jpeg)
 
 
 

@@ -5,7 +5,7 @@ mathjax: false
 tags:
   - Game Develop
   - SEGA
-  - C++
+  - Cpp
 categories: 游戏开发 (Game Development)
 abbrlink: 6487e0f7
 translate_title: 2d-game-development

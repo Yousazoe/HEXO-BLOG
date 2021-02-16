@@ -3,8 +3,8 @@ title: 分析聚焦感情而设计的游戏品类
 top: false
 mathjax: false
 tags:
-  - Game
-  - INDIE
+- Game
+- INDIE
 categories: 游戏分析与测评 (Game Analysis and Evaluation)
 abbrlink: 86c9b0ee
 translate_title: analyze-game-categories-designed-to-focus-on-emotions
@@ -26,17 +26,7 @@ comments: false
 </div>
 
 
-
-
-
-### <div align=center>
-  <font size="3">
-    <i>
-      <a href="https://www.behance.net/gallery/110074175/Haokan_Newbrand_video?tracking_source=search_projects_recommended">Haokan_Newbrand_video</a> by 
-      <a href="https://www.behance.net/donerzozo">Donerzozo</a>
-    </i>
-  </font>
-</div>
+### 引言
 
 本文主要分成四个部分，首先是关于聚焦情感而诞生的玩法品类，并以女性向游戏为例进行简要分析，提取出特征和关键要素；之后是关于聚焦情感而产生的设计方向，也就是独立游戏，提取出独立游戏的关键要素。
 

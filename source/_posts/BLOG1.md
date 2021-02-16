@@ -1,9 +1,9 @@
 ---
 title: Hexo-Fluid写作指南
 tags:
-  - Hexo
-  - Fluid
-  - Blog
+- Hexo
+- Fluid
+- Blog
 categories: 
 - [博客搭建 (Blog Building)]
 - [写作技巧 (Write Skill)]

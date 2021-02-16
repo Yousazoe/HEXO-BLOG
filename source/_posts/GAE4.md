@@ -3,9 +3,9 @@ title: MMORPG的发展历程与简析
 top: false
 mathjax: false
 tags:
-  - Game
-  - RPG
-  - MMORPG
+- Game
+- RPG
+- MMORPG
 categories: 游戏分析与测评 (Game Analysis and Evaluation)
 abbrlink: ccbc93d7
 translate_title: the-development-process-and-brief-analysis-of-mmorpg
@@ -15,18 +15,17 @@ comments: false
 
 
 
-
-
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gh07s1iq60j312w0a0adb.jpg)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/bb577066966371.5b292fe8ca2fa.jpg)
 
 <div align=center>
   <font size="3">
     <i>
-      <a href="https://www.behance.net/gallery/68766885/Black-potion">Black potion</a> by 
-      <a href="https://www.behance.net/harveydentmustdie">Milos Kostic</a>
+      <a href="https://www.behance.net/gallery/66966371/PromaxGames-Sponsor-Titles">PromaxGames Sponsor Titles</a> by 
+      <a href="https://www.behance.net/BlakeFawley">Blake Fawley</a>
     </i>
   </font>
 </div>
+
 
 
 
@@ -162,7 +161,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ghbggrdqahj30r00f7juo.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ghbggrdqahj30r00f7juo.jpg)
 
 <div align=center>
   <font size="3">
@@ -220,7 +219,7 @@ comments: false
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1ghbo6zmp6mj30zk0ffn4z.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ghbo6zmp6mj30zk0ffn4z.jpg)
 
 <div align=center>
   <font size="3">
@@ -295,7 +294,7 @@ MMO页游的特点就是全自动，它的目标用户就是上班族白领，�
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gh17yayv6rj30mk0dkzw6.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gh17yayv6rj30mk0dkzw6.jpg)
 
 <div align=center>
   <font size="3">
@@ -317,7 +316,7 @@ MMO页游的特点就是全自动，它的目标用户就是上班族白领，�
 
 
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gh07sc7c5sj30xc08cmzg.jpg)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gh07sc7c5sj30xc08cmzg.jpg)
 
 
 

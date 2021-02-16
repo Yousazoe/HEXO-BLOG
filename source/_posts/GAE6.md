@@ -3,7 +3,7 @@ title: 美国游戏市场概况
 top: false
 mathjax: false
 tags:
-  - Game
+- Game
 categories: 游戏分析与测评 (Game Analysis and Evaluation)
 abbrlink: 24a69431
 translate_title: overview-of-the-us-game-market

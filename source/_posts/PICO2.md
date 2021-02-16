@@ -6,7 +6,6 @@ tags:
   - Lua
   - Pico-8
   - Reprint
-  - Game Engine
 categories:  Pico-8 游戏引擎 (Pico-8 Game Engine)
 abbrlink: 9c0e841f
 translate_title: pico8-wonderful-code-analysis

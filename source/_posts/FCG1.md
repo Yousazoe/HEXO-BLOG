@@ -3,8 +3,8 @@ title: Foundations of Computer Graphics Unit1
 abbrlink: 301329c
 date: 2020-12-06 11:00:02
 tags:
-  - Computer Graphics
-  - Mooc
+- Computer Graphics
+- Mooc
 categories: 计算机图像学 (Foundations of Computer Graphics)
 index_img:
 banner_img: https://tva1.sinaimg.cn/large/0081Kckwgy1gldye06tlhj31hc0u0weo.jpg

@@ -1,7 +1,7 @@
 ---
 title: Project SetUp
 tags:
-  - C++
+  - Cpp
   - Game Engine
 categories: 游戏引擎开发 (Game Engine Series)
 abbrlink: 2b07a0e9

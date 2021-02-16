@@ -1,9 +1,8 @@
 ---
 title: 《蔚蓝》的开发故事 The Story of Celeste's Development
 tags:
-  - Story
-  - Reprint
-  - Celeste
+- Story
+- Celeste
 categories: 游戏幕后 (Behind the Game)
 banner_img: 'https://tva1.sinaimg.cn/large/008eGmZEly1gmm5utfydwj30zk0k00w9.jpg'
 abbrlink: a20064d

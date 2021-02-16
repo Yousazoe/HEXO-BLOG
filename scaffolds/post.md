@@ -6,7 +6,7 @@ categories:
 banner_img:
 index_img:
 abbrlink:
-comment:
+comment: false
 translate_title:
 top:
 ---
