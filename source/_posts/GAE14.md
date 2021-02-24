@@ -310,7 +310,7 @@ Dreamworks和微软合作成立了DICE，所有的《战地》都是它开发的
 - Value   Gearbox
 - \#Survival   #RPG
 
-![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/0000006029.600x338.jpg)
+
 
 把多人合作再提升一个台阶的是《无主之地》，它在2009年由Gearbox开发。玩家除了可以打枪战外还可以体验刷刷刷的乐趣。
 

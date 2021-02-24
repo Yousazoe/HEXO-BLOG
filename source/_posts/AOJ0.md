@@ -4594,6 +4594,157 @@ EESWN
 
 ##### 問題を解く
 
+本题要求我们根据立方体旋转特性判断最终的置顶面数字。我们首先接收输入（数组`num`与命令`s`）并用`switch`语句进行选择分流，可以写出如下的基本架构：
+
+```c++
+int main(){
+    int num[6];
+    string s;
+    char cmd;
+
+    for (int i = 0; i < 6; ++i) {
+        cin >> num[i];
+    }
+    cin >> s;
+
+    for (int i = 0; i < s.length(); ++i) {
+        cmd = s[i];
+        switch (cmd) {
+            case 'N':
+                break;
+
+            case 'S':
+                break;
+
+            case 'W':
+                break;
+
+            case 'E':
+                break;
+        }
+    }
+
+    cout << endl;
+
+    return 0;
+}
+```
+
+
+
+解决该问题使用的思想是类似递归。假设现在1为置顶面，当发生旋转时其他数字会替代这个1，再次旋转时我们可以把这个数字看作之前的1，也就是旋转的变化是固定的，我们抓住这点问题就迎刃而解了。
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/008eGmZEly1gmuhrlov6nj30fc05ma9v.jpg)
+
+具体到这幅图而言，现在置顶面为1。当执行`S`操作时向下翻转，置顶面变为5，此时我们把5看作是之前的1，如果之前的1再执行`E`操作时置顶为4，而现在`S`操作中4的位置没有变化，所以最后置顶面为4，对应数字为8。
+
+所以对于`NSWE`四个操作我们可以画图想象四种旋转情况写出映射关系：
+
+```
+N:
+1 --> 2 4 --> 4
+2 --> 6 5 --> 1
+3 --> 3 6 --> 5
+
+S:
+1 --> 5 4 --> 4
+2 --> 1 5 --> 6
+3 --> 3 6 --> 2
+
+W:
+1 --> 3 4 --> 1
+2 --> 2 5 --> 5
+3 --> 6 6 --> 4
+
+E:
+1 --> 4 4 --> 6
+2 --> 2 5 --> 5
+3 --> 1 6 --> 3
+```
+
+最终体现在代码上就是`switch`中的顺序变化：
+
+```c++
+switch (cmd) {
+            case 'N':
+                setArr(num,arr[1],arr[5],arr[2],arr[3],arr[0],arr[4]);
+                break;
+
+            case 'S':
+                setArr(num,arr[4],arr[0],arr[2],arr[3],arr[5],arr[1]);
+                break;
+
+            case 'W':
+                setArr(num,arr[2],arr[1],arr[5],arr[0],arr[4],arr[3]);
+                break;
+
+            case 'E':
+                setArr(num,arr[3],arr[1],arr[0],arr[5],arr[4],arr[2]);
+                break;
+} 
+```
+
+
+
+完整源码如下：
+
+```c++
+#include <iostream>
+#include <string>
+using namespace std;
+
+void setArr(int* arr,int num0,int num1,int num2,int num3,int num4,int num5){
+    arr[0] = num0;
+    arr[1] = num1;
+    arr[2] = num2;
+    arr[3] = num3;
+    arr[4] = num4;
+    arr[5] = num5;
+}
+
+
+int main(){
+    int num[6],arr[6];
+    string s;
+    char cmd;
+
+    for (int i = 0; i < 6; ++i) {
+        cin >> num[i];
+        arr[i] = num[i];
+    }
+    cin >> s;
+
+    for (int i = 0; i < s.length(); ++i) {
+        for (int j = 0; j < 6; ++j) {
+            arr[j] = num[j];
+        }
+
+        cmd = s[i];
+        switch (cmd) {
+            case 'N':
+                setArr(num,arr[1],arr[5],arr[2],arr[3],arr[0],arr[4]);
+                break;
+
+            case 'S':
+                setArr(num,arr[4],arr[0],arr[2],arr[3],arr[5],arr[1]);
+                break;
+
+            case 'W':
+                setArr(num,arr[2],arr[1],arr[5],arr[0],arr[4],arr[3]);
+                break;
+
+            case 'E':
+                setArr(num,arr[3],arr[1],arr[0],arr[5],arr[4],arr[2]);
+                break;
+        }
+    }
+
+    cout << num[0] << endl;
+
+    return 0;
+}
+```
+
 
 
 
@@ -4618,9 +4769,9 @@ You are given integers on the top face and the front face after the dice was rol
 
 ##### Input
 
-In the first line, six integers assigned to faces are given in ascending order of their corresponding labels. In the second line, the number of questions qq is given.
+In the first line, six integers assigned to faces are given in ascending order of their corresponding labels. In the second line, the number of questions q is given.
 
-In the following qq lines, qq questions are given. Each question consists of two integers on the top face and the front face respectively.
+In the following q lines, q questions are given. Each question consists of two integers on the top face and the front face respectively.
 
 ##### Output
 
@@ -4654,7 +4805,132 @@ For each question, print the integer on the right side face.
 
 ##### 問題を解く
 
+本题要求我们按照之前的Dice1的立方体给出顶面和侧面，要我们输出两个面相邻的右侧面。
 
+对于本题我认为也是将旋转的规律找出来。当一个面置顶的时候，与它相对的那个面是不可能在侧面出现的，所以我们只需要考虑4个侧面即可。立方体一共有6个面，所以我们可以根据右手定律列出1到6每个数字置顶时侧面的情况：
+
+```
+1: 2 --> 3 --> 5 --> 4 --> 2
+2: 1 --> 4 --> 6 --> 3 --> 1
+3: 1 --> 2 --> 6 --> 5 --> 1
+4: 1 --> 5 --> 6 --> 2 --> 1
+5: 1 --> 3 --> 6 --> 4 --> 1
+6: 2 --> 4 --> 5 --> 3 --> 2
+```
+
+通过这种类似单链表的表现形式，我们可以发现在确定置顶面与其中一个侧面时侧面的后一个面就是我们要找的那个面。这里需要形成一个闭环，不然在表末尾就没有面对应了，在代码中对应到这个常数数组：
+
+```c++
+int dice[6][5]{
+    2,3,5,4,2,
+    1,4,6,3,1,
+    1,2,6,5,1,
+    1,5,6,2,1,
+    1,3,6,4,1,
+    2,4,5,3,2
+};
+```
+
+之后就很简单了，对应上面的数组找到对应的面数输出即可：
+
+```c++
+#include <iostream>
+using namespace std;
+
+int dice[6][5]{
+    2,3,5,4,2,
+    1,4,6,3,1,
+    1,2,6,5,1,
+    1,5,6,2,1,
+    1,3,6,4,1,
+    2,4,5,3,2
+};
+
+int find(int dice1[6][5],int m,int k){
+    for (int i = 0; i < 6; ++i) {
+        if (dice1[m - 1][i] == k)
+            return dice1[m - 1][i + 1];
+    }
+}
+
+int main(){
+    int arr[6],dice1[6][5];
+    int n,m,k;
+    for (int i = 0; i < 6; ++i) {
+        cin >> arr[i];
+    }
+
+    for (int i = 0; i < 6; ++i) {
+        for (int j = 0; j < 6; ++j) {
+            dice1[i][j] = arr[dice[i][j] - 1];
+        }
+    }
+
+    cin >> n;
+    for (int i = 0; i < n; ++i) {
+        cin >> m >> k;
+        cout << find(dice1,m,k) << endl;
+    }
+
+    return 0;
+}
+```
+
+
+
+以上代码通过了样例，但在测试时出错，原因是在数字变为11时数组越界。调试发现问题是在`find`函数中直接使用了`m`作为数组参数，这是因为我默认了数字是1～6，当数字改变时数组就发生越界。
+
+所以我们需要编写一个匹配函数`findIndex`将`m`转换为数组参数，成功。
+
+```c++
+#include <iostream>
+using namespace std;
+
+int dice[6][5]{
+    2,3,5,4,2,
+    1,4,6,3,1,
+    1,2,6,5,1,
+    1,5,6,2,1,
+    1,3,6,4,1,
+    2,4,5,3,2
+};
+
+int find(int dice1[6][5],int index,int k){
+    for (int i = 0; i < 6; ++i) {
+        if (dice1[index][i] == k)
+            return dice1[index][i + 1];
+    }
+}
+
+int findIndex(int arr[6],int m){
+    for (int i = 0; i < 6; ++i) {
+        if (arr[i] == m)
+            return i;
+    }
+}
+
+int main(){
+    int arr[6],dice1[6][5];
+    int n,m,k;
+    for (int i = 0; i < 6; ++i) {
+        cin >> arr[i];
+    }
+
+    for (int i = 0; i < 6; ++i) {
+        for (int j = 0; j < 6; ++j) {
+            dice1[i][j] = arr[dice[i][j] - 1];
+        }
+    }
+
+    cin >> n;
+    for (int i = 0; i < n; ++i) {
+        cin >> m >> k;
+        cout << find(dice1,findIndex(arr,m),k) << endl;
+    }
+
+    return 0;
+}
+```
 
 
 

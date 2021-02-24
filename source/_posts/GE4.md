@@ -345,12 +345,12 @@ Infinite
 |__ bin
 |__ bin-int
 |__ Infinite
-|   |__ Infinite.vcxproj
-|   |__ Infinite.vcxproj.filters
-|   |__ Infinite.vcxproj.user
+|		|__ Infinite.vcxproj
+|		|__ Infinite.vcxproj.filters
+|		|__ Infinite.vcxproj.user
 |__ Sandbox
-|   |__ Sandbox.vcxproj
-|   |-- Sandbox.vcxproj.user
+|		|__ Sandbox.vcxproj
+|		|__ Sandbox.vcxproj.user
 |__ Infinite.sln
 ```
 
@@ -374,3 +374,12 @@ xcopy /y "$(OutDir)Infinite.dll" "$(SolutionDir)bin\$(Configuration)-$(Platform)
 ```
 
 系统报错就会停止，但生成的dll文件在另一个平行的文件夹中，原因是`$(Configuration)-$(Platform)`和`%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}`还是不一致，而我浏览了宏也没有找到合适的，最后只能用拖拽的方式暂时将`Infinite.dll`拖回`Sandbox'`，勉强运行成功。
+
+
+
+后再次研究，将问题锁定到生成前事件的指令，我认为是指令不明确的原因，更改为`xcopy /Y ...`也可以解决问题。
+
+```
+IF EXIST ..\bin\Debug-windows-x86_64\Infinite\Infinite.dll\ (xcopy /Y  ..\bin\Debug-windows-x86_64\Infinite\Infinite.dll ..\bin\Debug-windows-x86_64\Sandbox > nul) ELSE (xcopy /Y ..\bin\Debug-windows-x86_64\Infinite\Infinite.dll ..\bin\Debug-windows-x86_64\Sandbox > nul)
+```
+

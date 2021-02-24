@@ -196,6 +196,47 @@ baidu_url_submit:
 
 
 
+### RSS订阅
+
+#### 地址
+
++ [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
+
+
+
+#### 安装配置
+
+```bash
+npm install hexo-generator-feed --save
+```
+
+在站点的配置根目录`_config.yml`添加：
+
+```yaml
+# Extensions
+## Plugins: http://hexo.io/plugins/
+#RSS订阅
+plugin:
+- hexo-generator-feed
+#Feed Atom
+feed:
+type: atom
+path: atom.xml
+limit: 20
+```
+
+接着在主题配置文件添加：
+
+```diff
+social:
+  E-Mail: mailto:zoeyousa@gmail.com || fa fa-envelope
+  GitHub: https://github.com/Yousazoe || fab fa-github
+  Weibo: https://www.weibo.com/6034231696/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1 || fab fa-weibo
+  Steam: https://steamcommunity.com/profiles/76561198856466228/ || fab fa-steam
+  Chess: https://www.chess.com/member/yousazoe || fa fa-chess-pawn
++  RSS: /atom.xml || fa fa-rss
+```
+
 
 
 ### 站点统计
