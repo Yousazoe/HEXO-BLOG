@@ -241,11 +241,8 @@ Mersenne是Makoto Mastsumoto（松本）和Takuji Nishimura（西村）于1997�
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gekzwflh2oj30xc0p0dot.jpg)
 
-<div align=center>
-  <font size="3">
-    <i> Acknowledgement <br/> 
-      <a href="https://www.behance.net/victoire">Victoire Douy</a>
-    </i>
-  </font>
-</div>
+
+
+
+
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gekyba8kcdj30xc0got99.jpg)

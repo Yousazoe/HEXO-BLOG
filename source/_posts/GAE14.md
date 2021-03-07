@@ -363,3 +363,10 @@ Dreamworks和微软合作成立了DICE，所有的《战地》都是它开发的
 ### 写在最后
 
 > ***Mario Hsu : " Next generation starts when you say so! "***
+
+
+
+<br/>
+
+<center>{% btn https://github.com/Yousazoe/yousazoe.github.io/raw/master/pdf/GAE14.pdf,  射击游戏终极发展史, fas fa-download %}</center>
+

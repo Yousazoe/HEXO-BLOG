@@ -1,5 +1,5 @@
 ---
-title: 《蔚蓝》的开发故事 The Story of Celeste's Development
+title: 《蔚蓝》的开发故事
 tags:
 - Story
 - Celeste

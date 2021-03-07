@@ -1,5 +1,5 @@
 ---
-title: 博客使用插件总结
+title: Hexo-NexT博客使用插件总结
 abbrlink: c12c9c40
 date: 2021-01-26 17:28:58
 tags:
@@ -270,6 +270,33 @@ symbols_count_time:
 
 
 
+### 文章置顶
+
+#### 插件配置
+
+```bash
+npm uninstall hexo-generator-index --save
+npm install hexo-generator-index-pin-top --save
+```
+
+#### 图标配置
+
+打开`/themes/next/layout/_macro/` 目录下的`post.swig`文件，在`<div class="post-meta">`的第一个`<span>`标签下，插入如下代码：
+
+```swig
+{% if post.top %}
+  <i class="fas fa-thumbtack"></i>
+  <font color="#C0C0C0">Top</font>
+  <span class="post-meta-divider">|</span>
+{% endif %}
+```
+
+
+
+
+
+
+
 ### 站内搜索
 
 #### 地址
@@ -352,7 +379,7 @@ neat_js:
 
 #### 地址
 
-+ []()
++ [hexo-lazyload]()
 
 #### 安装配置
 
@@ -447,13 +474,71 @@ nofollow:
 
 
 
+### Live2D
+
+#### 地址
+
++ [hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)
+
+#### 安装配置
+
+```bash
+npm install --save hexo-helper-live2d
+```
+
+#### 选择模型
+
+可到https://huaji8.top/post/live2d-plugin-2.0/预览效果。
+
+命令为:`npm install live2d-widget-model-模型名`，模型为可参考上面的预览内容，安装模型:
+
+```bash
+npm install live2d-widget-model-hijiki
+```
+
+
+
+#### 主题配置
+
+站点的配置文件`\_config.yml`或者是主题的配置文件中添加：
+
+```yaml
+# Live2D
+## https://github.com/EYHN/hexo-helper-live2d
+live2d:
+  enable: ture
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-hijiki # 模型：https://huaji8.top/post/live2d-plugin-2.0/
+  display:
+    position: right
+    width: 50
+    height: 100
+  mobile:
+    show: true
+```
+
+
+
+#### 参考
+
++ [hexo+yilia添加Live2D看板娘](https://yansheng836.github.io/article/e239dc63.html)
++ [hexo live2d插件 2.0 !](https://huaji8.top/post/live2d-plugin-2.0/)
+
+
+
 ### 播放器标签
 
 #### 地址
 
 + [hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer)
 
-### 安装
+#### 安装
 
 ```bash
 npm install hexo-tag-aplayer --save

@@ -1,12 +1,12 @@
 ---
-layout: game
 title: 中国游戏市场简析
 tags:
-- Game
+  - Game
 categories: 游戏分析与测评 (Game Analysis and Evaluation)
 translate_title: a-brief-analysis-of-the-chinese-game-market
-date: 2020-05-05 23:38:05
 comments: false
+abbrlink: bae9d248
+date: 2020-05-05 23:38:05
 ---
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ggxwpu9b5oj311i0p0n12.jpg)
@@ -346,3 +346,10 @@ IP端 -> 游戏研发商 -> 游戏发行商 -> 游戏渠道商 -> 游戏用户
 ### 结语
 
 中国游戏行业是丰富、复杂的市场，但庞大的用户基数与持续需求，依然展露着中国市场的前景。不断进取的行业从业者，也将中国游戏往全球遍地开花
+
+
+
+<br/>
+
+<center>{% btn https://github.com/Yousazoe/yousazoe.github.io/raw/master/pdf/GAE1.pdf, 中国游戏市场简析, fas fa-download %}</center>
+

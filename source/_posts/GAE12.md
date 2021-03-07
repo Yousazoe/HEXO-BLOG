@@ -372,3 +372,12 @@ top:
   - 移动端的新发展
     - **《LOVELIVE！校园偶像祭》**
 - 音乐节奏类游戏的衍生类型
+
+
+
+
+
+<br/>
+
+<center>{% btn https://github.com/Yousazoe/yousazoe.github.io/raw/master/pdf/GAE12.pdf,  日本游戏市场简析, fas fa-download %}</center>
+

@@ -1,5 +1,5 @@
 ---
-title: Hero-NexT主题配置
+title: Hexo-NexT主题配置
 tags:
 - Hexo
 - NexT
@@ -906,3 +906,512 @@ title_trick:
 {% endif %}
 ```
 
+
+
+#### 修改友链样式
+
+##### 新建`links.swig`文件
+
+在`/themes/next/layout/`路径下，新建一个文件`links.swig`，其内容为以下代码：
+
+```
+{% block content %}
+  {######################}
+  {### LINKS BLOCK ###}
+  {######################}
+  
+    <div id="links">
+        <style>
+            .links-content{
+                margin-top:1rem;
+            }
+            
+            .link-navigation::after {
+                content: " ";
+                display: block;
+                clear: both;
+            }
+            
+            .card {
+                width: 300px;
+                font-size: 1rem;
+                padding: 10px 20px;
+                border-radius: 4px;
+                transition-duration: 0.15s;
+                margin-bottom: 1rem;
+                display:flex;
+            }
+            .card:nth-child(odd) {
+                float: left;
+            }
+            .card:nth-child(even) {
+                float: right;
+            }
+            .card:hover {
+                transform: scale(1.1);
+                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+            }
+            .card a {
+                border:none; 
+            }
+            .card .ava {
+                width: 3rem!important;
+                height: 3rem!important;
+                margin:0!important;
+                margin-right: 1em!important;
+                border-radius:4px;
+                
+            }
+            .card .card-header {
+                font-style: italic;
+                overflow: hidden;
+                width: 236px;
+            }
+            .card .card-header a {
+                font-style: normal;
+                color: #2bbc8a;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .card .card-header a:hover {
+                color: #d480aa;
+                text-decoration: none;
+            }
+            .card .card-header .info {
+                font-style:normal;
+                color:#a3a3a3;
+                font-size:14px;
+                min-width: 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        </style>
+        <div class="links-content">
+            <div class="link-navigation">
+
+                {% for link in theme.mylinks %}
+                
+                    <div class="card">
+                        <img class="ava" src="{{ link.avatar }}"/>
+                        <div class="card-header">
+                        <div><a href="{{ link.site }}" target="_blank">@ {{ link.nickname }}</a></div>
+                        <div class="info">{{ link.info }}</div>
+                        </div>
+                    </div>
+                
+                {% endfor %}
+
+            </div>
+            {{ page.content }}
+            </div>
+        </div>
+  
+  {##########################}
+  {### END LINKS BLOCK ###}
+  {##########################}
+{% endblock %}
+```
+
+##### 修改`page.swig`文件
+
+修改`/themes/next/layout/page.swig`:
+
+```diff
+{% extends '_layout.swig' %}
+{% import '_macro/sidebar.swig' as sidebar_template with context %}
+
+{% block title %}
+  {%- set page_title_suffix = ' | ' + title %}
+
+  {%- if page.type === 'categories' and not page.title %}
+    {{- __('title.category') + page_title_suffix }}
+  {%- elif page.type === 'tags' and not page.title %}
+    {{- __('title.tag') + page_title_suffix }}
+  {%- elif page.type === 'schedule' and not page.title %}
+    {{- __('title.schedule') + page_title_suffix }}
++  {% elif page.type === 'links' and not page.title %}
++    {{ __('title.links') + page_title_suffix }}
+  {%- else %}
+    {{- page.title + page_title_suffix }}
+  {%- endif %}
+{% endblock %}
+
+{% block class %}page posts-expand{% endblock %}
+
+{% block content %}
+
+    {##################}
+    {### PAGE BLOCK ###}
+    {##################}
+    <div class="post-block" lang="{{ page.lang or config.language }}">
+      {% include '_partials/page/page-header.swig' %}
+      {#################}
+      {### PAGE BODY ###}
+      {#################}
+      <div class="post-body{%- if page.direction and page.direction.toLowerCase() === 'rtl' %} rtl{%- endif %}">
+        {%- if page.type === 'tags' %}
+          <div class="tag-cloud">
+            <div class="tag-cloud-title">
+              {{ _p('counter.tag_cloud', site.tags.length) }}
+            </div>
+            <div class="tag-cloud-tags">
+              {{ tagcloud({
+                min_font   : theme.tagcloud.min,
+                max_font   : theme.tagcloud.max,
+                amount     : theme.tagcloud.amount,
+                color      : true,
+                start_color: theme.tagcloud.start,
+                end_color  : theme.tagcloud.end})
+              }}
+            </div>
+          </div>
+        {% elif page.type === 'categories' %}
+          <div class="category-all-page">
+            <div class="category-all-title">
+              {{ _p('counter.categories', site.categories.length) }}
+            </div>
+            <div class="category-all">
+              {{ list_categories() }}
+            </div>
+          </div>
+        {% elif page.type === 'schedule' %}
+          <div class="event-list">
+          </div>
+          {% include '_scripts/pages/schedule.swig' %}
+        {% elif page.type === 'links' %}
+          {% include 'links.swig' %}
+        {% else %}
+          {{ page.content }}
+        {%- endif %}
+      </div>
+      {#####################}
+      {### END PAGE BODY ###}
+      {#####################}
+    </div>
+    {% include '_partials/page/breadcrumb.swig' %}
+    {######################}
+    {### END PAGE BLOCK ###}
+    {######################}
+
+{% endblock %}
+
+{% block sidebar %}
+  {{ sidebar_template.render(true) }}
+{% endblock %}
+
+```
+
+
+
+
+
+
+
+##### 修改`_config.yml`文件
+
+在主题配置文件`/themes/_config.yml`末尾处添加友链：
+
+```yaml
+mylinks:
+  - nickname: Fl0w3r  #友链名称
+    avatar: https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/IMG_5497.JPG #友链头像
+    site: https://yousazoe.top  #友链地址
+    info: carpe diem.  #友链说明
+```
+
+##### 创建`links`页面
+
+创建一个`links`页面，页面将自动加载已添加的友链：
+
+
+```markdown
+---
+title: Links
+type: links
+date: 2021-02-28 17:40:03
+---
+
+```
+
+原因：
+
+- 添加`title`，是为了标题中出现`title`，
+- 添加`type`，是为了显示友链的对象，不添加不显示
+
+
+
+##### 参考
+
++ [Hexo+NexT修改友链样式](https://wugenqiang.github.io/articles/hexoEditLinkStyle.html)
+
+
+
+#### Hitokoto一言功能
+
+最近看到许多网站都使用了一言，于是想给自己的博客加一个一言模块。
+但是在上网寻找博客添加Hitokoto现成方案时，我发现仅有的方案都是采用下载许多句子并保存来调用的，我认为这样非常愚蠢，理由如下：
+
+- Hitokoto官方明明给了API不用，反而自己保存名言，这不是自找麻烦吗？
+- TXT文件的句子仅有内容，没有出处，对于我这样的强迫症患者，非常不爽。
+
+因此我选择了自己写。
+
+##### 调用API
+
+官方给出了API的使用示例，在此处基于Hexo-NexT主题加以适配（将一言添加到NexT主题的侧边栏中）。
+
+在`blog/themes/next/layout/_custom/sidebar.swig`中添加以下内容：
+
+```html
+<!-- none-select-br -->
+
+<p></p>
+
+<!-- hitokoto -->
+
+<div class="hitokoto-title">
+	<i class="fa fa-paragraph"></i>
+	<b>一言</b>
+</div>
+
+<div id="hitokoto">:D 获取中...</div>
+<i id="hitofrom">:D 获取中...</i>
+
+<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+<script>
+  fetch('https://v1.hitokoto.cn')
+    .then(function (res){
+      return res.json();
+    })
+    .then(function (data) {
+      var hitokoto = document.getElementById('hitokoto');
+      hitokoto.innerText = '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + data.hitokoto;
+      var hitofrom = document.getElementById('hitofrom');
+      hitofrom.innerText = "——" + data.from + '\xa0'; 
+    })
+    .catch(function (err) {
+      console.error(err);
+    })
+</script>
+```
+
+##### CSS配置
+
+在`blog/themes/next/source/css/_custom/custom.styl`中添加以下内容：
+
+```css
+//hitokoto
+
+.hitokoto-title {
+  text-align: center;
+  font-size: 12px;
+}
+
+#hitokoto {
+  text-align: left;
+  font-family: "Microsoft YaHei";
+  font-size: 11px;
+}
+
+#hitofrom {
+  float: right;
+  font-family: "Microsoft YaHei";
+  font-size: 10px;
+}
+```
+
+
+
+##### 参考
+
++ [为您的Hexo博客添加Hitokoto一言功能](https://blog.bill.moe/add-hitokoto/)
+
+
+
+#### 在线聊天
+
+在线聊天算是一个比较成熟的 SaaS 商业应用了，业内产品如 [Tidio](https://www.tidiochat.com/)、 [TalkJS](https://talkjs.com/)、[Intercom](https://www.intercom.com/)、[tawk.to](https://www.tawk.to/) 等，使用体验都很好，交互界面也很干净别致。经过比较，本站最终选择了 Tidio：
+
+- 在个人博客这种业务场景中，几乎用不到它的收费功能，可以算是终身免费了。
+- Tidio 提供了多种消息回复渠道，包括网页、桌面应用、iOS/Android APP（需要 Google play 服务支持）。
+- 除了在线聊天，Tidio 还可以在线发送邮件，以及关联接收 Fackbook 消息。
+
+首先需要注册 Tidio 账号，根据引导填写应用信息。进入控制台后，在 `SETTINGS -> Developer -> Project data` 中获取到 `Public Key`：
+
+在主题配置文件下配置如下代码：
+
+```yaml
+# Tidio Support
+# See: https://www.tidiochat.com
+# Dashboard: https://www.tidiochat.com/panel/dashboard
+tidio:
+  enable: ture
+  key: your public key # Public Key, get it from dashboard. See: https://www.tidiochat.com/panel/settings/developer
+
+```
+
+
+
+请注意，下面的`chat`并不需要我们配置，这样会使sidebar出现Chat图标，不是很美观，所以保持默认设置即可：
+
+```yaml
+# A button to open designated chat widget in sidebar.
+# Firstly, you need enable the chat service you want to activate its sidebar button.
+chat:
+  enable: false
+  #service: chatra
+  #service: tidio
+  icon: #fa fa-comment # Icon name in Font Awesome, set false to disable icon.
+  text: #Chat # Button text, change it as you wish.
+```
+
+在主题自定义布局文件中添加以下代码：
+
+```swig
+{# Tidio 在线联系功能 #} {% if theme.tidio.enable %}
+<script async src="//code.tidio.co/{{ theme.tidio.key }}.js"></script>
+{% endif %}
+```
+
+为避免代码加载阻塞页面渲染，需要为脚本添加 `async` 属性使其异步加载。
+
+如果 `custom.swig` 文件不存在，需要手动新建并在布局页面中 `body` 末尾引入：
+
+```diff
+
+      ...
+      {% include '_third-party/exturl.swig' %}
+      {% include '_third-party/bookmark.swig' %}
+      {% include '_third-party/copy-code.swig' %}
+
++     {% include '_custom/custom.swig' %}
+    </body>
+  </html>
+```
+
+刷新页面即可在右下角看到 Tidio 的会话标志了。接下来可以在 Tidio 控制台中根据提示定制聊天对话框的主题外观和语言包即可。
+
+
+
+##### 参考
+
++ [Hexo-NexT 添加第三方服务](https://tding.top/archives/7696c13f.html)
++ [Hexo 搭建个人博客系列：进阶设置篇](http://yearito.cn/posts/hexo-advanced-settings.html)
+
+
+
+
+
+#### 行为监测与反馈
+
+[Hotjar](https://www.hotjar.com/) 是一款轻量级的监测分析工具，能够提供用户行为监测和用户反馈分析，相比 Google Analysis 而言，它没有复杂的监测指标与分析报表，更加的简单实用，并且为免费用户提供 2000pv/day 的数据采集服务，适用于小型网站或个人博客的监测分析。
+
+Hotjar 主要提供 **ANALYTICS** 和 **FEEDBACK** 两大类服务。
+
+ANALYTICS 主要用于用户交互行为的监测分析，属于客观分析，包括以下四项具体功能：
+
+- Heatmaps: 通过热力图可视化用户的鼠标交互行为，帮助理解用户动机和需求。
+- Recording: 记录用户在站点的行为轨迹，了解应用的可用性以及用户遭遇的问题。
+- Funnels: 记录每个页面或者步骤的用户流失率。
+- Forms: 记录表单中每一项输入的完成率，完成时间以及用户流失率。
+
+FEEDBACK 主要为用户提供反馈渠道，收集用户观点与数据，属于主观分析，包括以下四项具体功能：
+
+- Incoming: 即时反馈，了解用户对页面的评价。
+- Polls: 投票反馈，获取某个问题的用户答案。
+- Surveys: 问卷调查，以问卷形式获取用户反馈。
+- Recruiters: 获取用户信息，招募用户用于用户调查或测试反馈。
+
+Hotjar 通过以上八项具体而实用的功能为用户提供主客观相结合的监测分析服务，可以说它是所有轻量级分析工具中唯一做到了主客观相结合的，同时也是所有主客观分析工具中，做的最轻量的。
+
+> 更多功能介绍请参考 [Hotjar Features](https://www.hotjar.com/tour)
+
+本站点中应用了 Incoming 即时反馈功能，读者可以通过该渠道评价页面或者提交勘误，点击悬挂在屏幕右侧的 Feedback 按钮弹出对话框，点击人物头像评价后将会跳转到如下界面：
+
+[![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/hotjar-feedback.png)](http://yearito-1256884783.image.myqcloud.com/hexo-advanced-settings/hotjar-feedback.png)
+
+
+
+你可以在此页面输入反馈内容，并通过点击左下角的按钮在当前页面上标识目标元素，之后 hotjar 会将反馈内容连同带有高亮标识的页面截图一起提交到后台。
+
+在站点中集成 Hotjar 的各项功能，需要先 [注册 Hotjar 账号](https://insights.hotjar.com/register)，根据指引一步步填写站点信息，然后在控制面板首页中获取 site ID。
+
+在主题配置文件下添加以下代码并补全 site ID：
+
+```yaml
+# Hotjar
+# see: https://www.hotjar.com/
+hotjar:
+  enable: true
+  siteID: your site ID # site ID
+```
+
+在主题自定义布局文件中添加以下代码：
+
+```
+{# hotjar 页面反馈 #} {% if theme.hotjar.enable %}
+<script>
+  (function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:{{ theme.hotjar.siteID }},hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+{% endif %}
+```
+
+如果 custom.swig 文件不存在，需要手动新建并在布局页面中 body 末尾引入：
+
+```
+themes\next\layout_layout.swig      ...
+      {% include '_third-party/exturl.swig' %}
+      {% include '_third-party/bookmark.swig' %}
+      {% include '_third-party/copy-code.swig' %}
+
++     {% include '_custom/custom.swig' %}
+    </body>
+  </html>
+```
+
+如此即可将 Hotjar 嵌入到站内，接下来在 Hotjar 控制台菜单中点击 Incoming，然后根据引导一步步配置即时反馈服务即可。
+
+
+
+#### Artitalk功能集成
+
+
+
+##### 页面配置
+
+```html
+---
+title: Artitalk
+date: 2021-03-04 00:47:39
+comments: false
+---
+
+<body>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/artitalk"></script>
+  <div id="artitalk_main"></div>
+  <script>
+    new Artitalk({
+      appId: 'Your appId',
+      appKey: 'Your appKey'
+    })
+  </script>
+</body>
+```
+
+
+
+
+
+##### 参考
+
++ [在 Hexo 中使用 artitalk 新增说说功能](https://blog.csdn.net/qq_38157825/article/details/112783238)
++ [Hexo添加可实时发布的说说界面 | Artitalk.js](https://cndrew.cn/2020/05/11/artitalk/)

@@ -316,15 +316,16 @@ MMO页游的特点就是全自动，它的目标用户就是上班族白领，�
 
 
 
-![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gh07sc7c5sj30xc08cmzg.jpg)
+
+
+<br/>
+
+<center>{% btn https://github.com/Yousazoe/yousazoe.github.io/raw/master/pdf/GAE4.pdf, MMORPG的发展与简析, fas fa-download %}</center>
 
 
 
-<div align=center>
-  <font size="3">
-    <i> Acknowledgement <br/> 
-     <a href="https://www.behance.net/harveydentmustdie">Milos Kostic</a>
-    </i>
-  </font>
-</div>
+
+
+
+
 

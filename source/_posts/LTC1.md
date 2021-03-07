@@ -209,8 +209,8 @@ stu arr2[10];// C++⾥⾯不⽤写struct，直接写stu就好了～
 void func(int &a) { // 传⼊的是n的引⽤，相当于直接对n进⾏了操作，只不过在func函数中换了个名字叫a
   a = 99; }
 int main() {
-	int n = 0;
-	func(n); // n由0变成了99
+  int n = 0;
+  func(n); // n由0变成了99
 }
 ```
 
@@ -218,8 +218,8 @@ int main() {
 void func(int a) {// 传⼊的是0这个值，并不会改变main函数中n的值
 	a = 99; }
 int main() {
-	int n = 0;
-	func(n);// 并不会改变n的值，n还是0 
+  int n = 0;
+  func(n);// 并不会改变n的值，n还是0 
 }
 ```
 
@@ -267,28 +267,28 @@ cout << v[0];
 #include <vector>
 using namespace std;
 int main() {
-	vector<int> a; // 定义的时候不指定vector的⼤⼩
+  vector<int> a; // 定义的时候不指定vector的⼤⼩
   cout << a.size() << endl; // 这个时候size是0
   for (int i = 0; i < 10; i++) {
-  		a.push_back(i); // 在vector a的末尾添加⼀个元素i
+    a.push_back(i); // 在vector a的末尾添加⼀个元素i
    }
   cout << a.size() << endl; // 此时会发现a的size变成了10
   vector<int> b(15); // 定义的时候指定vector的⼤⼩，默认b⾥⾯元素都是0
   cout << b.size() << endl;
   for (int i = 0; i < b.size(); i++) {
-  		b[i] = 15;
+    	b[i] = 15;
    }
   for (int i = 0; i < b.size(); i++) {
-  		cout << b[i] << " ";
+    	cout << b[i] << " ";
    }
   cout << endl;
   vector<int> c(20, 2); // 定义的时候指定vector的⼤⼩并把所有的元素赋⼀个指定的值
   for (int i = 0; i < c.size(); i++) {
-  		cout << c[i] << " ";
+    	cout << c[i] << " ";
    }
   cout << endl;
   for (auto it = c.begin(); it != c.end(); it++) { // 使⽤迭代器的⽅式访问vector
-  		cout << *it << " ";
+    	cout << *it << " ";
    } 
   return 0; 
 }
@@ -309,7 +309,8 @@ int main() {
 #include <set>
 using namespace std;
 int main() {
-  set<int> s; // 定义⼀个空集合s s.insert(1); // 向集合s⾥⾯插⼊⼀个1
+  set<int> s; // 定义⼀个空集合s 
+  s.insert(1); // 向集合s⾥⾯插⼊⼀个1
   cout << *(s.begin()) << endl; // 输出集合s的第⼀个元素 (前⾯的星号表示要对指针取值)
   for (int i = 0; i < 6; i++) {
   		s.insert(i); // 向集合s⾥⾯插⼊i
@@ -577,11 +578,11 @@ auto y = 1.5; // y是double变量
 ```c++
 // 本来set的迭代器遍历要这样写：
 for(set<int>::iterator it = s.begin(); it != s.end(); it++) {
-		cout << *it << " "; 
+  	cout << *it << " "; 
 }
 // 现在可以直接替换成这样的写法：
 for(auto it = s.begin(); it != s.end(); it++) {
-		cout << *it << " "; 
+  	cout << *it << " "; 
 }
 ```
 
@@ -594,7 +595,7 @@ for(auto it = s.begin(); it != s.end(); it++) {
 ```c++
 int arr[4] = {0, 1, 2, 3};
 for (int i : arr)
-	cout << i << endl; // 输出数组中的每⼀个元素的值，每个元素占据⼀⾏
+  cout << i << endl; // 输出数组中的每⼀个元素的值，每个元素占据⼀⾏
 ```
 
 `i` 变量从数组的第⼀个元素开始，不断执⾏循环， `i` 依次表示数组中的每⼀个元素～注意，使⽤ `int i` 的⽅式定义时，该语句只能⽤来输出数组中元素的值，⽽不能修改数组中的元素，如果想要修改，必须使⽤ `int &i` 这种定义引⽤变量的⽅式～⽐如想给数组中的每⼀个元素都乘以 2 ，可以使⽤如下⽅式：
@@ -602,7 +603,7 @@ for (int i : arr)
 ```c++
 int arr[4] = {0, 1, 2, 3};
 for (int &i : arr) // i为引⽤变量
-	i = i * 2; // 将数组中的每⼀个元素都乘以2，arr[4]的内容变为了{0, 2, 4, 6}
+  i = i * 2; // 将数组中的每⼀个元素都乘以2，arr[4]的内容变为了{0, 2, 4, 6}
 ```
 
 这种基于范围的 `for` 循环适⽤于各种类型的数组，将上述两段代码中的 `int` 改成其他变量类型如 `double` 、 `char` 都是可以的～另外，这种 `for` 循环⽅式不仅可以适⽤于数组，还适⽤于各种STL容器，⽐如 `vector` 、 `set` 等～加上上⾯⼀节所讲的C++11⾥⾯很好⽤的 `auto` 声明，将 `int` 、 `double` 等变量类型替换成 `auto` ，⽤起来就更⽅便啦～
@@ -610,10 +611,10 @@ for (int &i : arr) // i为引⽤变量
 ```c++
 // v是⼀个int类型的vector容器
 for (auto i : v)
-	cout << i << " ";
+  cout << i << " ";
 // 上⾯的写法等价于
 for (int i = 0; i < v.size(); i++)
-	cout << v[i] << " ";
+  cout << v[i] << " ";
 ```
 
 

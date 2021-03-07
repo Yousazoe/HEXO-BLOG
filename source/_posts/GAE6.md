@@ -201,7 +201,7 @@ comments: false
 | 4    |         Madden NFL 19          |   体育   |           2K            |
 | 5    | 任天堂明星大乱斗（未含数字版） |   乱斗   |         任天堂          |
 | 6    |           漫威蜘蛛侠           | 动作冒险 |        Insomniac        |
-| 7    |           孤岛惊魂5            |   射击   |         Ubisoft         |
+| 7    |           孤岛惊魂5            |   射击   |         <center>{% btn https://github.com/Yousazoe/yousazoe.github.io/raw/master/pdf/GAE5.pdf, 分析聚焦情感而设计的游戏品类, fas fa-download %}</center>         |
 | 8    |             战神4              | 动作冒险 | SIE Santa Monica Studio |
 | 9    |         怪物猎人：世界         |   ARPG   |         Capcom          |
 | 10   |        刺客信条：奥德赛        |   ARPG   |         Ubisoft         |
@@ -417,12 +417,16 @@ comments: false
     + 云游戏
     + 订阅
 
-<div align=center>
-  <font size="3">
-    <i> Acknowledgement <br/> 
-      <a href="https://www.behance.net/chsoares">Carlos Soares</a><br/>
-      <a href="https://www.behance.net/angelo_fernandes">Ângelo Fernandes</a>
-    </i>
-  </font>
-</div>
+
+
+
+
+<br/>
+
+<center>{% btn https://github.com/Yousazoe/yousazoe.github.io/raw/master/pdf/GAE6.pdf, 美国游戏市场简析, fas fa-download %}</center>
+
+
+
+
+
 

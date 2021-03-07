@@ -138,3 +138,12 @@ top:
 ### 8.5 格斗游戏的魅力
 
 > *" Fight Games is......something so GREAT! "*
+
+
+
+
+
+<br/>
+
+<center>{% btn https://github.com/Yousazoe/yousazoe.github.io/raw/master/pdf/GAE8.pdf, 浅谈格斗游戏, fas fa-download %}</center>
+

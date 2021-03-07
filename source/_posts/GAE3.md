@@ -229,7 +229,8 @@ comments: false
 
 **追赶机制** 简单来说就是 *给予劣势玩家一定程度的帮助* ，让其可以合理利用该系统的奖励保持竞争力
 
-> - **DOTA自走棋** ，连败也会有奖励
+> - <center>{% btn https://github.com/Yousazoe/yousazoe.github.io/raw/master/pdf/GAE4.pdf, MMORPG的发展与简析, fas fa-download %}</center>
+>
 > - **魔兽争霸3**，有人口和维护费的限制
 > - **全面战争**，称帝之后会有外交惩罚，**将军** 那代会有包围网的系统
 > - 类比现实中的通货膨胀或者边际效应
@@ -340,4 +341,10 @@ comments: false
 >   &emsp;&emsp;如同绘画、电影等其它艺术的形式，游戏同样也是 **理解、看待世界** 的一扇窗，是 **一种不同的视角**。
 >   而策略游戏，是带有 **全局观念**，从 **俯瞰** 角度看待世界的一种体验。  
 >   &emsp;&emsp;
+
+
+
+<br/>
+
+<center>{% btn https://github.com/Yousazoe/yousazoe.github.io/raw/master/pdf/GAE3.pdf, 策略游戏如何成为时间杀手, fas fa-download %}</center>
 

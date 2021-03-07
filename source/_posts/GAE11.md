@@ -123,3 +123,12 @@ top:
 ### 写在最后
 
 >   游戏叙事也许在资本运作的市场里面不应该成为一个立项方向，不能保证成功。它也不能成为市场宣传的一个噱头，把用户牢牢吸引过来。 但它的意义在于*一个好的游戏叙事可以让这个游戏被玩家记住*，所以无论如何这方面还是值得的。
+
+
+
+
+
+<br/>
+
+<center>{% btn https://github.com/Yousazoe/yousazoe.github.io/raw/master/pdf/GAE11.pdf,  游戏叙事初探, fas fa-download %}</center>
+

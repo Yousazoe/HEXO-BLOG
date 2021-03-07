@@ -9,13 +9,12 @@ comment: false
 <br/>
 
 
-
-### 🖥️ Coding
+### Coding
 
 <center><img src="http://ghchart.rshah.org/409ba5/yousazoe" alt="" /></center>
 
 <br/>
 
-### 🎧 Music
+### Music
 
 {% meting "5350868431" "netease" "playlist" "theme:#FF4081" "mode:circulation" "mutex:true" "listmaxheight:340px" "preload:auto" %}

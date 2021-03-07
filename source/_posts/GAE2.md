@@ -409,10 +409,9 @@ RTS产品与现实间的映射
 
 
 
-<div align=center>
-  <font size="3">
-    <i> Acknowledgement <br/> 
-      <a href="https://www.behance.net/dafortin">David Fortin</a>
-    </i>
-  </font>
-</div>
+
+
+<br/>
+
+<center>{% btn https://github.com/Yousazoe/yousazoe.github.io/raw/master/pdf/GAE2.pdf, 游戏分析方法, fas fa-download %}</center>
+

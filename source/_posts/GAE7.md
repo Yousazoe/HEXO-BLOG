@@ -202,13 +202,7 @@ comments: false
 
 
 
+<br/>
 
+<center>{% btn https://github.com/Yousazoe/yousazoe.github.io/raw/master/pdf/GAE7.pdf, 图形技术&动作游戏发展, fas fa-download %}</center>
 
-
-<div align=center>
-  <font size="3">
-    <i> Acknowledgement <br/> 
-      <a href="https://www.behance.net/pegazord">Michał Sawtyruk</a>
-    </i>
-  </font>
-</div>

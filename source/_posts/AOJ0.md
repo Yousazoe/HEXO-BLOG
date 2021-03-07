@@ -12,8 +12,10 @@ banner_img: https://tva1.sinaimg.cn/large/0081Kckwgy1gl1tzdi89aj311i0u07bw.jpg
 comments: false
 sticky:
 abbrlink: c735be6b
-translate_title:
 top:
+translate_title:
+mathjax: ture
+
 ---
 
 

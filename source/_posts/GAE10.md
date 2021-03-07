@@ -235,3 +235,12 @@ MOBA - **M**ultiplayer **O**nline **B**attle **A**rena
   - 单局成长：等级与装备
   - 中立资源
   - 视野机制
+
+
+
+
+
+<br/>
+
+<center>{% btn https://github.com/Yousazoe/yousazoe.github.io/raw/master/pdf/GAE10.pdf,  MOBA游戏历史与解析, fas fa-download %}</center>
+
