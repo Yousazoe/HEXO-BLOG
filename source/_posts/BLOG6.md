@@ -130,4 +130,15 @@ function run() {
 
 `hexo -d`后成功上传。
 
-![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210629135608676.png)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210629140447332.png)
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210629140808496.png)
+
+
+
+
+
+### 参考文献
+
++ [自动备份Hexo博客源文件](https://wugenqiang.github.io/articles/auto_backup_blog_source_files.html)
+
