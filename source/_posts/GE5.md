@@ -39,6 +39,8 @@ top:
 
 
 
+### 架构
+
 我们希望当我们实际创建一个窗口时，我们可以非常轻松地处理所有事情。以前可能先编写整个窗口系统然后再处理事件，但现在最好是先完成事件系统，当我们编写到窗口时已经可以调度所有事件。
 
 目前我们有一个叫`Application`做应用程序的东西，这意味着它实际上包含了使一切保持运行的循环并且一直不断更新我们的游戏。不仅如此，它还要作为事件的枢纽需要接收事件，最终将它们分派到一个`Layer`层中，现在的游戏层是我们以后会讨论的话题所以不会过多地提及它们，因为我们将为此有单独的章节。总之现在事件最终传播到层以便它们可以处理。
@@ -67,9 +69,9 @@ top:
 
 
 
-### Event.h
+### 事件系统
 
-> Events in Hazel are currently blocking, meaning when an event occurs it
+> Events in Infinite are currently blocking, meaning when an event occurs it
 > immediately gets dispatched and must be dealt with right then an there.
 > For the future, a better strategy might be to buffer events in an event
 > bus and process them during the "event" part of the update stage.
@@ -121,17 +123,17 @@ top:
 #else
 	#error Infinite only support Windows
 #endif
-+ #define BIT(x)(1 << x)
++#define BIT(x)(1 << x)
 ```
 
-事件可以分为多个类别，例如`Keyboard`、`Mouse`、`MouseButton`都是`Input`事件、`MouseButton`是`Mouse`事件......而我们想要将多个类别应用与单个事件类型，因此我们需要创建一个位字段以便我们可以设置多个位。
+事件可以分为多个类别，例如`Keyboard`、`Mouse`、`MouseButton`都是`Input`事件、`MouseButton`是`Mouse`事件......而我们想要将多个类别应用于单个事件类型，因此我们需要创建一个位字段以便我们可以设置多个位。
 
 
 
-让我们来看一下实际的事件基类
+让我们来看一下实际的事件基类：
 
 ```c++
-class HAZEL_API Event
+class INFINITE_API Event
 	{
 		friend class EventDispatcher;
 	public:
@@ -149,68 +151,184 @@ class HAZEL_API Event
 	};
 ```
 
+首先是`m_Handled`变量，它用于事件的阻断。比如当我们实际上开始调度事件执行各种操作时，我们决定不希望进一步传播此信息例如鼠标单击事件，如果我们单击了鼠标而鼠标落在了按钮范围内，事件经过处理后我们希望阻断该事件，因为它很可能已经被按钮处理了。
 
+`IsInCategory()`函数用于返回事件的类别，例如鼠标事件。通过给定事件类别我们可以快速过滤掉某些事件，返回`ture`属于或不属于`false`该类别。
 
-
+其余有很多虚函数，这意味着必须实现它们，例如获取事件类型`GetEventType()`、获取事件名称`GetName()`、获取事件标志`GetCategoryFlags()`等等，目前仍需要这些函数便于调试。如果我们需要更多详细信息，显然返回事件的名称，`ToString()`就会调用`GetName()`打印事件名称，我们来看一个具体的事件类窗口大小调整事件`ApplicationEvent.h`。
 
 ```c++
 #pragma once
 
-#include "Hazel/Core.h"
+#include "Event.h"
 
-#include <string>
-#include <functional>
+#include <sstream>
 
-namespace Hazel {
+namespace Infinite {
 
-	// Events in Hazel are currently blocking, meaning when an event occurs it
-	// immediately gets dispatched and must be dealt with right then an there.
-	// For the future, a better strategy might be to buffer events in an event
-	// bus and process them during the "event" part of the update stage.
-
-	enum class EventType
+	class INFINITE_API WindowResizeEvent : public Event
 	{
-		None = 0,
-		WindowClose, WindowResize, WindowFocus, WindowLostFocus, WindowMoved,
-		AppTick, AppUpdate, AppRender,
-		KeyPressed, KeyReleased,
-		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
-	};
-
-	enum EventCategory
-	{
-		None = 0,
-		EventCategoryApplication    = BIT(0),
-		EventCategoryInput          = BIT(1),
-		EventCategoryKeyboard       = BIT(2),
-		EventCategoryMouse          = BIT(3),
-		EventCategoryMouseButton    = BIT(4)
-	};
-
-#define EVENT_CLASS_TYPE(type) static EventType GetStaticType() { return EventType::##type; }\
-								virtual EventType GetEventType() const override { return GetStaticType(); }\
-								virtual const char* GetName() const override { return #type; }
-
-#define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override { return category; }
-
-	class HAZEL_API Event
-	{
-		friend class EventDispatcher;
 	public:
-		virtual EventType GetEventType() const = 0;
-		virtual const char* GetName() const = 0;
-		virtual int GetCategoryFlags() const = 0;
-		virtual std::string ToString() const { return GetName(); }
-
-		inline bool IsInCategory(EventCategory category)
+		......
+      
+		std::string ToString() const override
 		{
-			return GetCategoryFlags() & category;
+			std::stringstream ss;
+			ss << "WindowResizeEvent: " << m_Width << ", " << m_Height;
+			return ss.str();
 		}
+		......
+}
+```
+
+`ToString()`在这里进行了重写，在目前不考虑性能的情况下利用字符流`ss`输出“窗口大小调整事件”和长宽来作为一种打印事件信息的调试信息。
+
+
+
+### 键事件
+
+当我们在键盘上按一下某种东西时，事件就会起作用。因此如果当我从键盘上释放键时这是一个按键事件，它在某些方面有权限，即已按下或释放的内容的键控代码：
+
+```c++
+#pragma once
+
+#include "Event.h"
+
+#include <sstream>
+
+namespace Infinite {
+
+	class INFINITE_API KeyEvent : public Event
+	{
+	public:
+		inline int GetKeyCode() const { return m_KeyCode; }
+
+		EVENT_CLASS_CATEGORY(EventCategoryKeyboard | EventCategoryInput)
 	protected:
-		bool m_Handled = false;
+		KeyEvent(int keycode)
+			: m_KeyCode(keycode) {}
+
+		int m_KeyCode;
 	};
 
-	class EventDispatcher
+	class INFINITE_API KeyPressedEvent : public KeyEvent
+	{
+	public:
+		KeyPressedEvent(int keycode, int repeatCount)
+			: KeyEvent(keycode), m_RepeatCount(repeatCount) {}
+
+		inline int GetRepeatCount() const { return m_RepeatCount; }
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "KeyPressedEvent: " << m_KeyCode << " (" << m_RepeatCount << " repeats)";
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(KeyPressed)
+	private:
+		int m_RepeatCount;
+	};
+
+	class INFINITE_API KeyReleasedEvent : public KeyEvent
+	{
+	public:
+		KeyReleasedEvent(int keycode)
+			: KeyEvent(keycode) {}
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "KeyReleasedEvent: " << m_KeyCode;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(KeyReleased)
+	};
+}
+```
+
+无论对键如何交互，其中关键核心的代码在所有事件间是通用的，这就是为什么做一个包含键相关代码的键事件基类。当一个键被释放时，我们需要知道是否有重复事件，这意味着当我按下一个键时，它将向操作系统发送按键事件，然后它会发送连续的重复事件。
+
+举个例子，当我按下`a`键时它会立刻添加字母`a`，然后有一个暂停，再之后就打印一连串`a`：
+
+
+
+所以第一个是按键事件，然后是其他事件，本质上是键重复事件。`m_KeyCode`用于存储键，还有一个保护类构造函数`KeyEvent(int keycode)`：
+
+```c++
+#pragma once
+
+#include "Event.h"
+
+#include <sstream>
+
+namespace Infinite {
+
+	class INFINITE_API KeyEvent : public Event
+	{
+	public:
+		inline int GetKeyCode() const { return m_KeyCode; }
+
+		EVENT_CLASS_CATEGORY(EventCategoryKeyboard | EventCategoryInput)
+	protected:
+		KeyEvent(int keycode)
+			: m_KeyCode(keycode) {}
+
+		int m_KeyCode;
+	};
+  ......
+}  
+```
+
+
+
+`KeyEvent`事件是由刚才的`KeyEvent`派生而来。构造函数`KeyPressedEvent(int keycode, int repeatCount)`中`keycode`用于存储键，`repeatCount`则是重复次数，如果它的值为0那么它是第一次按下按键，不是重复事件。
+
+我们在此处还实现了一个字符串函数`ToString()`，它将覆盖基类打印键按下事件与重复次数：
+
+```c++
+class INFINITE_API KeyPressedEvent : public KeyEvent
+	{
+	public:
+		KeyPressedEvent(int keycode, int repeatCount)
+			: KeyEvent(keycode), m_RepeatCount(repeatCount) {}
+
+		inline int GetRepeatCount() const { return m_RepeatCount; }
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "KeyPressedEvent: " << m_KeyCode << " (" << m_RepeatCount << " repeats)";
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(KeyPressed)
+	private:
+		int m_RepeatCount;
+	};
+```
+
+
+
+我们还有了这个事件类型的宏`EVENT_CLASS_TYPE(KeyPressed)`，该宏`EVENT_CLASS_TYPE`在`Events/Event.h`定义如下，用于返回事件的类型并将其字符串化：
+
+```c++
+#define EVENT_CLASS_TYPE(type) 
+static EventType GetStaticType() { return EventType::##type; }\
+virtual EventType GetEventType() const override { return GetStaticType(); }\
+virtual const char* GetName() const override { return #type; }
+```
+
+
+
+为什么需要这些静态函数呢？我们希望能够在运行时检查事件的类型，所以很显然我们需要一个返回当前事件的函数，但我们不需要按键事件的实例来查看事件的类型，按键事件永远是按键事件。
+
+在`Events/Event.h`中定义了事件的调度`EventDispatcher`，其中`Dispatch()`的功能是检查当前事件类型的调度是否与该参数匹配：
+
+```c++
+class EventDispatcher
 	{
 		template<typename T>
 		using EventFn = std::function<bool(T&)>;
@@ -233,11 +351,202 @@ namespace Hazel {
 	private:
 		Event& m_Event;
 	};
+```
 
-	inline std::ostream& operator<<(std::ostream& os, const Event& e)
+
+
+### 鼠标事件
+
+鼠标事件与前面的键事件类似。构造函数`MouseMovedEvent()`获取鼠标`m_MouseX`、`m_MouseY`坐标，重写`ToString()`用于打印鼠标移动事件以及坐标：
+
+```c++
+#pragma once
+
+#include "Event.h"
+
+#include <sstream>
+
+namespace Infinite {
+
+	class INFINITE_API MouseMovedEvent : public Event
 	{
-		return os << e.ToString();
-	}
+	public:
+		MouseMovedEvent(float x, float y)
+			: m_MouseX(x), m_MouseY(y) {}
+
+		inline float GetX() const { return m_MouseX; }
+		inline float GetY() const { return m_MouseY; }
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "MouseMovedEvent: " << m_MouseX << ", " << m_MouseY;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(MouseMoved)
+		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+	private:
+		float m_MouseX, m_MouseY;
+	};
+
+```
+
+
+
+
+
+鼠标的滚动事件继承自`Event`，构造函数`MouseScrolledEvent()`的`m_XOffset`、`m_YOffset`是两个坐标的偏移量，重写`ToString()`打印滚动事件和偏移量：
+
+```c++
+class INFINITE_API MouseScrolledEvent : public Event
+	{
+	public:
+		MouseScrolledEvent(float xOffset, float yOffset)
+			: m_XOffset(xOffset), m_YOffset(yOffset) {}
+
+		inline float GetXOffset() const { return m_XOffset; }
+		inline float GetYOffset() const { return m_YOffset; }
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "MouseScrolledEvent: " << GetXOffset() << ", " << GetYOffset();
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(MouseScrolled)
+		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+	private:
+		float m_XOffset, m_YOffset;
+	};
+```
+
+
+
+其他鼠标释放按下事件同理：
+
+```c++
+class INFINITE_API MouseButtonEvent : public Event
+	{
+	public:
+		inline int GetMouseButton() const { return m_Button; }
+
+		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+	protected:
+		MouseButtonEvent(int button)
+			: m_Button(button) {}
+
+		int m_Button;
+	};
+
+	class INFINITE_API MouseButtonPressedEvent : public MouseButtonEvent
+	{
+	public:
+		MouseButtonPressedEvent(int button)
+			: MouseButtonEvent(button) {}
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "MouseButtonPressedEvent: " << m_Button;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(MouseButtonPressed)
+	};
+
+	class INFINITE_API MouseButtonReleasedEvent : public MouseButtonEvent
+	{
+	public:
+		MouseButtonReleasedEvent(int button)
+			: MouseButtonEvent(button) {}
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "MouseButtonReleasedEvent: " << m_Button;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(MouseButtonReleased)
+	};
+```
+
+
+
+
+
+### 应用事件
+
+应用事件`ApplicationEvent.h`中包括了诸如窗口调整大小`WindowResizeEvent`、窗口关闭`WindowCloseEvent`之类的事件，还有更新`AppUpdateEvent`和渲染`AppRenderEvent`等事件声明出来备用：
+
+```c++
+#pragma once
+
+#include "Event.h"
+
+#include <sstream>
+
+namespace Infinite {
+
+	class INFINITE_API WindowResizeEvent : public Event
+	{
+	public:
+		WindowResizeEvent(unsigned int width, unsigned int height)
+			: m_Width(width), m_Height(height) {}
+
+		inline unsigned int GetWidth() const { return m_Width; }
+		inline unsigned int GetHeight() const { return m_Height; }
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "WindowResizeEvent: " << m_Width << ", " << m_Height;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(WindowResize)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
+	private:
+		unsigned int m_Width, m_Height;
+	};
+
+	class INFINITE_API WindowCloseEvent : public Event
+	{
+	public:
+		WindowCloseEvent() {}
+
+		EVENT_CLASS_TYPE(WindowClose)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
+	};
+
+	class INFINITE_API AppTickEvent : public Event
+	{
+	public:
+		AppTickEvent() {}
+
+		EVENT_CLASS_TYPE(AppTick)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
+	};
+
+	class INFINITE_API AppUpdateEvent : public Event
+	{
+	public:
+		AppUpdateEvent() {}
+
+		EVENT_CLASS_TYPE(AppUpdate)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
+	};
+
+	class INFINITE_API AppRenderEvent : public Event
+	{
+	public:
+		AppRenderEvent() {}
+
+		EVENT_CLASS_TYPE(AppRender)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
+	};
 }
 ```
 
@@ -245,9 +554,19 @@ namespace Hazel {
 
 
 
+### 调试
 
+编译出现`C1083`错误，无法读取`#include "Events/Event.h"`，调用逻辑是：
 
-### Application.cpp
+```
+SandboxApp.cpp -- Infinite.h -- Application.h -- Events/Event.h
+```
 
+回到`Events/Event.h`，源码中`#include "Events/Event.h"`并没有报错，输出窗口显示`Infinite`构建成功而`Sandbox`失败，而之前我一直在`Infinite`的项目配置折腾近三周。最后我在视频的下面找到了解决方案：
 
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210317083429466.png)
+
+很可能是`premake.lua`出错导致没办法导入`src`中的文件，但目前我暂时按上面的方法给`Sandbox`配置添加目录`$(SolutionDir)Infinite\src`后，问题成功解决。
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210317185442617.png)
 

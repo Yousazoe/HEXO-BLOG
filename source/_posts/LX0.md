@@ -140,107 +140,17 @@ $\prod_\epsilon$
 
 ### 常用符号表示方法
 
-#### 数学模式重音符
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xpQm8wMTEwMTA5MjE=,size_16,color_FFFFFF,t_70.png)
 
-```latex
-\hat{a}   \check{a} \tilde{a}   \acute{a} 
-\grave{a} \dot{a}   \ddot{a}    \breve{a} 
-\bar{a}   \vec{a}   \widehat{a} \widetilde{a}
-```
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/2.GIF)
 
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/3.GIF)
 
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/4.GIF)
 
-> $\hat{a} \qquad \check{a} \qquad \tilde{a} \qquad \acute{a} \\\\
-> \grave{a} \qquad \dot{a} \qquad \ddot{a} \qquad \breve{a} \\\\
-> \bar{a} \qquad \vec{a} \qquad \widehat{a} \qquad \widetilde{a} \\\\$
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/5.GIF)
 
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/6.GIF)
 
-
-
-
-#### 小写希腊字母
-
-```latex
-\alpha      \theta    o         \upsilon
-\beta       \vartheta \pi       \phi
-\gamma      \iota     \varpi    \varphi
-\delta      \kappa    \rho      \chi
-\epsilon    \lambda   \varrho   \psi
-\varepsilon \mu       \sigma    \omega
-\zeta       \nu       \varsigma 
-\eta        \xi       \tau
-```
-
-
-
-> $$
-> \alpha \qquad \theta \qquad o \qquad \upsilon \\\\
-> \beta \qquad \vartheta \qquad \pi \qquad \phi \\
-> \gamma \qquad \iota \qquad \varpi  \qquad \varphi \\
-> \delta \qquad \kappa \qquad \rho \qquad \chi \\
-> \epsilon \qquad \lambda \qquad \varrho \qquad \psi \\
-> \varepsilon \qquad \mu \qquad \sigma \qquad \omega \\
-> \zeta \qquad \nu \qquad \varsigma \\ 
-> \eta \qquad \xi \qquad \tau \\
-> $$
-
-
-
-#### 大写希腊字母
-
-
-
-
-
-
-
-#### 二元关系符
-
-
-
-
-
-
-
-
-
-#### 二元运算符
-
-
-
-
-
-
-
-#### 大尺寸运算符
-
-
-
-
-
-
-
-#### 箭头
-
-
-
-
-
-
-
-#### 定界符
-
-
-
-
-
-#### 大尺寸定界符
-
-
-
-#### 其他符号
-
-
-
-
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/7.GIF)
 

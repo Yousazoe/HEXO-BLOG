@@ -57,6 +57,10 @@ comments: false
 
 
 
+MMORPG在国内的网游史上其实扮演了非常重要的历史地理位置，由于早期阶段国内网游几乎只有MMORPG这一个品类，所以MMORPG早期的发展也就直接代表了中国的网游的发展。MMORPG指的是大型多人在线角色扮演游戏，直观地理解是在单机RPG的基础上增加了大型社交的概念，但这个概念的引入给整个游戏体验带来了巨大的改变。与单机RPG游戏一样，个人成长仍然是游戏的核心驱动力，但是成长出口和成长方式有本质差别。接下来，我们通过一些代表性产品一探MMORPG发展历程，以及作为国内网游品类中的重要分支，它有哪些新的玩法、社交和商业化内容。
+
+
+
 与单机RPG一样，个人成长仍然是游戏的核心驱动力，但成长出口和成长方式有本质区别。社交系统给了玩家全新的体验。
 
 其实并不是所有产品都会在国内市场获得成功，但是每款产品都奠定了一个MMORPG的一个玩法品类或者是整个框架这样一个基础，所以后续的产品基本上没有逃出这三个产品的一个基本框架。
@@ -96,6 +100,8 @@ comments: false
 
 
 
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210327124643218.png)
+
 
 
 
@@ -107,6 +113,10 @@ comments: false
 
 > 里面的夜晚真的就是夜晚，现在游戏的夜晚是天色变黑但能见度没有影响，但在EQ里面没有夜视能力的职业是基本什么都看不到。所以当时如果人类在晚上出生，他想出新手村可能要转几个小时才能出去。
 
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210327124657975.png)
+
+
+
 
 
 
@@ -117,6 +127,10 @@ comments: false
 - 宠物系统
 - 社交行为
 - 直接影响回合制游戏的设定
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210327124714922.png)
+
+
 
 
 
@@ -137,6 +151,10 @@ comments: false
 
 
 
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210327124735258.png)
+
+
+
 #### **《梦幻西游》**
 
 融合了几乎所有回合制游戏的优点。当时设计者对玩家体验并不是十分的关注，而梦幻西游在玩家体验上做到了非常极致的优化，在游戏生活中非常的便捷。同时它在玩法上已经扩充的非常丰富了，除了最原始的打怪升级之外还有许多丰富的任务活动来填充玩家的游戏时间，成为了回合制游戏标杆。
@@ -144,6 +162,10 @@ comments: false
 梦幻西游的经济系统非常开放，玩家可以自由交易，还能做到经济平衡，玩家的产出和消耗基本是持平的状态。在经济系统平稳的前提下，玩家整个打怪收益会比较固定，玩家粘性也会更高，最重要的点就是 **我的努力有回报**。
 
 网易凭借梦幻西游在2006年直接成为了国内第一的网游公司，所有产品的总在线人数超过了两百万。
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210327124757764.png)
+
+
 
 
 
@@ -161,16 +183,7 @@ comments: false
 
 
 
-![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ghbggrdqahj30r00f7juo.jpg)
-
-<div align=center>
-  <font size="3">
-    <i>
-      <a href="https://www.wowchina.com/zh-cn/news/18088331/%E9%AD%94%E5%85%BD%E4%B8%96%E7%95%8C%E5%85%A8%E6%96%B04k%E5%A3%81%E7%BA%B8">魔兽世界</a> 
-    </i>
-  </font>
-</div>
-
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210327124818502.png)
 
 
 #### **《热血江湖》**
@@ -178,6 +191,10 @@ comments: false
 首款大张旗鼓宣扬自己是免费游戏的一款游戏。在此之前的免费游戏没有找到很好的营收手段，同时“卖数值”会影响平衡，让非R玩家有很强的负面情绪。
 
 + 宣告网游正式进入免费时代
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210327124834848.png)
+
+
 
 
 
@@ -192,6 +209,10 @@ comments: false
 + 自动寻路开始普及
 + 网游开始快餐化
 
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210327124900526.png)
+
+
+
 
 
 #### **《魔域》**
@@ -202,11 +223,17 @@ comments: false
 + 商人在游戏中作用巨大
 + 网络游戏快餐化
 
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210327124922788.png)
+
+
+
 
 
 #### **《剑侠情缘网络版叁》**
 
-初期仿照魔兽世界，后面效果不佳对游戏进行改进，变成现在这样相对巅峰的状态。恶人谷与浩气盟的争斗让设计者重新发现PvP的玩家参与度是比较高的，最终演变为阵容的攻防战，鼓励玩家去攻击阵营的BOSS。
+《剑网3》早期许多地方照搬了《魔兽世界》，但是反响并不太好，后来发生了几件事使游戏走向了巅峰状态。一是“蝶恋花”事件：当时有浩气盟和恶人谷两个阵营，蝶恋花是浩气盟比较有优势的服务器，一个中秋节晚上，恶人谷突然集结兵力杀掉了浩气盟的老大，于是浩气盟的人就坐不住了，而且刚好碰上中秋假期，浩气盟的玩家就发动起来，不推掉恶人谷谷主不罢休，甚至集体删号，最终演变成了一场旷世大战。层出不穷的战术吸引了一大批观光玩家入驻，致使蝶恋花服务器崩溃，重启之后也处于排队状态。
+
+这场战斗持续了五天五夜，以恶人谷谷主王遗风被杀结束。
 
 萝莉体型也是剑网三首创的，吸引了一部分二次元玩家。这部分玩家的二次创作能力非常强，包括cosplay、同人漫画、同人歌曲等等。同人文化的发展也是剑网三的一大特色。
 
@@ -217,18 +244,7 @@ comments: false
 
 这些改进让剑网三走向了和魔兽世界完全不同的道路。
 
-
-
-![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1ghbo6zmp6mj30zk0ffn4z.jpg)
-
-<div align=center>
-  <font size="3">
-    <i>
-      <a href="https://mp.weixin.qq.com/s/pLTjQMTOw6veVAn2R4mT0w">@白芷不是中药</a> 
-    </i>
-  </font>
-</div>
-
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210327125000548.png)
 
 
 
@@ -242,6 +258,10 @@ MMO页游的特点就是全自动，它的目标用户就是上班族白领，�
 
 + 洗量大行其道
 + 页游MMO最终只成为一个过渡形态
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210327125053181.png)
+
+
 
 
 
@@ -261,6 +281,10 @@ MMO页游的特点就是全自动，它的目标用户就是上班族白领，�
 + 端游IP移植手游的热潮开启
 + 后续**热血传奇、剑侠情缘、天龙八部**等游戏相继上线
 
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210327125117616.png)
+
+
+
 
 
 #### **《我叫MT4》**
@@ -270,6 +294,8 @@ MMO页游的特点就是全自动，它的目标用户就是上班族白领，�
 + 魔兽玩法移植
 + 端游IP基本消耗殆尽
 + 手游MMO也将进入瓶颈
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/640-20210327125135788.png)
 
 
 
@@ -292,17 +318,6 @@ MMO页游的特点就是全自动，它的目标用户就是上班族白领，�
 + 硬件和网络不断发展
 + 手游MMO的机会比较大
 
-
-
-![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/007S8ZIlly1gh17yayv6rj30mk0dkzw6.jpg)
-
-<div align=center>
-  <font size="3">
-    <i>
-      <a href="https://jianghu.163.com/?from=nietop">楚留香 一梦江湖</a> 
-    </i>
-  </font>
-</div>
 
 
 

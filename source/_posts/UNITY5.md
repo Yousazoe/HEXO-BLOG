@@ -10,6 +10,7 @@ date: 2021-01-13 20:04:58
 index_img:
 comment:
 sticky:
+mathjax: true
 ---
 
 

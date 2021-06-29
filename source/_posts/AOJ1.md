@@ -14,7 +14,7 @@ type:
 banner_img:
 index_img:
 translate_title:
-top: 1
+top: 
 ---
 
 
@@ -131,7 +131,6 @@ The output consists of *N* lines. Please output the intermediate sequence in a l
 再举个例子，我们对数组`A={8,3,1,5,2,1}`进行插入排序时，整体流程如下：
 
 ```
-	 0 1 2 3 4 5
 0: 8 3 1 5 2 1
 1: 3 8 1 5 2 1
 2: 1 3 8 5 2 1

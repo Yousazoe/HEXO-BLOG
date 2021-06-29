@@ -9,6 +9,7 @@ categories: 计算机图像学 (Foundations of Computer Graphics)
 index_img:
 banner_img: https://tva1.sinaimg.cn/large/0081Kckwgy1gldye06tlhj31hc0u0weo.jpg
 comment:
+mathjax: ture
 sticky:
 ---
 
@@ -537,6 +538,14 @@ sticky:
 
 
 ### Viewing
+
+> + We have seen transforms (between coord systems)
+> + But all that is in 3D
+> + We still need to make a 2D picture
+> + Project 3D to 2D.How do we do this?
+> + This lecture is about viewing transformations
+
+到目前位置我们讨论的都是三维的变换，它们处理了如何将三维世界坐标系中的物体从一个位置放置到另一个位置的问题。在这一讲中我们将要讨论观察的问题。由于我们最终在计算机上看到的是二维图像，所以我们需要把三维世界中的物体投射到二维图像上。在讨论计算机图形学的时候所以我们需要把三维世界中的物体投射到二维图像上。在讨论计算机图形学的时候，我们能够从人眼和真实相机中发生的类似过程中得到启发。目前，我们已经见过一些坐标系统之间的变换方法，但它们都是三维的，如何才能把三维的变成二维的？如何才能把三维空间投射到二维空间上？
 
 #### 正交投影
 

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a7af9676-2415-4f4e-a567-b0bcf9942904" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/AOJ1.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/AOJ1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/BLOG2.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/BLOG2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/CPP1.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/CPP1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/CPTT2.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/CPTT2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/FCG1.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/FCG1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/GAE13.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/GAE13.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/GAE2.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/GAE2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/GAE3.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/GAE3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/GAE4.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/GAE4.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/GAE5.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/GAE5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/GE5.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/GE5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/GP1.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/GP1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/GT3.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/GT3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/LTC2.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/LTC2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/LX0.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/LX0.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/OS0.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/OS0.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/PAD2.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/PAD2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/PAD4.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/PAD4.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/UNITY3.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/UNITY3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/UNITY5.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/UNITY5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/about/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/about/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/artitalk/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/artitalk/index.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1sTTKSnjWGEUIGhi6zUSAKpVAFe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Node.js.hexo">
+    <configuration name="hexo" type="NodeJSConfigurationType" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.hexo" />
+      <item itemvalue="npm.run" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7af9676-2415-4f4e-a567-b0bcf9942904" name="Default Changelist" comment="" />
+      <created>1620895520842</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620895520842</updated>
+      <workItem from="1620895525545" duration="303000" />
+      <workItem from="1620895833693" duration="7000" />
+      <workItem from="1621127170820" duration="51000" />
+      <workItem from="1621127260161" duration="192000" />
+      <workItem from="1621323680244" duration="88000" />
+      <workItem from="1622313762042" duration="102000" />
+      <workItem from="1622314232439" duration="1597000" />
+      <workItem from="1622382900191" duration="1237000" />
+      <workItem from="1622448226774" duration="834000" />
+      <workItem from="1622706654884" duration="2396000" />
+      <workItem from="1622800095012" duration="335000" />
+      <workItem from="1623076557618" duration="746000" />
+      <workItem from="1623247860531" duration="579000" />
+      <workItem from="1623291063580" duration="494000" />
+      <workItem from="1624766982877" duration="115000" />
+      <workItem from="1624942850131" duration="743000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

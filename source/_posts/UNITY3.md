@@ -10,6 +10,7 @@ index_img:
 banner_img: https://tva1.sinaimg.cn/large/0081Kckwgy1gmd6blk9puj30xc0eg0w4.jpg
 comment:
 sticky:
+mathjax: true
 ---
 
 

@@ -1230,6 +1230,20 @@ date: 2021-02-28 17:40:03
 
 
 
+#### 小空调
+
+在所需要的地方加入如下代码：
+
+```html
+<iframe  src="https://ac.yunyoujun.cn" height="740" width="100%" frameborder="0" scrolling="no"  noresize="noresize"></iframe>
+```
+
+
+
+
+
+
+
 #### 在线聊天
 
 在线聊天算是一个比较成熟的 SaaS 商业应用了，业内产品如 [Tidio](https://www.tidiochat.com/)、 [TalkJS](https://talkjs.com/)、[Intercom](https://www.intercom.com/)、[tawk.to](https://www.tawk.to/) 等，使用体验都很好，交互界面也很干净别致。经过比较，本站最终选择了 Tidio：
@@ -1415,3 +1429,86 @@ comments: false
 
 + [在 Hexo 中使用 artitalk 新增说说功能](https://blog.csdn.net/qq_38157825/article/details/112783238)
 + [Hexo添加可实时发布的说说界面 | Artitalk.js](https://cndrew.cn/2020/05/11/artitalk/)
+
+
+
+
+
+
+
+#### SEO优化
+
+##### robots.txt
+
+```bash
+cd blog
+vi ./source/robots.txt
+```
+
+填入以下代码
+
+```
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /tags/
+Allow: /categories/
+Allow: /about/
+
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+
+Sitemap: https://weilining.github.io/sitemap.xml
+Sitemap: https://weilining.github.io/baidusitemap.xml
+```
+
+
+
+
+
+##### 预加载
+
+当我们提到性能优化，往往都会着眼于当前用户访问的这个页面，通过压缩资源大小、删减不必要资源、加快页面解析渲染等方式提升用户的访问速度；而 quicklink 用了另一种思路：我预先帮你加载（获取）接下来最可能要用的资源，这样之后真正使用到该资源（链接）时就会感觉非常顺畅。
+
+###### 配置
+
+```yaml
+# Quicklink Support
+# Do not enable both `pjax` and `quicklink`.
+# For more information: https://github.com/GoogleChromeLabs/quicklink
+# Front-matter (unsupport home archive).
+quicklink:
+  enable: ture
+
+  # Home page and archive page can be controlled through home and archive options below.
+  # This configuration item is independent of `enable`.
+  home: ture
+  archive: false
+
+  # Default (true) will initialize quicklink after the load event fires.
+  delay: true
+  # Custom a time in milliseconds by which the browser must execute prefetching.
+  timeout: 3000
+  # Default (true) will enable fetch() or falls back to XHR.
+  priority: true
+
+  # For more flexibility you can add some patterns (RegExp, Function, or Array) to ignores.
+  # See: https://github.com/GoogleChromeLabs/quicklink#custom-ignore-patterns
+  ignores:
+```
+
+注意：**Quicklink 需要安装依赖**。
+
+##### 启用 CDN
+
+```yaml
+  # Quicklink
+  # quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
+  quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
+```
+
+##### 参考
+
++ [Hexo NexT 加载性能优化](https://weilining.github.io/209291.html)
+

@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://yousazoe.top
+url: https://yousazoe.top
 root: /
 permalink: archives/:abbrlink.html
 abbrlink:
@@ -37,7 +37,7 @@ skip_render:
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
-titlecase: false # Transform title into titlecase
+titlecase: true # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
@@ -109,8 +109,8 @@ deploy:
 - type: git
   repo:
       github: git@github.com:Yousazoe/yousazoe.github.io.git
-      vercel: git@github.com:Yousazoe/vercel-repo.git
-      coding: git@e.coding.net:yousazoe/yousazoe/yousazoe.git
+      #vercel: git@github.com:Yousazoe/vercel-repo.git
+      #coding: git@e.coding.net:yousazoe/yousazoe/yousazoe.git
   branch: master
 
 
@@ -129,13 +129,13 @@ tag_cloud:
   textColor: '#555' # 字体颜色
   textHeight: 14 # 字体高度
   outlineColor: '#FFFFFF' # 字体背景色
-  maxSpeed: 0.1 # 标签云最大移动速度    
+  maxSpeed: 0.1 # 标签云最大移动速度
 
 # 字数统计
 symbols_count_time:
   separated_meta: true
   item_text_post: true
-  item_text_total: ture
+  item_text_total: true
   awl: 2
   wpm: 275
 
@@ -153,7 +153,7 @@ neat_enable: true
 neat_html:
   enable: true
   exclude:
-# 压缩css  
+# 压缩css
 neat_css:
   enable: true
   exclude:
@@ -167,7 +167,7 @@ neat_js:
   exclude:
     - '**/*.min.js'
     - '**/jquery.fancybox.pack.js'
-    - '**/index.js'  
+    - '**/index.js'
 
 # 图片懒加载
 lazyload:
@@ -177,10 +177,10 @@ lazyload:
   isSPA: false # optional
   preloadRatio: 3 # optional, default is 1
 
-  
+
 # 百度主动推送
 baidu_url_submit:
-  count: 100 				     ## 提交最新的1个链接
+  count: 100 				 ## 提交最新的1个链接
   host: yousazoe.top 	     ## 百度站长平台中注册的域名
   token: slBbq5f8WxljPytW	 ## 准入秘钥
   path: baidu_urls.txt 		 ## 文本文档的地址， 新链接会保存在此文本文档里
@@ -188,7 +188,7 @@ baidu_url_submit:
 # Live2D
 ## https://github.com/EYHN/hexo-helper-live2d
 live2d:
-  enable: ture
+  enable: true
   scriptFrom: local
   pluginRootPath: live2dw/
   pluginJsPath: lib/
