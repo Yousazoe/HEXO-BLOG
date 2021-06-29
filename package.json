@@ -38,6 +38,7 @@
     "hexo-tag-cloud": "^2.1.2",
     "hexo-tag-dplayer": "^0.3.3",
     "hexo-theme-landscape": "^0.0.3",
-    "hexo-wordcount": "^6.0.1"
+    "hexo-wordcount": "^6.0.1",
+    "shelljs": "^0.8.4"
   }
 }
