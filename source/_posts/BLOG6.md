@@ -2,9 +2,9 @@
 title: 自动备份Hexo博客源文件
 comment: false
 tags:
-  - Hexo
-  - NexT
-  - Blog
+- Hexo
+- NexT
+- Blog
 categories: 博客搭建 (Blog Building)
 abbrlink: c4d910e6
 date: 2021-06-29 13:36:41
@@ -18,7 +18,7 @@ mathjax:
 
 
 
-
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/next-schemes-dark.png)
 
 
 
