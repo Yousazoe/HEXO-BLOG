@@ -203,8 +203,79 @@ GAMES201高级物理引擎实战是由胡渊鸣老师教授。本节主要讲述
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210701145338319.png)
 
-我们会讲怎样写有效率的求解器。
+我们会讲怎样写有效率的求解器，后面我们会详细介绍。
 
 
 
 #### Productivity
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210701164745250.png)
+
+
+
+同样我们会讲讲怎么会提高生产力，怎么样用比较短的代码实现一个高效metric。
+
+
+
+
+
+#### Performance
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210701172105296.png)
+
+当然我们也很在意性能，刚才提到很多模拟我们要等上一天的时间。
+
+
+
+
+
+#### Hardware architecture
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210701172240794.png)
+
+
+
+我们也会简单介绍一下硬件的体系结构，因为如果你要写高性能求解器，需要去了解硬件是什么样子的，否则很难把它全部利用起来。
+
+
+
+#### Data Structures
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210701172608321.png)
+
+
+
+还有一些复杂的数据结构，太极语言让这些数据结构的使用变得更加简单，后面我们会详细介绍。
+
+
+
+#### Parallelization
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210701173008944.png)
+
+
+
+我们也会讲讲怎么去做复杂的并行，因为现在并行硬件大行其道，CPU和GPU如果算吞吐量真的是天壤之别，一般能差上一个数量级。
+
+
+
+
+
+#### Differentiability
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210701173318387.png)
+
+
+
+
+
+最后我们会讲讲怎么求simulation的导数，做很多有意思的东西。
+
+
+
+
+
+
+
+### The Taichi Programming Language Introduction
+
