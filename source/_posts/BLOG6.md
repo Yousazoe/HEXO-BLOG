@@ -132,7 +132,7 @@ function run() {
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210629140447332.png)
 
-![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210629140808496.png)
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210701131936368.png)
 
 
 
