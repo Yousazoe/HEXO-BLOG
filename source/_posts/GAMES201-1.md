@@ -2,8 +2,8 @@
 title: 导论
 comment: false
 tags:
-  - Computer Graphics
-  - Physics
+- Computer Graphics
+- Physics
 categories: 高级物理引擎实战 (GAMES201-Advanced Physics Engines)
 abbrlink: ee59981a
 date: 2021-07-01 13:45:14
