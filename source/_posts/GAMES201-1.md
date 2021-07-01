@@ -317,6 +317,8 @@ python3 -m pip install taichi
 
 三个主流的操作系统都是支持的，太极程序既可以在CPU上运行又可以在GPU上运行（支持CUDA、OpenGL、Apple Metal）。如果你的CPU是一些神奇的配置或Python是3.9以上，那么需要下载太极源代码下来装了。
 
+这里我选择直接在Pycharm中安装太极：
+
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210701181803381.png)
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210701192234480.png)
@@ -385,17 +387,215 @@ print(loss[None])                               # 3
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210701232400669.png)
 
++ `a`是一个标量的张量，这个张量有 42x63 个元素，每一个元素是一个标量
++ `b`是一个向量的张量，这个张量由4个3D `vector`组成的张量
++ `C`是一个张量的矩阵，这个矩阵有 3x5 个元素，每一个元素是 2x2 的矩阵
++ `loss`的`shape`为空，说明它是一个0D的张量，也就是一个元素的张量：标量
 
-
-
+不难看出，`shape`是这个张量的真正维度，前面的数字表述的是这个量里面的每个元素的维度。
 
 
 
 #### Computation
 
+##### Kernels
 
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210701235850626.png)
+
+计算里最重要的概念是`kernel`，太极中`kernel`是用于计算的函数。
+
+太极`kernel`中自己有一个语言，这个语言和Python非常非常像，唯一的区别是这个语言会被即时编译的。太极自带一个编译器把`kernel`里面的语言编译成高性能`kernel`，这样就能摆脱Python运行很慢的问题。
+
+
+
+##### Functions
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702000731717.png)
+
+太极的`func`可以被`kernel`调用，但不可以被Python调用。
+
+
+
+##### Scalar math
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702000807920.png)
+
+
+
+##### Matrices and linear algebra
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702001019222.png)
+
+物理模拟很多时候要用到线性代数，`ti.Matrix`是用来做小矩阵的。如果有很大的阶数需要考虑要不要用`tensors`而不是数组，因为太极中的一些机制会导致大数组非常慢，但小数组就会非常非常快。
+
+
+
+
+
+##### Parallel for-loops
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702003140404.png)
+
+接下来我们来讲一讲并行`for`循环。太极里有两种`for`循环：
+
++ Range-for loops 和Python的`for`循环没有区别
++ Struct-for loops 遍历稀疏张量里所有的元素
+
+
+
+##### Range-for loops
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702011544805.png)
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702011613661.png)
+
+要注意的是我们只会自动并行最外层的`for`循环，如果在`for`前面嵌套一个`if`就不会被自动并行，被认为是一个Serial，做过并行编程的同学应该很容易理解。
+
+
+
+
+
+##### Struct-for loops
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702011648101.png)
+
+```python
+import taichi as ti
+ti.init(arch=ti.gpu)
+
+n = 320
+pixels = ti.var(dt=ti.f32, shape=(n * 2, n))
+
+@ti.kernel
+def paint(t: ti.f32):
+    for i, j in pixels:
+        pixels[i, j] = i * 0.001 + j * 0.002 + t
+
+paint(0.3)
+```
+
+
+
+我们定义了一个叫做`pixels`的`tensors`，每一个元素是32位的浮点数，`shape`为 640x320。
+
+
+
+
+
+##### Atomic Operations
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702011729708.png)
+
+并行中很多时候需要原子操作，在太极里面例如`x[i]+=1`自动是原子操作。
+
+
+
+
+
+##### Taichi-scope v.s. Python-scope
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702003245409.png)
+
++ Taichi-scope 任何被`ti.kernel`或`ti.func`修饰的函数
++ Python-scope 任何不在Taichi-scope的代码
+
+
+
+##### Playing with tensors in Taichi-scope
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702013945651.png)
+
+```python
+import taichi as ti
+ti.init()
+
+a = ti.var(dt=ti.f32, shape=(42, 63))
+b = ti.Vector(3, dt=ti.f32, shape=4)
+C = ti.Matrix(2, 2, dt=ti.f32, shape=(3, 5))
+
+@ti.kernel
+def foo():
+    a[3, 4] = 1
+    print('a[3, 4] = ', a[3, 4])
+
+    b[2] = [6, 7, 8]
+    print('b[0] = ', b[0], '  b[2] = ', b[2])
+
+    C[2, 1][0, 1] = 1
+    print('C[2, 1] = ', C[2, 1])
+
+foo()
+```
+
+
+
+
+
+##### Phases of a Taichi program
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702003323334.png)
+
+
+
+
+
+##### Putting everything together
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702014743828.png)
+
+
+
+```python
+import taichi as ti
+ti.init(arch=ti.gpu)
+
+n = 320
+pixels = ti.var(dt=ti.f32, shape=(n * 2, n))
+
+@ti.func
+def complex_sqr(z):
+    return ti.Vector([z[0]**2 - z[1]**2, z[1] * z[0] * 2])
+
+@ti.kernel
+def paint(t: ti.f32):
+    for i, j in pixels:
+        c = ti.Vector([-0.8, ti.cos(t) * 0.2])
+        z = ti.Vector([i / n - 1, j / n - 0.5]) * 2
+        iterations = 0
+        while z.norm() < 20 and iterations < 50:
+            z = complex_sqr(z) + c
+            iterations += 1
+        pixels[i, j] = 1 - iterations * 0.02
+
+gui = ti.GUI("Julia Set",res=(n * 2, n))
+
+for i in range(1000000):
+    paint(i * 0.03)
+    gui.set_image(pixels)
+    gui.show()
+
+```
+
+
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702020346244.png)
 
 
 
 #### Debugging
 
+##### Debug mode
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702000324169.png)
+
+
+
+
+
+
+
+
+
+##### Thank you!
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210702000254571.png)
