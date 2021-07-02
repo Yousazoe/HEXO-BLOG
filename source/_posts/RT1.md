@@ -11,7 +11,7 @@ type:
 banner_img:
 index_img:
 translate_title:
-top: true
+top:
 mathjax: true
 ---
 

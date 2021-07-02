@@ -1,5 +1,5 @@
 ---
-title: 导论
+title: Introduction
 comment: false
 tags:
 - Computer Graphics
@@ -590,7 +590,7 @@ for i in range(1000000):
 
 
 
-
+下面是怎么调试太极陈谷。在初始化时设置`debug = True`时会做一些额外的检查，比如图中的数组越界。
 
 
 
