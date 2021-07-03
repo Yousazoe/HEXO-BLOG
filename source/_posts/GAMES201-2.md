@@ -12,7 +12,7 @@ banner_img:
 index_img:
 translate_title:
 top:
-mathjax:
+mathjax: true
 ---
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/E4v9qlcXEAUK9hf.jpeg)
@@ -141,11 +141,171 @@ mathjax:
 
 #### Mass-spring Systems
 
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703155855699.png)
 
+
+
+这边我们给出一些数学公式，大家不要被吓到，其实它还是非常简单的，就是胡克定律和牛顿第二定律。
+
+胡克定律就是`i`到`j`受力$f_{ij}$等于弹簧刚度`k`乘上现在两个质点它们的距离减去弹簧静止距离的差，最后算出的标量乘上两个质点力的单位向量，这样我们就得到了两个质点间的受力。
+
+有了力我们就可以根据牛顿第二定律力除以质量求出速度的导数。这里$\frac{1}{m_i}$是提前取倒数，乘法效率比除法高，等到需要时再拿出来使用。
 
 
 
 
 
 #### Time integration
+
+下面我们来看看时间积分是怎么做的。
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163832597.png)
+
+
+
+##### Implementing a mass-spring system with symplectic Euler
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163714942.png)
+
+
+
+
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163745562.png)
+
+
+
+
+
+##### Explicit v.s. implicit time integrators
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163636950.png)
+
+
+
+##### Mass-spring systems
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163613291.png)
+
+
+
+
+
+##### After linearization
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163547142.png)
+
+
+
+
+
+##### Solving the system
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163507504.png)
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163355214.png)
+
+
+
+
+
+##### Solving linear systems with Jacobi iterations
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163423495.png)
+
+
+
+
+
+
+
+##### Unifying explicit and implicit integrators
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163321604.png)
+
+
+
+
+
+##### Solve faster
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163252015.png)
+
+
+
+
+
+#### Lagrangian fluid simulation: Smoothed particle hydrodynamics
+
+##### Smoothed particle hydrodynamics
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163218816.png)
+
+
+
+
+
+
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163137329.png)
+
+
+
+
+
+
+
+##### Implementing SPH using the Equation of States (EOS)
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163055764.png)
+
+
+
+
+
+##### Gradients in SPH
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163027501.png)
+
+
+
+
+
+##### SPH Simulation Cycle
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703162912483.png)
+
+
+
+
+
+##### Variants of SPH
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703162739473.png)
+
+
+
+##### Courant–Friedrichs–Lewy (CFL) condition
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703162652790.png)
+
+
+
+##### Accelerating SPH: Neighborhood search
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703162626157.png)
+
+
+
+
+
+##### Other particle-based simulation methods
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703162525016.png)
+
+
+
+##### Exporting your results
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703162424358.png)
 
