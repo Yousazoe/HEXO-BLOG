@@ -29,7 +29,7 @@ mathjax: true
 
 ### 引言
 
-
+GAMES201高级物理引擎实战是由胡渊鸣老师教授。本节主要简单讲解拉格朗日、欧拉两种视角，配合太极语言编写简单的弹簧质点系统。
 
 
 
@@ -139,6 +139,24 @@ mathjax: true
 
 ### Lagrangian Simulation Approaches
 
+我们先来试一下demo的效果；
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703203550055.png)
+
+
+
+其中两个参数非常重要：
+
++ `stiffness` 弹簧硬度
+
+  `s`调大以后整个材料坚如磐石，变得非常坚硬；`S`调小以后让材料变软
+
++ `damping` 阻尼系数
+
+  `d` 调大以后显得非常粘滞， `D`调小以后运行更加灵活。很多游戏里面会把`damping`调的比较大
+
+
+
 #### Mass-spring Systems
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703155855699.png)
@@ -163,23 +181,76 @@ mathjax: true
 
 
 
+刚才我们写出的方程全部是连续的，相当于是常微方程。如果要在计算机中表示就遇到了一个问题：计算机中的时间全部都是离散的，计算资源也全部都是离散的，不可能取一个无穷小的时间。
+
+这个时候大家会取一个$\Delta t$，一般来说可以是一个比较小的值比如$10^{-3}$、$10^{-4}$，会根据物理系统的各种参数去取。大家会选择一个比较大的$\Delta t$，代表模拟同样长时间的物理过程跑得比较快，$\Delta t$越大越好。当然$\Delta t$大了以后又会带来许多不稳定性的问题，后面会提到。
+
+
+
+我们做了离散化以后$v$就不再是连续的，下标表示$t$时刻的$v$，而$v_{t+1}$表示的是下一时间步的$v$。通过比较简单的前向欧拉法（根据现有状态推测以后的状态）我们可以得到一个简单的公式：$v_{t+1}=v_{t}+\Delta t \frac{f_t}{m}$，对于$x$我们用同样的方式处理。
+
+但是Forward Euler用的不多了，现在大家用的比较多的是Semi-implicit Euler。它也是另一个根据现有状态推出未来的一种时间计算方式，可以看到两者的区别在于$x_{t+1}$使用的速度$v$不同。这看起来是一个小的差异，但其实很多时候有一个准确性的提升。
+
+
+
+
+
 ##### Implementing a mass-spring system with symplectic Euler
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163714942.png)
 
+我们只要三步：
 
++ 首先计算新的速度$v_{t+1}$
++ 和地面做一次碰撞
++ 用新的速度计算一下新的位置$x_{t+1}$
 
 
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163745562.png)
 
+```python
+@ti.kernel
+def substep():
+    # Compute force and new velocity
+    n = num_particles[None]
+    for i in range(n):
+        v[i] *= ti.exp(-dt * damping[None]) # damping
+        total_force = ti.Vector(gravity) * particle_mass
+        for j in range(n):
+            if rest_length[i, j] != 0:
+                x_ij = x[i] - x[j]
+                total_force += -spring_stiffness[None] * (x_ij.norm() - rest_length[i, j]) * x_ij.normalized()
+        v[i] += dt * total_force / particle_mass
+        
+    # Collide with ground
+    for i in range(n):
+        if x[i].y < bottom_y:
+            x[i].y = bottom_y
+            v[i].y = 0
 
+    # Compute new position
+    for i in range(num_particles[None]):
+        x[i] += v[i] * dt
+```
+
+
+
+这个`substep`的`kernel`非常简单，首先它把所有的`i`枚举一遍，总受力为$G = mg$。接着我们枚举其他所有的粒子，看它们之间是否有联系，如果`rest_length[]`为0代表没有弹簧，否则它们之间有一个弹簧。最后我们按照胡克定律的公式算出粒子的受力，用力更新速度。
+
+之后我们与地面做一次碰撞。为什么在中间和地面做一次碰撞呢？如果我们在计算速度以后再和地面做碰撞，有可能在计算速度的时候粒子陷到地底，这就不是很自然了，所以对于弹簧质点系统一般计算完力和速度之后立刻做一次碰撞。
+
+接下来我们把速度累加到位置上就可以计算新的位置了。
 
 
 
 ##### Explicit v.s. implicit time integrators
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163636950.png)
+
+
+
+
 
 
 
