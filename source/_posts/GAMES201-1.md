@@ -317,6 +317,18 @@ python3 -m pip install taichi
 
 三个主流的操作系统都是支持的，太极程序既可以在CPU上运行又可以在GPU上运行（支持CUDA、OpenGL、Apple Metal）。如果你的CPU是一些神奇的配置或Python是3.9以上，那么需要下载太极源代码下来装了。
 
+> 不同操作系统所支持的后端：
+>
+> | 平台     | CPU  | CUDA   | OpenGL | Metal  |
+> | -------- | ---- | ------ | ------ | ------ |
+> | Windows  | 可用 | 可用   | 可用   | 不可用 |
+> | Linux    | 可用 | 可用   | 可用   | 不可用 |
+> | Mac OS X | 可用 | 不可用 | 不可用 | 可用   |
+>
+> （可用: 该系统上有最完整的支持；不可用: 由于平台限制，我们无法实现该后端）
+>
+> 在参数 `arch=ti.gpu` 下，Taichi 将首先尝试在 CUDA 上运行。如果你的设备不支持 CUDA，那么 Taichi 将会转到 Metal 或 OpenGL。如果所在平台不支持 GPU 后端（CUDA、Metal 或 OpenGL），Taichi 将默认在 CPU 运行。
+
 这里我选择直接在Pycharm中安装太极：
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210701181803381.png)
