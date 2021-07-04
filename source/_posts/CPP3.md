@@ -1820,5 +1820,255 @@ public:
 
 假设我有一个`Player`实例`player`，我不仅可以调用`printName()`函数，也可以调用`move()`函数并访问`x`、`y`：
 
+```diff
+int main(){
+    Player player;
++   player.move(5,5);
+
+    std::cin.get();
+}
+```
+
+
+
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210629111020683.png)
+
+
+
+我可以访问 `x` 和 `y` 就像它是一个 `Entity` 一样，因为它继承了所有的 `Entity` 的功能。还有一个概念叫做多态，在以后会深入讨论，多态是一个单一类型，但有多个类型的意思。`Player` 不只是 `Player` 类型，而且也是一个 `Entity`，这意味着我们可以在任何我们想要使用 `Entity` 的地方使用 `Player`，因为 `Player` 总会拥有 `Entity` 所拥有的一切再多加一点点东西。
+
+如果我想创建一个打印 `Entity` 对象的独立功能，例如通过访问 `x` 和 `y` 变量并将它们打印到控制台上，我可以传入 `Player` 对象到相同的函数中，即使这个函数是接受 `Entity`作为参数的。可以这样搞的原因是 `Player` 保证会有这些 `x` 和 `y` 变量，包含所有 `Entity` 的东西。
+
+继承是我们一直使用的一种方式，它是一种扩展现有类并为基类提供新功能的方式，这是面向对象编程中最重要的东西之一，当你创建一个子类时，它将包含你的父类所包含的一切。
+
+
+
+另一个证明方法是打印内存的大小：
+
+```diff
+#include <iostream>
+
+class Entity {
+public:
+    float x;
+    float y;
+
+    void move(float dx,float dy) {
+        x += dx;
+        y += dy;
+    }
+};
+
+class Player : public Entity{
+public:
+    const char* name;
+
+    void printName() const {
+        std::cout << name << std::endl;
+    }
+};
+
+
+int main(){
+    Player player;
+    player.move(5,5);
+
++   std::cout << "sizeof Entity: " << sizeof(Entity) << std::endl;
++   std::cout << "sizeof Player: " << sizeof(Player) << std::endl;
+
+    std::cin.get();
+}
+```
+
+
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210704152839890.png)
+
+
+
+这就是继承在C++类中如何工作的要点。
+
+
+
+
+
+### 虚函数
+
+今天我们来聊聊C++中的虚函数。之前的章节我们一直在讨论类、面向对象编程、继承，所有这些东西包括今天的虚函数，对整个面向对象概念都非常非常重要。
+
+虚函数允许我们在子类中重写方法，所以假设我们有两个类 `A` 和 `B`，`B` 是 `A` 派生出来的，也就是 `B` 是 `A` 的子类。如果我们在 `A` 类中创建一个方法，标记为 `virtual`，我们可以选择在 `B` 类中重写那个方法，让它做其他事情。
+
+#### virtual
+
+像往常一样，通过一个例子可以很好地解释这一点：
+
+```c++
+#include <iostream>
+#include <string>
+
+class Entity {
+public:
+    std::string getName(){
+        return "Entity";
+    }
+};
+
+class Player : public Entity {
+private:
+    std::string name;
+public:
+    Player(const std::string& name)
+        : name(name) {
+        
+    }
+    
+    std::string getName(){
+        return name;
+    }
+};
+
+int main(){
+
+    std::cin.get();
+}
+```
+
+
+
+我们创建了两个类，一个是 `Entity` 是我们的基类，唯一拥有的是一个名为 `getName()` 的公共方法，它会返回一个字符串 `"Entity"`；另一个类是 `Player`，它将是 `Entity` 类的子类，在这个类里我们存储一个名字字符串 `name`、提供一个构造函数 `Player()`，我们给它一个叫 `getName()` 的方法，返回 `name`。
+
+让我们看看如何使用这些设定。假设我们在这里创造了一个 `Entity`，我要试着打印 `getName()`，`Player` 同理：
+
+```diff
+int main(){
++   Entity* e = new Entity();
++   std::cout << e->getName() << std::endl;
+
++   Player* p = new Player("Yousazoe");
++   std::cout << p->getName() << std::endl;
+
+    std::cin.get();
+}
+```
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210704155920565.png)
+
+酷，看起来不错，我们得到了打印结果。然而如果我们使用多态的概念，那么到目前为止我们在这里编写的所有内容都有问题了，如果我们指向一个 `Player`，就像它是一个 `Entity` 一样，我们就会遇到问题。
+
+如果我在这里创建一个名为 `entity` 的变量，它会被赋值为 `p` 指向 `Player` 的指针，此时调用打印函数：
+
+```diff
+int main(){
+    Entity* e = new Entity();
+    std::cout << e->getName() << std::endl;
+
+    Player* p = new Player("Yousazoe");
+    std::cout << p->getName() << std::endl;
+
++   Entity* entity = p;
++   std::cout << entity->getName() << std::endl;
+    
+    std::cin.get();
+}
+```
+
+
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210704160429996.png)
+
+
+
+运行代码，得到结果为 `Entity`，然而我们希望是 `Player`，它是一个 `Player` 实例。
+
+一个更好的例子是用一个 `printName()` 替换：
+
+```diff
++void printName(Entity* entity){
++    std::cout << entity->getName() << std::endl;
++}
+
+int main(){
+    Entity* e = new Entity();
+-   std::cout << e->getName() << std::endl;
++   printName(e);
+
+    Player* p = new Player("Yousazoe");
+-   std::cout << p->getName() << std::endl;
++   printName(p);
+    
+-   Entity* entity = p;
+-   std::cout << entity->getName() << std::endl;
+    std::cin.get();
+}
+```
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210704161449301.png)
+
+
+
+我们期望不同的 `getName()` 函数作用于不同的类对象。然而如果我们运行代码，`Entity` 打印了两次，为什么会这样？
+
+发生这种情况的原因是在我们声明函数时，方法通常在类内部起作用，然后当要调用方法的时候会调用属于该类型的方法，而这里参数为 `Entity*` 决定了它会从 `Entity` 类中找到这个 `getName()` 函数：
+
+```c++
+void printName(Entity* entity){
+    std::cout << entity->getName() << std::endl;
+}
+```
+
+
+
+我们希望C++能意识到这一点，这就是虚函数出现的地方。
+
+虚函数引入了一种叫做动态联编（Dynamic Dispatch）的东西，它通常通过虚函数表来实现编译。虚函数表就是一个表，它包含基类中所有虚函数的映射，这样我们可以在它运行时将它们映射到正确的覆写（override）函数，之后为会做一个关于虚函数表如何运作的深度文章，但为了简单起见，你只需要知道如果想覆写一个函数，必须将基类中的基函数标记为虚函数。
+
+回到我们的代码，在 `Entity` 类中 `getName()` 方法前面加上 `virtual` 这个词：
+
+```diff
+class Entity {
+public:
++   virtual std::string getName(){
+        return "Entity";
+    }
+};
+```
+
+
+
+尽管没有做很多工作，但这可以告诉编译器：“嘿，生成虚函数表吧！”。运行代码，我们得到了正确的结果：
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210704162639642.png)
+
+
+
+#### override
+
+在C++11中我们可以做的另一件事情是将覆写函数标记为关键字 `override`：
+
+```diff
+class Player : public Entity {
+private:
+    std::string name;
+public:
+    Player(const std::string& name)
+        : name(name) {
+
+    }
+
++   std::string getName() override {
+        return name;
+    }
+};
+```
+
+
+
+这不是必须的，你可以看到刚刚我们没写那个 `override`，它也工作得很好。然而你还是应该这样做，因为首先这让它更具可读性，现在我们知道这实际上是一个覆写函数，而且它还可以帮助我们预防 bug 的发生比如拼写错误之类的。
+
+这就是虚函数的本质，但是很遗憾，虚函数并不是免费（无额外开销）的，有两种与虚函数相关的运行时成本：
+
++ 首先我们需要额外的内存来存储虚函数表，这样我们才可以分配到正确的函数，包括基类中要有一个成员指针指向虚函数表
++ 其次我们调用虚函数时，我们需要遍历这个表来确定映射到哪个函数，这是额外的性能损失
+
+由于这些成本，有些人根本就不喜欢使用虚函数。老实说，根据我的经验，我没有遇到开销特别大的情况，所以我个人而言经常用，没有任何问题，可能在一些嵌入式平台上 cpu 性能非常差需要注意避免使用虚函数。
 
