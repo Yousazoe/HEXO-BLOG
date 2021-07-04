@@ -367,6 +367,8 @@ for i in range(n):
 
 
 
+Jacobi迭代就是每一次迭代把未知数的一项换成一个值，这个值能够使得右端项能够被满足，最终收敛回一个值。
+
 
 
 ##### Unifying explicit and implicit integrators
@@ -375,6 +377,8 @@ for i in range(n):
 
 
 
+如果我们往刚才的公式加入一个$\beta$，那么就可以把 forward/backward Euler 整合到一起。
+
 
 
 ##### Solve faster
@@ -382,6 +386,12 @@ for i in range(n):
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163252015.png)
 
 
+
+如果我们有成千上万个弹簧该怎么办：
+
++ 稀疏矩阵
++ 共轭梯度
++ 预条件
 
 
 
@@ -393,7 +403,9 @@ for i in range(n):
 
 
 
+接下来我们讲讲拉格朗日解流体的方法。
 
+SPH 的主体思想是有一堆粒子，每个粒子携带一些物理量，用和函数去近似一个连续的长度。其中 $A$ 可以是任何随着空间变化的物理量，比如速度、压力等等。
 
 
 
@@ -401,13 +413,19 @@ for i in range(n):
 
 
 
-
+SPH 的方法一开始是用来求天体物理，它最大的好处是不需要 meshes，非常适合模拟自由表面流体。还有一个好处是非常直观容易理解，每一个粒子就是一小包水。
 
 
 
 ##### Implementing SPH using the Equation of States (EOS)
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703163055764.png)
+
+
+
+那么用 SPH 模拟流体最简单的方法叫做 WCSPH，最关键的是 $v$ 对 $t$ 的导数，$D$ 是材料导数（可以认为是粒子对时间的导数）。
+
+那么速度的导数是什么呢？首先液体里面得有压强 $p$，压强的梯度会影响流体粒子的速度，除以密度 $\rho$ 得到加速度。压强 $p$ 的公式中 $B$ 为体积模量，$\rho_0$ 为理想密度。直观上来说，$\rho$ 非常大压强 $p$ 就会非常高，推着周围的粒子离开自己，尝试保持自己的体积。
 
 
 
@@ -419,19 +437,33 @@ for i in range(n):
 
 
 
+刚才提到 $A(x)$ 公式来去在每一个粒子处计算出粒子所在位置物理量是多少，算梯度 $SPH$ 有一套特别的算法。但是它其实并不能从上面推出来，而且梯度值也不是特别准确，但大家还用是因为至少在 $SPH$ 中它还是对称的，保证动量守恒。
+
 
 
 ##### SPH Simulation Cycle
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703162912483.png)
 
+讲了这么多写一个 SPH 也非常容易，左边一个不考虑粘性的欧拉方程，右边是一个压强关于密度的关系。对于 SPH Simulation Cycle：
 
++ 对于每一个粒子计算局部的密度（粒子只携带质量，密度由质量估计）
++ 对于每一个粒子用梯度公式计算压强的梯度
++ Symplectic Euler！
+
+可以看到最后的 Symplectic Euler 和弹簧质点系统是非常像的，甚至可以认为 SPH 里弹簧遵循的不是胡克定律而是这些物理关系。
 
 
 
 ##### Variants of SPH
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703162739473.png)
+
+
+
+SPH 有很多很多变种，PCI-SPH 是一个隐式的时间积分，但又为了性能做了取舍不完全隐式，使用预测矫正的格式每次先预测粒子的位置和速度，然后再根据预测做出矫正，得到一个比较好散度比较小的速度场。
+
+另一个非常流行的变种是 PBF
 
 
 
