@@ -463,7 +463,13 @@ SPH 的方法一开始是用来求天体物理，它最大的好处是不需要 
 
 SPH 有很多很多变种，PCI-SPH 是一个隐式的时间积分，但又为了性能做了取舍不完全隐式，使用预测矫正的格式每次先预测粒子的位置和速度，然后再根据预测做出矫正，得到一个比较好散度比较小的速度场。
 
-另一个非常流行的变种是 PBF
+另一个非常流行的变种是 PBF，在实时的情况被频繁使用。它是 PBD 和 SPH 结合起来得到的模拟流体的方法，太极中内置了该例子的demo：
+
+```shell
+ti example pbf2d
+```
+
+
 
 
 
@@ -479,6 +485,8 @@ SPH 有很多很多变种，PCI-SPH 是一个隐式的时间积分，但又为�
 
 
 
+如果你要加速 SPH，目前我们看到对于每一个粒子都要枚举其他粒子，所以每一个时间步的复杂度是 $O(n^2)$，$n$ 为粒子数量。实际上大家会采用一些空间数据结构来加速到 $O(n)$。
+
 
 
 ##### Other particle-based simulation methods
@@ -490,4 +498,86 @@ SPH 有很多很多变种，PCI-SPH 是一个隐式的时间积分，但又为�
 ##### Exporting your results
 
 ![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210703162424358.png)
+
+
+
+> Taichi 的视频导出工具依赖于 `ffmpeg`。如果你的机器上还没有安装 `ffmpeg`，请按照本节末尾的 `ffmpeg` 安装说明进行操作。
+
+- `ti.VideoManager` 可以帮助你导出 mp4 或 **gif** 格式的结果。例如,
+
+```python
+import taichi as ti
+
+ti.init()
+
+pixels = ti.var(ti.u8, shape=(512, 512, 3))
+
+@ti.kernel
+def paint():
+    for i, j, k in pixels:
+        pixels[i, j, k] = ti.random() * 255
+
+result_dir = "./results"
+video_manager = ti.VideoManager(output_dir=result_dir, framerate=24, automatic_build=False)
+
+for i in range(50):
+    paint()
+
+    pixels_img = pixels.to_numpy()
+    video_manager.write_frame(pixels_img)
+    print(f'\rFrame {i+1}/50 is recorded', end='')
+
+print()
+print('Exporting .mp4 and .gif videos...')
+video_manager.make_video(gif=True, mp4=True)
+print(f'MP4 video is saved to {video_manager.get_output_filename(".mp4")}')
+print(f'GIF video is saved to {video_manager.get_output_filename(".gif")}')
+```
+
+运行上述代码后，你将在 `./results/` 文件夹中找到输出的视频。
+
+
+
+###### Windows
+
+- 从 [ffmpeg](https://ffmpeg.org/download.html) 上下载 `ffmpeg` 存档文件（具体名称为，`ffmpeg-2020xxx.zip`）;
+- 解压存档到指定文件夹中，比如， “D:/YOUR_FFMPEG_FOLDER”;
+- **关键步骤：** 添加路径 `D:/YOUR_FFMPEG_FOLDER/bin` 到环境变量 `PATH` 中;
+- 打开 Windows 下的 `cmd` 或 `PowerShell` ，然后输入下面这行命令来测试你的安装是否成功。 如果 `ffmpeg` 已经正确安装完毕，那么它的版本信息就会被打印出来。
+
+```shell
+ffmpeg -version
+```
+
+###### Linux 
+
+- 大多数 Linux 发行版都会自带 `ffmpeg` ，所以如果你的机器上已经有了 `ffmpeg` 命令，那么你就不需要阅读这一部分了。
+- 在 Ubuntu 上安装 `ffmpeg`
+
+```shell
+sudo apt-get update
+sudo apt-get install ffmpeg
+```
+
+- 在 CentOS 和 RHEL 上安装 `ffmpeg`
+
+```shell
+sudo yum install ffmpeg ffmpeg-devel
+```
+
+- 在 Arch Linux 上安装 `ffmpeg`:
+
+- 使用下面这行命令测试你的安装是否成功
+
+```shell
+ffmpeg -h
+```
+
+###### OS X 
+
+- 在 OS X 上可以通过 `homebrew` 安装 `ffmpeg`:
+
+```shell
+brew install ffmpeg
+```
 
