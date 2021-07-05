@@ -2072,3 +2072,145 @@ public:
 
 由于这些成本，有些人根本就不喜欢使用虚函数。老实说，根据我的经验，我没有遇到开销特别大的情况，所以我个人而言经常用，没有任何问题，可能在一些嵌入式平台上 cpu 性能非常差需要注意避免使用虚函数。
 
+
+
+### 接口
+
+今天我们讲的是一种特殊类型的虚函数：纯虚函数。
+
+C++纯虚函数本质上与其他语言（如Java或C#）中的抽象方法或接口相同。基本上纯虚函数允许我们在基类中定义一个没有实现的函数，然后强制子类去实现该函数。如果我们看一下之前的例子，可以看到我们在 `Entity` 类中有一个虚函数 `getName()`，然后我们在 `Player` 中重写了那个函数：
+
+```c++
+class Entity {
+public:
+    virtual std::string getName(){
+        return "Entity";
+    }
+};
+
+class Player : public Entity {
+private:
+    std::string name;
+public:
+    Player(const std::string& name)
+        : name(name) {
+
+    }
+
+    std::string getName() override {
+        return name;
+    }
+};
+```
+
+
+
+在这个基类中 `getName()` 有函数体，意味着在某个类中重写它只是一个可选项，即使我们不重写它仍然可以调用 `Player.getName()` 返回字符串 `Entity`。然而在某些情况下，提供这种默认实现是没有意义的，实际上我们可能想要强制子类为特定的函数提供自己的定义。
+
+在面向对象编程中创建一个只由未实现的方法组成，然后强制子类去实现它们非常常见，这通常被称为接口。因此，类中的接口只包含未实现的方法作为模板，由于这个接口类实际上并不包含方法实现，我们实际上不可能实例化那个类。让我们看看这个在 `Entity` 类中的 `getName()` 函数能不能搞成纯虚函数：
+
+```c++
+class Entity {
+public:
+    virtual std::string getName() = 0;
+};
+```
+
+
+
+我们去掉了函数体就写成等于0。注意，这里依然是定义成 `virtual` 虚函数，但等于0本质上使它成为一个纯虚函数，这意味着如果你想实例化这个子类，它必须在一个子类中实现。
+
+这样做确实发生了一些变化，在 `main()` 函数中我们不再具有实例化 `Entity` 类的实例，我们必须给它一个子类来实现这个函数：
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210705160236508.png)
+
+
+
+目前 `Player` 工作正常，因为我们实现了那个 `getName()` 函数。如果我注销掉这个实现，你可以看到 `Player` 也不能进行实例化了：
+
+```diff
+class Player : public Entity {
+private:
+    std::string name;
+public:
+    Player(const std::string& name)
+        : name(name) {
+
+    }
+
+-   std::string getName() override {
+-       return name;
+-   }
+};
+```
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210705163801189.png)
+
+
+
+本质上，你只能在实现了所有这些纯虚函数之后，才能够实例化。或者实现在更上层的类也是可以的，比如 `Player` 类是另一个类（`Entity` 的子类）的子类，而这个类实现了 `getName()` 函数。我们的想法是，纯虚函数必须被实现，才能创建这个类的实例。
+
+好了，让我们看一个更好的例子。先把我们之前的操作撤销，假设我们想要编写一个函数打印这些类的类名，我们需要一个类型可以提供 `getClassName()` 函数：
+
+```c++
+void Print(Printable obj){
+		std::cout << obj->getClassName << std::endl;
+}
+```
+
+
+
+让我们把这个叫做 `Printable`，然后设置它。创建一个新类 `Printable`，它唯一会有的是一个纯虚字符串函数：
+
+```diff
+#include <iostream>
+#include <string>
+
++class Printable {
++public:
++    virtual std::string getClassName() = 0;
++};
+
++class Entity : public Printable {
+public:
+    virtual std::string getName(){
+        return "Entity";
+    }
+};
+
++class Player : public Entity, Printable{
+private:
+    std::string name;
+public:
+    Player(const std::string& name)
+        : name(name) {
+
+    }
+
+    std::string getName() override {
+        return name;
+    }
+};
+
+void printName(Entity* entity){
+    std::cout << entity->getName() << std::endl;
+}
+
++void Print(Printable obj){
++    std::cout << obj->getClassName() << std::endl;
++}
+
+int main(){
+    Entity* e = new Entity();
+    printName(e);
+
+    Player* p = new Player("Yousazoe");
+    printName(p);
+
+    std::cin.get();
+}
+```
+
+
+
+然后我要让 `Entity` 实现那个接口
