@@ -2178,7 +2178,7 @@ public:
     }
 };
 
-+class Player : public Entity, Printable{
+class Player : public Entity {
 private:
     std::string name;
 public:
@@ -2213,4 +2213,252 @@ int main(){
 
 
 
-然后我要让 `Entity` 实现那个接口
+然后我要让 `Entity` 实现那个接口。注意虽然它叫做接口，但它其实只是一个类，所以还是 `class` 而不是 `interface`（其他语言有这个关键字，但C++没有，接口只是C++的类而已）。
+
+现在所有类都需要实现这个 `getClassName()` 函数了，否则我们将不能实例化这个类：
+
+```diff
+#include <iostream>
+#include <string>
+
+class Printable {
+public:
+    virtual std::string getClassName() = 0;
+};
+
+class Entity : public Printable {
+public:
+    virtual std::string getName(){
+        return "Entity";
+    }
+    
++   std::string getClassName() override {
++       return "Entity";
++   }
+};
+
+class Player : public Entity, Printable{
+private:
+    std::string name;
+public:
+    Player(const std::string& name)
+        : name(name) {
+
+    }
+
+    std::string getName() override {
+        return name;
+    }
+    
++   std::string getClassName() override {
++       return "Player";
++   }
+};
+
+void printName(Entity* entity){
+    std::cout << entity->getName() << std::endl;
+}
+
+void Print(Printable* obj){
+    std::cout << obj->getClassName() << std::endl;
+}
+
+int main(){
+    Entity* e = new Entity();
+-   printName(e);
+
+    Player* p = new Player("Yousazoe");
+-   printName(p);
+
++   Print(e);
++   Print(p);
+    
+    std::cin.get();
+}
+```
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210705212818328.png)
+
+
+
+现在可以看到，我得到了正确的类名，所有这些都来自于一个 `Print()` 函数，这个函数接受 `Printable` 作为参数。如果你不实现这个函数，你就不能实例化这个类。
+
+
+
+
+
+### 可见性
+
+今天我们讨论 C++ 中的可见性。
+
+可见性是一个属于面向对象编程的概念，它指的是类的某些成员或方法实际上有多可见。我说的可见性是指：谁能看到它们、谁能调用它们、谁能使用它们这些东西，所以一开始我要提一下，可见性是对程序实际运行方式完全没有影响的东西，对性能也没有影响，它纯粹是语言中存在的东西，让你能够写出更好的代码或者帮助你组织代码。
+
+C++ 中有三个基础的可见性修饰符：`private`、`protected` 和 `public`。在其他语言比如 Java 和 C# 有其他关键字，比如 Java 中你可以不使用可见性修饰符，这就是所谓的 `default` 可见性修饰符；在 C# 中有个可见性修饰符叫做 `internal`。
+
+在 C++ 中我们就是三个可见性修饰符：`private`、`protected` 和 `public`。让我们来看看它们在类中是怎么做的：
+
+```c++
+class Entity {
+    int x, y;
+};
+```
+
+
+
+如果我在一个 `Entity` 中把 `x` 和 `y` 定义为两个变量，默认的可见性是私有的，也就是说这段代码和我写 `private` 完全一样：
+
+```c++
+class Entity {
+private:
+    int x, y;
+};
+```
+
+
+
+但是如果这里不是 `class` 而是 `struct`，那么它将默认为公开的：
+
+```c++
+struct Entity {
+public:
+    int x, y;
+};
+```
+
+
+
+#### private
+
+让我们回到类，把这些设为私有，什么是 `private`？`private` 意味着只有（Only*）这个 `Entity` 类可以访问这些变量，它可以读取和写入它们。这里的 Only\* 要给个星号\*，因为在 C++ 中有个叫 `friend` 的东西。它是 C++ 中的关键字，可以让类或者函数成为类 `Entity` 的朋友（友元），`friend` 的意思是友元，实际上可以从类中访问私有成员。
+
+回到代码，如果我此时要在主函数里实例化这个 `Entity`，在这个类的作用域之外我不能调用 `x = 2` 或类似的东西，因为它是私有的：
+
+```c++
+#include <iostream>
+
+class Entity {
+    int x, y;
+public:
+    Entity() {
+        x = 0;
+    }
+};
+
+int main(){
+    Entity e;
+    e.x = 2;
+
+    std::cin.get();
+}
+```
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210705225327136.png)
+
+
+
+如果有一个 `Entity` 的子类为 `Player`，这里依然不能访问 `x`，只有 `Entity` 类和它的友元才能访问这些变量：
+
+```c++
+#include <iostream>
+
+class Entity {
+    int x, y;
+public:
+    Entity() {
+        x = 0;
+    }
+};
+
+class Player : public Entity {
+public:
+    Player() {
+        x = 2;
+    }
+};
+
+int main(){
+    Entity e;
+    e.x = 2;
+
+    std::cin.get();
+}
+```
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210705225650753.png)
+
+
+
+这同样适用于函数，这里我们新建一个 `Print()` 函数，可以从 `Entity` 类中调用函数，这完全没有问题。然而当我试图从子类 `Player` 或者一个完全不同的地方，实际上我不能调用它，因为是私有的：
+
+```diff
+#include <iostream>
+
+class Entity {
+    int x, y;
+    
++   void Print() {}
+public:
+    Entity() {
+        x = 0;
++       Print();
+    }
+};
+
+class Player : public Entity {
+public:
+    Player() {
+        x = 2;
++       Print();
+    }
+};
+
+int main(){
+    Entity e;
+    e.x = 2;
++   e.Print();
+
+    std::cin.get();
+}
+```
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210705230250552.png)
+
+
+
+#### protected
+
+我们有个东西叫 `protected`，它比 `private` 更可见，但比 `public` 更不可见。`protected` 意思是这个 `Entity` 类和层次结构中的所有子类也可以访问这些符号：
+
+```c++
+#include <iostream>
+
+class Entity {
+protected:
+    int x, y;
+
+    void Print() {}
+public:
+    Entity() {
+        x = 0;
+        Print();
+    }
+};
+
+class Player : public Entity {
+public:
+    Player() {
+        x = 2;
+        Print();
+    }
+};
+```
+
+
+
+可以看到现在我完全可以在 `Player` 类中写 `x = 2` 和调用 `Print()`，因为 `Player` 是 `Entity` 的子类。然而，我仍然不能在 `main()` 函数里面这样做，因为它是一个完全不同的函数，且在类外面。
+
+
+
+#### public
+
+最后是 `public`，它意味着所有人都可以访问它：我可以在 `Entity` 类中访问它、在 `Player` 类中访问它
