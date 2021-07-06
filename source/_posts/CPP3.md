@@ -2461,4 +2461,52 @@ public:
 
 #### public
 
-最后是 `public`，它意味着所有人都可以访问它：我可以在 `Entity` 类中访问它、在 `Player` 类中访问它
+最后是 `public`，它意味着所有人都可以访问它：我可以在 `Entity` 类中访问它、在 `Player` 类中访问它，也可以在 `main()` 函数中访问：
+
+```c++
+#include <iostream>
+
+class Entity {
+public:
+    int x, y;
+
+    void Print() {}
+public:
+    Entity() {
+        x = 0;
+        Print();
+    }
+};
+
+class Player : public Entity {
+public:
+    Player() {
+        x = 2;
+        Print();
+    }
+};
+
+int main(){
+    Entity e;
+    e.x = 2;
+    e.Print();
+
+    std::cin.get();
+}
+```
+
+
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210706143544608.png)
+
+
+
+
+
+现在我们来谈谈为什么要使用可见性，哪里要用到，为什么不让所有的东西都是 `public` 呢？
+
+`public` 公开一切对于开发者而言纯粹是一个糟糕的想法，这是如何写好代码问题。不管是阅读代码还是扩展代码，可见性让代码更加容易维护、容易理解。这与性能无关，也不会产生完全不同的代码，可见性不是 CPU 需要理解的东西，它只是人类为了帮助自己和他人发明的东西。
+
+所以当我说帮助他人时，我的意思是如果你把某件事标记为 `private`，这基本上告诉每个人：“嘿，你不应该从其他类或其他代码中访问这个”，你只能在类的内部访问这个。这意味着如果我从来没有使用过一个类，我看它包含了什么，我应该可以这么说：“好吧，我只被允许接触 `public` 的东西，这就是我使用这个类应该的方式”。
+
+这是这个类
