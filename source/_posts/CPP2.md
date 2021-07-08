@@ -2226,3 +2226,232 @@ public:
 
 
 
+#### mutable
+
+`mutable` 实际上有两种不同的用途，其中之一是与 `const` 一起使用；另一种是用在 lambda 表达式中。这两种情况实际上是不同的，英文单词 `mutable` 意味着它是很容易改变的东西，它是可以改变的。你可能之前听过不可改变 `immutable`，意为某事无法改变，`mutable` 是它的反义词，是可以改变的。
+
+##### const
+
+所以当我们在常量 `const` 的背景下谈论可变 `mutable` 时，很明显我们谈论的是某种 `const` 但它实际上又可以改变，这就像 `mutable` 翻转了 `const` 的意思。我们有一个应用了 `mutable` 的程序，来看一看：
+
+```c++
+#include <iostream>
+#include <string>
+
+class Entity {
+private:
+    std::string name;
+public:
+    const std::string& getName() const {
+        return name;
+    }
+};
+
+int main(){
+
+    std::cin.get();
+}
+```
+
+
+
+我们创建了一个 `Entity` 的类，有一个私有成员 `name` 和一个 `getter` 函数返回 `name`。这里的 `const` 意味着我们不允许修改实际的类成员，所以我不能把 `name` 重新赋值为别的东西。
+
+让方法为 `const` 的主要原因是承诺不会改变类，如果我们有一个常量的 `Entity` 对象，我们应该可以调用 `const` 方法，而如果没有标记就不行了。
+
+然而在某些情况下我们还是想将方法标记为 `const`，因为无论如何它的目的都是不变的，它本质上没有修改对象本身，但它可能需要触及/修改某个变量。在 `Entity` 类中，从技术上讲是有可能的，但没人真的想要这样修改类的对象。
+
+假设为了调试，我们想计算一下这个函数在程序中被调用了多少次，声明一个 `count` 用于计数，每次我们调用 `getName()` 这个函数就增加这个计数：
+
+```diff
+class Entity {
+private:
++   int count = 0;
+    std::string name;
+
+public:
+    const std::string& getName() const {
++       count++;
+        return name;
+    }
+};
+```
+
+
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210708174020025.png)
+
+
+
+可以看到现在我们不能这样做，解决方法是去掉 `const`。但是可以看到在主函数中又不能调用了：
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210708174450408.png)
+
+
+
+这个 `getter` 方法应该是 `const` 的，所以不能做累加操作。当然我们可以把 `count` 移到其他类中或者什么地方，但是会很混乱，因为这个参数在这个类中是用在这个函数中的。
+
+我们能做的就是恢复 `const`，然后标记这个 `count` 为 `mutable`：
+
+```diff
+#include <iostream>
+#include <string>
+
+class Entity {
+private:
++   mutable int count = 0;
+    std::string name;
+
+public:
++   const std::string& getName() const {
+        count++;
+        return name;
+    }
+};
+
+int main(){
+    const Entity e;
+    e.getName();
+
+    std::cin.get();
+}
+```
+
+
+
+现在一切ok了，我们有了一个很好的 `const` 方法，可以修改这个特定的成员变量。所以，标记类成员为 `mutable`意味着类中的 `const` 方法可以修改这个成员。这种用法也是 `mutable` 最常见的用法，老实说，在类成员中使用 `mutable` 可能是你唯一会使用到它的情况了。
+
+
+
+##### lambda
+
+但是，还有一个用到 `mutable` 的地方，就是 lambda。我不会把这个讲的太复杂，因为我们还没有讲到这方面的知识。这里的变量 `x = 8`，然后我想声明某种 lambda，所以我就叫它 `f`：
+
+```c++
+int main(){
+    int x = 8;
+    auto f = []() {
+        std::cout << "Hello World!" << std::endl;
+    };
+    f();
+
+    std::cin.get();
+}
+```
+
+
+
+这就是一个 lambda 式子。lambda 基本上就像一个一次性的小函数，你可以写出来并赋值给一个变量，我们可以像调用其他函数一样调用它，就像这样使用它的名字，然后指定任何参数。
+
+现在假设我们想在这里使用变量 `x`，不打印 `Hello World!` 了，变成打印 `x`：
+
+```diff
+int main(){
+    int x = 8;
+    auto f = []() {
++       std::cout << x << std::endl;
+    };
+    f();
+
+    std::cin.get();
+}
+```
+
+
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210708211722202.png)
+
+
+
+我需要定义一些捕获方法，我们可以像这样通过引用发送这个变量：
+
+```c++
+auto f = [&x]() {
+		std::cout << x << std::endl;
+};
+```
+
+
+
+或者这样直接传值：
+
+```c++
+auto f = [x]() {
+		std::cout << x << std::endl;
+};
+```
+
+
+
+或者通过 `=` 号对所有变量进行传值传递：
+
+```c++
+auto f = [=]() {
+		std::cout << x << std::endl;
+};
+```
+
+
+
+
+
+或者通过引用符号 `&` 对所有的变量进行引用传递：
+
+```c++
+auto f = [&]() {
+		std::cout << x << std::endl;
+};
+```
+
+
+
+
+
+假设这个 lambda 式子搞点额外的东西比如 `x++`，我们还是想按值来传递，会得到错误：
+
+```diff
+auto f = [=]() {
++		x++;
+		std::cout << x << std::endl;
+};
+f();
+```
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210708212609375.png)
+
+
+
+在这种情况下，我实际上需要做的是搞另外一个变量，赋值给它，然后修改这个变量：
+
+```diff
+auto f = [=]() {
++		int y = x;
++		y++;
+		std::cout << x << std::endl;
+};
+f();
+```
+
+
+
+相当于复制：创建一个局部变量，然后将 `x` 赋值给它。这有点乱，所以我要做的就是用 `mutable` 关键字：
+
+```diff
+int main(){
+    const Entity e;
+    e.getName();
+
+    int x = 8;
++   auto f = [=]() mutable {
+        x++;
+        std::cout << x << std::endl;
+    };
+    f();
+
+    std::cin.get();
+}
+```
+
+
+
+这意味着你通过值传递的变量，这里做的实际上和刚才的 `y` 局部变量一样，只是在源码上看起来会干净很多。当然，在这个函数之外 `x` 的值仍然是8，它不会增加为9，因为你不是通过引用来传递它的。
