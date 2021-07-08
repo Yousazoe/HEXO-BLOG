@@ -2075,5 +2075,154 @@ public:
 
 这个类有两个变量，我们通过 `getter` 和 `setter` 的方式初始化。我把 `const` 放在方法名的右边，参数列表之后，这就是第三种用法，它与变量无关，而是在方法名之后，顺便一说，这只在类中有效。
 
-这意味着这个方法不会修改任何实际的类，因此你可以看到我不能修改类成员变量
+这意味着这个方法不会修改任何实际的类，因此你可以看到我不能修改类成员变量。如果我尝试让 `m_X = 2`，可以看到是做不到的 ：
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210708161240526.png)
+
+
+
+我已经承诺，这个方法不会修改实际的类，只能读不能写。所以在 `getter` 方法之后写 `const` 是有意义的，然而如果是 `setter` 方法，我不能在这里声明 `const`，因为显然我要写这个类：
+
+```c++
+void setX(int x) const {
+		m_X = x;
+}
+```
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210708161619698.png)
+
+
+
+
+
+当然，如果 `m_X` 是一个指针，你想让它保持不变，你可以写成这样：
+
+```diff
+class Entity {
+private:
++   int* m_X, m_Y;
+
+public:
++   const int* const getX() const {
+        return m_X;
+    }
+};
+```
+
+
+
+我们一行写了三个 `const`，这意味着我们返回了一个不能被修改的指针（第一个 `const`），指针的内容也不能被修改（第二个 `const`），这个方法承诺不修改实际的 `Entity` 类（第三个 `const`）。
+
+让我们回到普通不是指针的情况，问题是为什么我要声明这个东西是常量？是的，我得到一种承诺不要修改这个函数里的东西，然而这是否真的强制了什么东西吗？
+
+答案是是的。如果我们在主函数中有 `Entity` 实例，然后我有一个 `printEntity()` 函数可访问我的 `getter` 方法：
+
+```c++
+#include <iostream>
+
+class Entity {
+private:
+    int m_X, m_Y;
+
+public:
+    int getX() const {
+        return m_X;
+    }
+};
+
+void printEntity(Entity e) {
+    std::cout << e.getX() << std::endl;
+}
+
+int main(){
+    Entity e;
+    
+    std::cin.get();
+}
+```
+
+
+
+现在我们有一个很合理的函数，但我希望能够通过常量引用传递这个，因为我不想再次复制 `Entity` 类，这需要分配空间。所以我要通过常量引用的方式：
+
+```diff
++void printEntity(const Entity& e) {
+    std::cout << e.getX() << std::endl;
+}
+```
+
+
+
+现在有件事，如果我通过常量引用来传递参数，这意味着这个 `e` 是常量，我不能修改 `e`，不能将它重新赋值，这与指针的工作方式不同。如果你重新分配这个引用，你实际是在改变这个对象，而不是其他对象。
+
+所以如果我把这个 `const` 从 `getX()` 方法中移走，突然间我就不能调用 `getX()` 函数了，因为它已经不能保证它不会写入 `Entity` 了：
+
+```diff
+#include <iostream>
+
+class Entity {
+private:
+    int m_X, m_Y;
+
+public:
++   int getX() {
+        return m_X;
+    }
+};
+
+void printEntity(const Entity& e) {
+    std::cout << e.getX() << std::endl;
+}
+
+int main(){
+    Entity e;
+    printEntity(e);
+
+    std::cin.get();
+}
+```
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210708163425569.png)
+
+
+
+我没有直接修改 `Entity`，然而我调用了一个可能可以修改 `Entity` 的方法，这是不被允许的，所以这里 `getX()` 函数的 `const` 是必须的。
+
+记住，如果你的方法实际上没有修改类或不应该修改类时标记它们为 `const`，否则在有常量引用或类似的情况下就用不了你的方法。
+
+在某些情况下你确实要标记方法为 `const`，但由于某些原因，它又确实需要修改一些变量。这里我新建一个 `var`，我们需要修改它：
+
+```diff
+class Entity {
+private:
+    int m_X, m_Y;
++   int var;
+
+public:
+    int getX() const {
++       var = 2;
+        return m_X;
+    }
+};
+```
+
+
+
+也许只是为了调试或者它不会真正影响程序，我们仍然想标记这个方法为 `const`。在 C++ 中有一个关键词 `mutable`，这个词意味着它是可以被改变的：
+
+```diff
+class Entity {
+private:
+    int m_X, m_Y;
++   mutable int var;
+
+public:
+    int getX() const {
+        var = 2;
+        return m_X;
+    }
+};
+```
+
+
 
