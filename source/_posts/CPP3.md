@@ -2519,5 +2519,328 @@ int main(){
 
 
 
+### 成员初始化列表
+
+今天我要讲的是构造函数初始化列表，这是我们在构造函数中初始化类成员（变量）一种方式。因此当我们编写一个类并向该类添加成员时，通常需要用某种方式对这些成员变量进行初始化。这通常在构造函数中，有两种方法，我们可以在构造函数中初始化一个类成员，让我们来看一看。
+
+我们有一个 `Entity` 类，它只有 `name` 成员变量：
+
+```c++
+class Entity {
+private:
+    std::string name;
+
+public:
+    Entity() {
+        name = "UNKOWN";
+    }
+    
+    Entity(const std::string& name) {
+        this->name = name;
+    }
+    
+    const std::string& getName() const {
+        return name;
+    }
+};
+```
 
 
+
+这可能是你之前一直在做的方式，但 C++ 中实际上还有另外一种方法：成员初始化列表。与上面设置 `name` 不同，在构造函数和参数之后我们可以添加一个冒号，然后开始列出你想要初始化的成员：
+
+```diff
+#include <iostream>
+#include <string>
+
+class Entity {
+private:
+    std::string name;
+
+public:
++   Entity() : name("UNKOWN") {
+-       name = "UNKOWN";
+    }
+
++   Entity(const std::string& name) : name(name) {
+-       this->name = name;
+    }
+
+    const std::string& getName() const {
+        return name;
+    }
+};
+
+int main(){
++   Entity e0;
++   std::cout << e0.getName() << std::endl;
+
++   Entity e1("YOUSAZOE");
++   std::cout << e1.getName() << std::endl;
+
+    std::cin.get();
+}
+```
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210709121151471.png)
+
+
+
+这就是成员初始化列表的方式。如果我们有另一个成员比如 `score`，只需要加一个逗号然后写上这个成员，在这种情况下我把它初始化为0：
+
+```diff
+class Entity {
+private:
++   int score;
+    std::string name;
+
+public:
++   Entity() : name("UNKOWN"), score(0) {
+    }
+
+    Entity(const std::string& name) : name(name) {
+    }
+
+    const std::string& getName() const {
+        return name;
+    }
+};
+```
+
+
+
+需要注意的是如果你定义这些变量，那么你在成员初始化列表中要按照顺序写，否则有些编译器会警告你。这很重要，因为不管你怎么写初始化列表，它都会按照定义类成员的顺序进行初始化。
+
+在这个例子中，首先初始化整数 `score`，然后初始化字符串 `name`。即便你在初始化列表的时候，用另一种方式来初始化列表，比如先初始化字符串再初始化整数，会导致各种各样的依赖性问题，所以你要确保你做成员初始化列表时，要与成员变量声明时的顺序一致。
+
+
+
+最大的问题是为什么我们要使用这个成员初始化列表，只是代码风格的问题吗？答案是对，又不对，不对可能更加正确。我喜欢这样写代码，因为如果你有很多成员变量，在函数体内初始化它们会变得非常凌乱，你的构造函数大部分内容都只是在初始化变量，都是些琐碎无聊的事情，可能很难看出构造函数到底在做什么：
+
+```diff
+class Entity {
+private:
+    int score;
++   int x, y, z;
+    std::string name;
+
+public:
+    Entity() : name("UNKOWN"), score(0) {
++       x = 0;
++       y = 0;
++       z = 0;
+        
++       Init();
+    }
+
+    Entity(const std::string& name) : name(name) {
+    }
+
+    const std::string& getName() const {
+        return name;
+    }
+};
+```
+
+
+
+你会想隐藏它们，这就是为什么我喜欢把它们放在成员初始化列表中。即使从代码风格的角度来看，我也更喜欢这样，它让我的构造函数非常干净，易于阅读：
+
+```diff
+class Entity {
+private:
+    int score;
+    int x, y, z;
+    std::string name;
+
+public:
++   Entity() : score(0), name("UNKOWN"), x(0), y(0), z(0) {
+-       x = 0;
+-       y = 0;
+-       z = 0;
+
+        Init();
+    }
+
+    Entity(const std::string& name) : name(name) {
+    }
+
+    const std::string& getName() const {
+        return name;
+    }
+};
+```
+
+
+
+
+
+但实际上在特定的类的情况下有一个功能上的区别，如果我们稍微修改一下去掉成员初始化列表中的赋值：
+
+```diff
+class Entity {
+private:
+    int score;
+    int x, y, z;
+    std::string name;
+
+public:
++   Entity() : x(0), y(0), z(0) {
++       name = "UNKOWN";
+    }
+
+    Entity(const std::string& name) : name(name) {
+    }
+
+    const std::string& getName() const {
+        return name;
+    }
+};
+```
+
+
+
+实际上会发生的是这个 `name` 对象会被构造两次，一次是使用默认构造函数，然后是这个用 `UNKOWN` 参数初始化，实际上发生的是这样：
+
+```c++
+name = std::string("UNKOWN");
+```
+
+
+
+所以你创建了2个字符串，其中一个被直接扔掉了。这是对性能的浪费，让我们演示一下。我要在这里创建一个 `Example` 类，有两个 `public` 构造函数：
+
+```diff
+#include <iostream>
+#include <string>
+
++class Example {
++public:
++   Example() {
++       std::cout << "Created Entity!" << std::endl;
++   }
+    
++   Example(int x) {
++       std::cout << "Created Entity with " << x << std::endl;
++   }
++};
+
+class Entity {
+private:
+-   int score;
+-   int x, y, z;
+    std::string name;
+    
++   Example example;
+
+public:
+    Entity() {
+        name = "UNKOWN";
++       example = Example(8);
+    }
+
+    Entity(const std::string& name) {
+    }
+
+    const std::string& getName() const {
+        return name;
+    }
+};
+
+int main(){
+    Entity e0;
+-   std::cout << e0.getName() << std::endl;
+
+-   Entity e1("YOUSAZOE");
+-   std::cout << e1.getName() << std::endl;
+
+    std::cin.get();
+}
+```
+
+
+
+这里我所做的只是创建一个 `Entity` 对象的实例，使用这个默认构造函数。运行程序：
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210709145146053.png)
+
+
+
+我们创建了两个 `Entity`，一个是无参的，一个是有整型参数的。这两个实际产生的 `Entity`一个是源自这里：
+
+```c++
+class Entity {
+private:
+    ......
+
+    Example example;
+		......
+};
+```
+
+
+
+另一个我们在这里创建了一个新的 `Example` 实例，然后把它赋值给 `example`：
+
+```c++
+class Entity {
+		......
+public:
+    Entity() {
+        ......
+        example = Example(8);
+    }
+		......
+};
+```
+
+
+
+但是我们刚刚创建了一个 `Example` 类实例，相当于我们又扔掉它，用一个新的对象覆盖它。然而如果我们把它移到初始化列表中：
+
+```diff
+class Entity {
+private:
+    std::string name;
+
+    Example example;
+
+public:
++   Entity() : example(Example(8)){
+        name = std::string("UNKOWN");
+-       example = Example(8);
+    }
+
+    Entity(const std::string& name) {
+    }
+
+    const std::string& getName() const {
+        return name;
+    }
+};
+```
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210709145852556.png)
+
+
+
+我们运行构造函数，只是创建了一个实例。甚至我可以把这个删掉，直接传入参数，你可以看到是完全一样的：
+
+```diff
+class Entity {
+......
+
+public:
++   Entity() : example(8){
+        name = std::string("UNKOWN");
+    }
+
+......
+};
+```
+
+
+
+这就是区别。你应该到处使用成员初始化列表，相反绝对没有理由不使用它们。如果你不喜欢这种代码风格，要习惯它们，因为这不仅仅是风格的问题，实际上有一个功能上的区别，如果不使用它们就会浪费性能。
+
+当然，并非所有情况都是如此。对于整数这样的基本类型，它不会被初始化，除非你通过赋值来初始化它们，但我不会区分原始类型和类类型，全部使用成员初始化列表。
