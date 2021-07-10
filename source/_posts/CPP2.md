@@ -2164,12 +2164,116 @@ int main(){
 
 那么让我们来谈谈如何使用 `std::string`。回到我们的代码，改用 `std::string`：
 
+```diff
+#include <iostream>
++#include <string>
+
+int main(){
++   std::string name = "YOUSAZOE";
+    char name1[9] = {'Y','o','u','s','a','z','o','e','\0'};
+
+    std::cout << name1 << std::endl;
+    name[2] = 'N';
+
+    std::cin.get();
+}
 ```
+
+
+
+`string` 有一个构造函数，它接受 `char*` 或 `const char*` 参数。如果你把鼠标悬停在这个上面，你会看到它实际上是一个 `const char` 数组：
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210710123435907.png)
+
+
+
+为什么你通常会把它赋值给 `const char*` 而不是 `char*`？因为本质上当你定义字符串时，用双引号引起来的一个单词或者多个单词在 C++ 中是 `const char` 数组，而不是 `char` 数组。
+
+如果我们没有把这个 `string` 头文件包括进去，会得到一个错误。输出流会告诉我们，不能把字符串发送到 `cout` 流中，因为这个操作符允许我们发送字符串到流中的重载版本在 `string` 头文件内部。
+
+当然，因为 `std::string` 是一个有很多功能的类，我们实际上有所有这些方法：
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210710135455259.png)
+
+
+
+我们可以找出它的尺寸：
+
+```c++
+name.size()
+```
+
+
+
+如果我们是 `const char*` 或 `char*`，我们就需要用到 C 函数比如 `strlen()`：
+
+```c++
+char* s;
+strlen(s);
+```
+
+
+
+另外一个常见的事是追加字符串，我想在 `YOUSAZOE` 加上 `hello`会出现错误：
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210710141541127.png)
+
+
+
+发生这种情况的原因是你实际上是想将两个 `const char` 的数组相加。这个双引号里面的东西是 `const char` 数组，它不是真正的字符串，不能把两个指针相加，不能把两个数组直接相加。
+
+所以如果你想做这样的事，一个很简单的方法是把它分开多行，用 `+=` 操作符重载：
+
+```c++
+std::string name = "YOUSAZOE";
+name += "hello";
+```
+
+
+
+或者将两个相加的字符数组中的其中一个，显式调用一个 `string` 构造函数：
+
+```c++
+std::string name = std::string("YOUSAZOE") + "hello";
+```
+
+
+
+如果你想找到字符串中的文本，你可以使用 `name.find()` 查找文本字符串：
+
+```c++
+bool contains = name.find("ZOE") != std::string::npos;
 ```
 
 
 
 
+
+我想快速提一下的另一件事，是把这些字符串传递给其他函数。如果我写了一个叫 `printString()` 的函数，我想要传递一个字符串，我不会简单地写 `std::string`：
+
+```c++
+void printString(std::string str) {
+		std::cout << str << std::endl;
+}
+```
+
+
+
+我不会这样做的原因是这实际上是一个副本，我们之前没有过多讨论过这个问题，但当你这样把类（对象）传递给一个函数时，你实际上在复制这个类（对象）。如果我要做诸如 `string += "h"` 这样的事情，它不会影响到传递的原始字符串。
+
+这显然是一个只读函数，我们不修改任何东西，我们只是想把它打印出来，为什么我们要复制整个字符串呢？这意味着我们必须动态地在堆上分配一个全新的 `char` 数组来存储我们已经得到的完全相同的文本。
+
+这可不快，字符串复制实际上相当慢。因此当你传递一个这样的字符串而且是只读的情况下，确保通过常量引用传递它：
+
+```c++
+void printString(const std::string& str) {
+		std::cout << str << std::endl;
+}
+```
+
+
+
+`&` 引用意味着它不会被复制；而 `const` 意味着我们承诺不会在这里修改它。
 
 
 
