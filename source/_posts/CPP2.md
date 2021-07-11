@@ -2277,6 +2277,90 @@ void printString(const std::string& str) {
 
 
 
+
+
+#### 字面量
+
+今天我们讨论字符串字面量，这是一种基于字符串的东西，会讲的更深一点。
+
+字符串字面量，是在双引号之间的一串字符。我可以定义一个字符串字面量，然后通过双引号在之间写点东西：
+
+```c++
+#include <iostream>
+#include <string>
+
+int main(){
+    "YOUSAZOE";
+
+    std::cin.get();
+}
+```
+
+
+
+好了，现在是一个字符串字面量。它会变成什么，取决于很多因素，最基本的情况下它是一个 `const char` 数组，长度为9。接着你可能注意到了，这里实际上只有8个字符，那为什么数组长度是9呢？原因是在这种情况下，字符串的最后有一个额外的字符：空终止字符，字符串的结束位置是0，代表 null 字符的意思而不是字符的 `0`。
+
+所以如果我们想做一些事情比如在字符串中间搞个 `\0`，在许多情况下实际上会破坏这个字符串的行为：
+
+```c++
+#include <iostream>
+#include <string>
+
+#include <stdlib.h>
+
+int main(){
+    const char name[9] = "YOU\0ZOE";
+
+    std::cin.get();
+}
+```
+
+
+
+如果我想看到我的字符串是什么，我可以运行 C 函数 `strlen()` 计算字符串长度的函数：
+
+```diff
+#include <iostream>
+#include <string>
+
+#include <stdlib.h>
+
+int main(){
+    const char name[9] = "YOU\0ZOE";
+
++   std::cout << strlen(name) << std::endl;
+    std::cin.get();
+}
+```
+
+
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210711005436382.png)
+
+
+
+查看结果是3，然而很显然它的长度超过了三个字符。得到这个结果的原因是它只计算到 `\0` 之前的字符数，碰到0就认为是字符串的结尾了。如果我们移除 `\0`，重新运行，得到的就会是6：
+
+```c++
+#include <iostream>
+#include <string>
+
+#include <stdlib.h>
+
+int main(){
+    const char name[9] = "YOUZOE";
+
+    std::cout << strlen(name) << std::endl;
+    std::cin.get();
+}
+```
+
+![](https://cdn.jsdelivr.net/gh/Yousazoe/picgo-repo/img/image-20210711011259660.png)
+
+
+
+
+
 ### 常量
 
 今天我们来讲 C++ 的 `const` 关键字。
