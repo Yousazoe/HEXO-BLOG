@@ -18,11 +18,12 @@ mathjax:
 <div align=center>
   <font size="3">
     <i>
-      <a href="https://www.behance.net/gallery/104225729/Tetris-Art?tracking_source=search_projects_recommended%7CTetris">Tetris Art</a> by 
-      <a href="https://www.behance.net/emineakgz">Emine Açıkgöz</a>
+      <a href="https://www.pixiv.net/artworks/67023394">0129</a> by 
+      <a href="https://www.pixiv.net/users/9713408">IIIIIIInari!</a>
     </i>
   </font>
 </div>
+
 
 
 
